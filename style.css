@@ -3,24 +3,48 @@
     padding: 0;
     border: 0;
     margin: 0;
+
+    font-family: Helvetica, sans-serif;
+    color: yellowgreen;
 }
 
 body {
     width: 100vw;
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: #414141;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 610px;
+}
+
+header {
+    text-align: center;
+    margin: 10px;
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    height: 80%;
+    display: grid;
+    grid-template: repeat(3, 150px) / repeat(3, 200px);
+    gap: 10px;
+
     justify-content: center;
 }
 
 .project-container {
-    width: 300px;
-    height: 200px;
-    background-color: white;
-    margin: 2% 3% ;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    border: solid 1px gray;
+}
+
+.project-header {
+    background-color: black;
 }
