@@ -5,13 +5,13 @@
     margin: 0;
 
     font-family: Helvetica, sans-serif;
-    color: yellowgreen;
+    color: rgb(136, 136, 136);
 }
 
 body {
     width: 100vw;
     height: 100vh;
-    background-color: #414141;
+    background-color: #F4F9EA;
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
@@ -27,24 +27,28 @@ nav {
 
 header {
     text-align: center;
-    margin: 10px;
+    margin: 25px;
 }
 
 main {
     height: 80%;
     display: grid;
-    grid-template: repeat(3, 150px) / repeat(3, 200px);
-    gap: 10px;
+    grid-template: repeat(2, 200px) / repeat(2, 200px);
+    gap: 25px;
 
     justify-content: center;
 }
 
 .project-container {
     display: grid;
-    grid-template-rows: 30px 1fr;
-    border: solid 1px gray;
+    grid-template-rows: 150px 50px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px rgba(124, 124, 124, 0.1);
 }
 
 .project-header {
-    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    background-color: #CE6B7D;
 }
