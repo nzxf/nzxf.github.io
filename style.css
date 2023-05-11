@@ -6,49 +6,61 @@
 
     font-family: Helvetica, sans-serif;
     color: rgb(136, 136, 136);
+    border: dotted 1px rgba(128, 128, 128, 0.363);
 }
 
 body {
     width: 100vw;
     height: 100vh;
-    background-color: #F4F9EA;
-    backdrop-filter: blur(10px);
-    display: flex;
-    flex-direction: column;
+    background-color: #D6E4E2;
+}
+
+main div {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.navbar {
+    background-color: black;
+    width: 100%; 
+    padding: 7px;
+}
+
+.login {
+    background-color: white;
+    color: white;
+    margin-left: 180px;
+}
+
+/* Grid setting  */
+main {
+    display: grid;
+    grid-template-rows: 1fr 3fr 5fr 4fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
     justify-content: center;
     align-items: center;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 610px;
+.navbar {
+    grid-column: 2 / 4;
 }
 
-header {
-    text-align: center;
-    margin: 25px;
+.side-bar {
+    grid-row: 1 / 5;
 }
 
-main {
-    height: 80%;
-    display: grid;
-    grid-template: repeat(2, 200px) / repeat(2, 200px);
-    gap: 25px;
-
-    justify-content: center;
+.main-bar {
+    grid-row: 2 / 5;
 }
 
-.project-container {
-    display: grid;
-    grid-template-rows: 150px 50px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 5px 5px 3px rgba(124, 124, 124, 0.1);
+.footer {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
 }
 
-.project-header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #CE6B7D;
+a {
+    background-color: transparent;
 }
