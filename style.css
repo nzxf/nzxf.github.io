@@ -15,52 +15,64 @@ body {
     background-color: #D6E4E2;
 }
 
-main div {
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.navbar {
+.topbar {
     background-color: black;
     width: 100%; 
     padding: 7px;
-}
 
-.login {
-    background-color: white;
-    color: white;
-    margin-left: 180px;
-}
-
-/* Grid setting  */
-main {
-    display: grid;
-    grid-template-rows: 1fr 3fr 5fr 4fr 1fr;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 10px;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.navbar {
-    grid-column: 2 / 4;
+.header,
+.project-container {
+    background-color: white;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 
-.side-bar {
-    grid-row: 1 / 5;
-}
-
-.main-bar {
-    grid-row: 2 / 5;
-}
-
-.footer {
-    grid-column: 1 / 4;
-    grid-row: 5 / 6;
+.project-preview {
+    background-image: url("imgs/rock.png");
+    background-position: center;
+    background-size: 280px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
 }
 
 a {
     background-color: transparent;
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grid setting  */
+body {
+    display: grid;
+    grid-template-rows: 35px 1fr 35px;
+    grid-template-columns: 130px 1fr;
+    gap: 7px;
+}
+
+.topbar {
+    grid-column: 1 / 3;
+}
+
+.side-bar {
+    grid-row: 2;
+}
+
+.main {
+    grid-row: 2 / 3;
+}
+
+.footer {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
 }
