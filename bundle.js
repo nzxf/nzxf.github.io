@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
-/*!*************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
-  \*************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/navbar.css":
+/*!**************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/navbar.css ***!
+  \**************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".test {\\n    color: blue;\\n\\n    border: solid 1px grey;\\n}\\n\\n.test-img {\\n    width: 350px;\\n    height: 300px;\\n    background-position: center;\\n    background-size: contain;\\n\\n    border: solid 1px grey;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://nzxf.github.io/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\n  box-sizing: border-box;\\n  margin: 0;\\n  border: 0;\\n  padding: 0;\\n  color: grey;\\n  font-family: Verdana;\\n}\\n\\nbody {\\n  height: 100vh;\\n  width: 100vw;\\n\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n}\\n\\n.content {\\n  height: 95%;\\n  width: 95%;\\n}\\n\\n.navbar {\\n  height: 100%;\\n  width: 175px;\\n  padding: 5px 7px 5px;\\n  border-radius: 1rem;\\n  background-color: black;\\n\\n  display: grid;\\n  grid-template-rows: auto auto 1fr auto;\\n}\\n\\n.navbar > div > div {\\n  width: auto;\\n  text-align: start;\\n  font-size: 1rem;\\n  padding: 1px 5px;\\n  border-radius: 0.5rem;\\n  /* background-color: white; */\\n}\\n\\n.dashboard,\\n.home,\\n.projects,\\n.project,\\n.profile {\\n  align-items: center;\\n  display: grid;\\n  grid-template-columns: 30px 1fr;\\n}\\n\\n.dashboard-image,\\n.home-image,\\n.projects-image,\\n.project-image,\\n.profile-image {\\n  background-color: rgba(255, 255, 255, 0.1);\\n  margin-right: 5px;\\n  height: 25px;\\n}\\n\\n.project-container>div {\\n  margin-bottom: 2px;\\n}\\n\\n.project {\\n  margin-left: 27.5px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://nzxf.github.io/./src/navbar.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -40,13 +40,13 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
 
 /***/ }),
 
-/***/ "./src/style.css":
-/*!***********************!*\
-  !*** ./src/style.css ***!
-  \***********************/
+/***/ "./src/navbar.css":
+/*!************************!*\
+  !*** ./src/navbar.css ***!
+  \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleDomAPI.js */ \"./node_modules/style-loader/dist/runtime/styleDomAPI.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertBySelector.js */ \"./node_modules/style-loader/dist/runtime/insertBySelector.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ \"./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertStyleElement.js */ \"./node_modules/style-loader/dist/runtime/insertStyleElement.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleTagTransform.js */ \"./node_modules/style-loader/dist/runtime/styleTagTransform.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!./style.css */ \"./node_modules/css-loader/dist/cjs.js!./src/style.css\");\n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n\nvar options = {};\n\noptions.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());\noptions.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());\n\n      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, \"head\");\n    \noptions.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());\noptions.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"], options);\n\n\n\n\n       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"] && _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals ? _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals : undefined);\n\n\n//# sourceURL=webpack://nzxf.github.io/./src/style.css?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleDomAPI.js */ \"./node_modules/style-loader/dist/runtime/styleDomAPI.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertBySelector.js */ \"./node_modules/style-loader/dist/runtime/insertBySelector.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ \"./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertStyleElement.js */ \"./node_modules/style-loader/dist/runtime/insertStyleElement.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleTagTransform.js */ \"./node_modules/style-loader/dist/runtime/styleTagTransform.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_navbar_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!./navbar.css */ \"./node_modules/css-loader/dist/cjs.js!./src/navbar.css\");\n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n\nvar options = {};\n\noptions.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());\noptions.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());\n\n      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, \"head\");\n    \noptions.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());\noptions.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_navbar_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"], options);\n\n\n\n\n       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_navbar_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"] && _node_modules_css_loader_dist_cjs_js_navbar_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals ? _node_modules_css_loader_dist_cjs_js_navbar_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals : undefined);\n\n\n//# sourceURL=webpack://nzxf.github.io/./src/navbar.css?");
 
 /***/ }),
 
@@ -110,23 +110,33 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/allFunctions.js":
+/*!*****************************!*\
+  !*** ./src/allFunctions.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   elementMaker: () => (/* binding */ elementMaker)\n/* harmony export */ });\nconst elementMaker = (type, className, parent, text = \"\") => {\n    const element = document.createElement(type);\n    element.classList.add(className);\n    element.innerText = text;\n    parent.appendChild(element);\n    return element;\n  };\n\n\n\n//# sourceURL=webpack://nzxf.github.io/./src/allFunctions.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _data_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./data.json */ \"./src/data.json\");\n/* harmony import */ var _images_rest_gif__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/rest.gif */ \"./src/images/rest.gif\");\n\n\n\n\nconst elementMaker = (type, className, parent, text = \"\") => {\n  const element = document.createElement(type);\n  element.classList.add(className);\n  element.innerText = text;\n  parent.appendChild(element);\n  return element;\n};\n\nconst content = document.querySelector('.content');\nconst test = elementMaker('div', 'test', content, 'Helloooo!!');\nconst testImg = elementMaker('img', 'test-img', content);\ntestImg.src = _images_rest_gif__WEBPACK_IMPORTED_MODULE_2__\n\n\n\n//# sourceURL=webpack://nzxf.github.io/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navbar_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar.css */ \"./src/navbar.css\");\n/* harmony import */ var _data_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./data.json */ \"./src/data.json\");\n/* harmony import */ var _allFunctions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./allFunctions */ \"./src/allFunctions.js\");\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n\n\n\n\n// import sample from './images/rest.gif'\n\nconst content = document.querySelector('.content');\n(0,_navbar__WEBPACK_IMPORTED_MODULE_3__.makeNavbar)(_data_json__WEBPACK_IMPORTED_MODULE_1__.projects, content);\n\n\n//# sourceURL=webpack://nzxf.github.io/./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/images/rest.gif":
-/*!*****************************!*\
-  !*** ./src/images/rest.gif ***!
-  \*****************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ "./src/navbar.js":
+/*!***********************!*\
+  !*** ./src/navbar.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"4f797dff19aa74fbcc77.gif\";\n\n//# sourceURL=webpack://nzxf.github.io/./src/images/rest.gif?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   makeNavbar: () => (/* binding */ makeNavbar)\n/* harmony export */ });\n/* harmony import */ var _allFunctions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./allFunctions */ \"./src/allFunctions.js\");\n\n\nconst makeNavbar = (array, parent) => {\n  const navbar = (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'navbar', parent);\n  // NAVBAR START\n  const navbarStart = (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'navbar-start', navbar);\n  const dashboard = (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'dashboard', navbarStart);\n  (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'dashboard-image', dashboard);\n  (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'dashboard-text', dashboard, 'Dashboard');\n  // NAVBAR MID\n  const navbarMid = (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'navbar-mid', navbar);\n  const home = (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'home', navbarMid);\n  (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'home-image', home);\n  (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'home-text', home, 'Home');\n  const projects = (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'projects', navbarMid);\n  (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'projects-image', projects);\n  (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'projects-text', projects, 'All Projects');\n  //PROJECTS CONTAINER\n  const projectContainer = (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'project-container', navbarMid);\n  for (let i = 0; i < array.length; i++) {\n    const project = (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'project', projectContainer);\n    (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'project-image', project);\n    (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'project-text', project, `Project ${array[i].name}`);\n  }\n  // GAP\n  const gap = (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'gap', navbar);\n  // NAVBAR END\n  const navbarEnd = (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'navbar-end', navbar);\n  const profile = (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'profile', navbarEnd);\n  (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'profile-image', profile);\n  (0,_allFunctions__WEBPACK_IMPORTED_MODULE_0__.elementMaker)('div', 'profile-text', profile, 'Profile');\n};\n\n\n\n\n//# sourceURL=webpack://nzxf.github.io/./src/navbar.js?");
 
 /***/ }),
 
@@ -136,7 +146,7 @@ eval("module.exports = __webpack_require__.p + \"4f797dff19aa74fbcc77.gif\";\n\n
   \***********************/
 /***/ ((module) => {
 
-eval("module.exports = JSON.parse('{\"projects\":[{\"name\":\"rest\",\"links\":{\"live\":\"https://nzxf.github.io/rest/\",\"code\":\"https://github.com/nzxf/rest\"},\"preview\":[\"xxx\",\"xxx\"]}]}');\n\n//# sourceURL=webpack://nzxf.github.io/./src/data.json?");
+eval("module.exports = JSON.parse('{\"projects\":[{\"name\":\"rest\",\"description\":\"This is a project done under The Odin Project: JavaScript path\",\"links\":{\"live\":\"https://nzxf.github.io/rest/\",\"code\":\"https://github.com/nzxf/rest\"}},{\"name\":\"tict\",\"description\":\"This is a project done under The Odin Project: JavaScript path\",\"links\":{\"live\":\"https://nzxf.github.io/tic/\",\"code\":\"https://github.com/nzxf/tic\"}},{\"name\":\"calc\",\"description\":\"This is a project done under The Odin Project: JavaScript path\",\"links\":{\"live\":\"https://nzxf.github.io/calculator/\",\"code\":\"https://github.com/nzxf/calculator\"}},{\"name\":\"dash\",\"description\":\"This is a project done under The Odin Project: JavaScript path\",\"links\":{\"live\":\"https://nzxf.github.io/dashboard/\",\"code\":\"https://github.com/nzxf/dashboard\"}},{\"name\":\"poke\",\"description\":\"This is a project done under The Odin Project: JavaScript path\",\"links\":{\"live\":\"https://nzxf.github.io/poke/\",\"code\":\"hidden\"}},{\"name\":\"heav\",\"description\":\"This is a project done under The Odin Project: JavaScript path\",\"links\":{\"live\":\"https://heavenlydelusion.netlify.app/\",\"code\":\"hidden\"}},{\"name\":\"libr\",\"description\":\"This is a project done under The Odin Project: JavaScript path\",\"links\":{\"live\":\"https://nzxf.github.io/library/\",\"code\":\"https://github.com/nzxf/library\"}}]}');\n\n//# sourceURL=webpack://nzxf.github.io/./src/data.json?");
 
 /***/ })
 
@@ -191,18 +201,6 @@ eval("module.exports = JSON.parse('{\"projects\":[{\"name\":\"rest\",\"links\":{
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -217,29 +215,6 @@ eval("module.exports = JSON.parse('{\"projects\":[{\"name\":\"rest\",\"links\":{
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src;
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) {
-/******/ 					var i = scripts.length - 1;
-/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
-/******/ 				}
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
