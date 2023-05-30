@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "name": "rest",
+      "links": {
+        "live": "https://nzxf.github.io/rest/",
+        "code": "https://github.com/nzxf/rest"
+      },
+      "preview": ["xxx", "xxx"]
+    }
+  ]
+}
