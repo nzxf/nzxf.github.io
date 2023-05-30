@@ -2,11 +2,59 @@
   "projects": [
     {
       "name": "rest",
+      "description": "This is a project done under The Odin Project: JavaScript path",
       "links": {
         "live": "https://nzxf.github.io/rest/",
         "code": "https://github.com/nzxf/rest"
-      },
-      "preview": ["xxx", "xxx"]
+      }
+    },
+    {
+      "name": "tict",
+      "description": "This is a project done under The Odin Project: JavaScript path",
+      "links": {
+        "live": "https://nzxf.github.io/tic/",
+        "code": "https://github.com/nzxf/tic"
+      }
+    },
+    {
+      "name": "calc",
+      "description": "This is a project done under The Odin Project: JavaScript path",
+      "links": {
+        "live": "https://nzxf.github.io/calculator/",
+        "code": "https://github.com/nzxf/calculator"
+      }
+    },
+    {
+      "name": "dash",
+      "description": "This is a project done under The Odin Project: JavaScript path",
+      "links": {
+        "live": "https://nzxf.github.io/dashboard/",
+        "code": "https://github.com/nzxf/dashboard"
+      }
+    },
+    {
+      "name": "poke",
+      "description": "This is a project done under The Odin Project: JavaScript path",
+      "links": {
+        "live": "https://nzxf.github.io/poke/",
+        "code": "hidden"
+      }
+    },
+    {
+      "name": "heav",
+      "description": "This is a project done under The Odin Project: JavaScript path",
+      "links": {
+        "live": "https://heavenlydelusion.netlify.app/",
+        "code": "hidden"
+      }
+    },
+    {
+      "name": "libr",
+      "description": "This is a project done under The Odin Project: JavaScript path",
+      "links": {
+        "live": "https://nzxf.github.io/library/",
+        "code": "https://github.com/nzxf/library"
+      }
     }
   ]
 }
