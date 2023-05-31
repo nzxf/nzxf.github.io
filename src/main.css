@@ -1,6 +1,7 @@
 :root {
-  --mainColor: rgb(10, 10, 10);
-  --mainText: rgb(204, 204, 204);
+  --mainColor: rgb(13, 13, 17);
+  --background: black;
+  --mainText: rgb(207, 207, 207);
 }
 
 * {
@@ -8,8 +9,9 @@
   margin: 0;
   border: 0;
   padding: 0;
-  color: rgb(255, 255, 255);
+  color: var(--mainText);
   font-family: Verdana;
+  font-size: .9rem;
 }
 
 body {
@@ -19,6 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--background);
 }
 
 .content {
@@ -26,37 +29,40 @@ body {
   width: 95%;
 
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 190px 1fr;
   gap: 10px;
 }
 
 .content > div {
-  padding: 15px;
+  background-color: var(--mainColor);
+  border: solid 15px var(--mainColor);
 }
 
 .main-body {
   height: 100%;
   background-color: var(--mainColor);
   border-radius: 25px;
-
+  
   display: grid;
-  grid-template-rows: repeat(auto-fill, minmax(320px, 350px));
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 15px;
   overflow: scroll;
 }
 
 .project-container-main {
+  background-color: rgba(13, 13, 13);
   display: grid;
-  grid-template-rows: 180px auto 1fr auto;
+  grid-template-rows: 160px auto auto auto;
+  border: solid 10px rgba(13, 13, 13);
+  border-radius: 15px;
   gap: 10px;
 }
 
 .preview {
   width: auto;
   border-radius: 15px;
-  background-color: white;
-
+opacity: .8;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,7 +77,8 @@ body {
   grid-template-columns: 30px 30px;
   gap: 5px;
   justify-content: end;
-  
+
+  padding-right: 5px;
 }
 
 .live, .code {

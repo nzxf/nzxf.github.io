@@ -36,12 +36,12 @@ const fillMain = (array, parent) => {
       projectContainerMain,
       array[i].name.toUpperCase()
     );
-    // const description = elementMaker(
-    //   'div',
-    //   'description',
-    //   projectContainerMain,
-    //   array[i].description
-    // );
+    const description = elementMaker(
+      'div',
+      'description',
+      projectContainerMain,
+      array[i].description
+    );
 
     // END
     const containerEnd = elementMaker(
