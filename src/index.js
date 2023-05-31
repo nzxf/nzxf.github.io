@@ -9,37 +9,50 @@ const content = document.querySelector('.content');
 
 makeNavbar(data.projects, content);
 
-// MAKE MAIN BODY
 const mainBody = elementMaker('div', 'main-body', content);
 
 // PROJECT CONTAINER
-const projectContainerMain = elementMaker(
-  'div',
-  'project-container-main',
-  mainBody
-)
-// MEDIA
-const preview = elementMaker('div', 'preview', projectContainerMain);
-preview.style.backgroundImage = `url(${data.projects[0].media.image})`;
-preview.addEventListener('mouseover', function () {
-  console.log('play videooooo');
-});
-// TEXT
-const title = elementMaker(
-  'div',
-  'title',
-  projectContainerMain,
-  data.projects[0].name
-);
-const description = elementMaker(
-  'div',
-  'description',
-  projectContainerMain,
-  data.projects[0].description
-);
-const live = elementMaker('a', 'live', projectContainerMain, 'see it live');
-live.href = data.projects[0].links.live;
-live.style.display = 'block'
-const code = elementMaker('a', 'code', projectContainerMain, 'see the code');
-code.href = data.projects[0].links.code;
-code.style.display = 'block'
+const fillMain = (array, parent) => {
+  for (let i = 0; i < array.length; i++) {
+    const projectContainerMain = elementMaker(
+      'div',
+      'project-container-main',
+      parent
+    );
+    // START
+    const preview = elementMaker('div', 'preview', projectContainerMain);
+    preview.style.backgroundImage = `url(${array[0].media.image})`;
+    preview.addEventListener('mouseover', function () {
+      console.log('play videooooo');
+    });
+    // MIDDLE
+    const title = elementMaker(
+      'div',
+      'title',
+      projectContainerMain,
+      array[i].name.toUpperCase()
+    );
+    const description = elementMaker(
+      'div',
+      'description',
+      projectContainerMain,
+      array[i].description
+    );
+
+    // END
+    const containerEnd = elementMaker(
+      'div',
+      'container-end',
+      projectContainerMain
+    );
+
+    const live = elementMaker('a', 'live', containerEnd, 'live');
+    live.href = array[i].links.live;
+    live.style.display = 'block';
+    const code = elementMaker('a', 'code', containerEnd, 'code');
+    code.href = array[i].links.code;
+    code.style.display = 'block';
+  }
+};
+
+fillMain(data.projects, mainBody);
