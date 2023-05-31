@@ -21,7 +21,11 @@ const fillMain = (array, parent) => {
     );
     // START
     const preview = elementMaker('div', 'preview', projectContainerMain);
-    preview.style.backgroundImage = `url(${array[0].media.image})`;
+    if (array[i].media == undefined) {
+      preview.style.backgroundImage = `url(${array[0].media.image})`;
+    } else {
+      preview.style.backgroundImage = `url(${array[i].media.image})`;
+    }
     preview.addEventListener('mouseover', function () {
       console.log('play videooooo');
     });
@@ -32,12 +36,12 @@ const fillMain = (array, parent) => {
       projectContainerMain,
       array[i].name.toUpperCase()
     );
-    const description = elementMaker(
-      'div',
-      'description',
-      projectContainerMain,
-      array[i].description
-    );
+    // const description = elementMaker(
+    //   'div',
+    //   'description',
+    //   projectContainerMain,
+    //   array[i].description
+    // );
 
     // END
     const containerEnd = elementMaker(

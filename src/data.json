@@ -2,14 +2,27 @@
   "projects": [
     {
       "name": "rest",
-      "description": "This is a project done under The Odin Project: JavaScript path",
+      "description": "This is a project done under The Odin Project: JavaScript path.",
       "links": {
         "live": "https://nzxf.github.io/rest/",
         "code": "https://github.com/nzxf/rest"
-      }, "media": {
+      },
+      "media": {
         "image": "https://res.cloudinary.com/demjqq8d3/image/upload/v1685473282/showcase/rest_txuuxf.png",
         "video": "https://res.cloudinary.com/demjqq8d3/video/upload/v1685473282/showcase/rest_es22hk.webm"
       }
+    },
+    {
+      "name": "rock",
+      "description": "This is a project done under The Odin Project: Foundation.",
+      "links": {
+        "live": "https://nzxf.github.io/rock-paper-scissor/",
+        "code": "https://github.com/nzxf/rock-paper-scissor"
+      },
+      "media": {
+        "image": "https://res.cloudinary.com/demjqq8d3/image/upload/v1685533041/showcase/rock_k7ogsd.png",
+        "image2": "https://res.cloudinary.com/demjqq8d3/image/upload/v1685533041/showcase/rock2_qzagmn.png"
+            }
     },
     {
       "name": "tict",
@@ -17,6 +30,10 @@
       "links": {
         "live": "https://nzxf.github.io/tic/",
         "code": "https://github.com/nzxf/tic"
+      },
+      "media": {
+        "image": "https://res.cloudinary.com/demjqq8d3/image/upload/v1685533050/showcase/tict_efxugg.png",
+        "video": "https://res.cloudinary.com/demjqq8d3/video/upload/v1685533052/showcase/tict_s0o0i2.webm"
       }
     },
     {
@@ -25,38 +42,42 @@
       "links": {
         "live": "https://nzxf.github.io/calculator/",
         "code": "https://github.com/nzxf/calculator"
+      },
+      "media": {
+        "image": "https://res.cloudinary.com/demjqq8d3/image/upload/v1685532956/showcase/calc_kktwf2.png"
       }
     },
     {
       "name": "dash",
-      "description": "This is a project done under The Odin Project: JavaScript path",
+      "description": "This is a project done under The Odin Project: Advance Html and CSS",
       "links": {
         "live": "https://nzxf.github.io/dashboard/",
         "code": "https://github.com/nzxf/dashboard"
+      },
+      "media": {
+        "image": "https://res.cloudinary.com/demjqq8d3/image/upload/v1685532978/showcase/dash_y754qc.png"
       }
     },
     {
       "name": "poke",
-      "description": "This is a project done under The Odin Project: JavaScript path",
+      "description": "This is a side project maimed to implement Pokemon API data structure",
       "links": {
         "live": "https://nzxf.github.io/poke/",
         "code": "hidden"
+      },
+      "media": {
+        "image": "https://res.cloudinary.com/demjqq8d3/image/upload/v1685534585/poke_s56mxf.png"
       }
     },
     {
       "name": "heav",
-      "description": "This is a project done under The Odin Project: JavaScript path",
+      "description": "This is a side project focusing on character's individual timeline for Heavenly Delusion",
       "links": {
         "live": "https://heavenlydelusion.netlify.app/",
         "code": "hidden"
-      }
-    },
-    {
-      "name": "libr",
-      "description": "This is a project done under The Odin Project: JavaScript path",
-      "links": {
-        "live": "https://nzxf.github.io/library/",
-        "code": "https://github.com/nzxf/library"
+      },
+      "media": {
+        "image": "https://res.cloudinary.com/demjqq8d3/image/upload/v1685532995/showcase/heav_ott6j5.png"
       }
     }
   ]
