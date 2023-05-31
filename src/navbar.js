@@ -16,11 +16,11 @@ const makeNavbar = (array, parent) => {
   elementMaker('div', 'projects-image', projects);
   elementMaker('div', 'projects-text', projects, 'All Projects');
   //PROJECTS CONTAINER
-  const projectContainer = elementMaker('div', 'project-container', navbarMid);
+  const projectContainerNavbar = elementMaker('div', 'project-container-navbar', navbarMid);
   for (let i = 0; i < array.length; i++) {
-    const project = elementMaker('div', 'project', projectContainer);
-    elementMaker('div', 'project-image', project);
-    elementMaker('div', 'project-text', project, `Project ${array[i].name}`);
+    const projectNavbar = elementMaker('div', 'project-navbar', projectContainerNavbar);
+    elementMaker('div', 'project-image-navbar', projectNavbar);
+    elementMaker('div', 'project-text-nabvar', projectNavbar, `Project ${array[i].name}`);
   }
   // GAP
   const gap = elementMaker('div', 'gap', navbar);
