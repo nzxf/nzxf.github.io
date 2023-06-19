@@ -11,7 +11,7 @@
   padding: 0;
   color: var(--mainText);
   font-family: Verdana;
-  font-size: .9rem;
+  /* border: solid 1px grey; */
 }
 
 body {
@@ -19,9 +19,14 @@ body {
   width: 100vw;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--background);
+}
+
+h2 {
+  padding: 30px;
 }
 
 .content {
@@ -29,59 +34,21 @@ body {
   width: 95%;
 
   display: grid;
-  grid-template-columns: 190px 1fr;
-  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+
+  justify-content: center;
+  align-items: center;
 }
 
-.content > div {
-  background-color: var(--mainColor);
-  border: solid 15px var(--mainColor);
-}
-
-.main-body {
-  height: 100%;
-  background-color: var(--mainColor);
-  border-radius: 25px;
-  
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 15px;
-  overflow: scroll;
-}
-
-.project-container-main {
-  background-color: rgba(13, 13, 13);
-  display: grid;
-  grid-template-rows: 160px auto auto auto;
-  border: solid 10px rgba(13, 13, 13);
-  border-radius: 15px;
-  gap: 10px;
-}
-
-.preview {
-  width: auto;
-  border-radius: 15px;
-opacity: .8;
+.container {
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-}
+  background-position: center;
 
-.title {
-  font-size: 2rem;
-}
+  height: 100%;
+  width: 100%;
 
-.container-end {
-  display: grid;
-  grid-template-columns: 30px 30px;
-  gap: 5px;
-  justify-content: end;
-
-  padding-right: 5px;
-}
-
-.live, .code {
-  padding: 3px; 
-  border-radius: 5px;
+  cursor: pointer;
 }
