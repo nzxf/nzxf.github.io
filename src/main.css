@@ -30,8 +30,8 @@ h2 {
 }
 
 .content {
-  height: 95%;
-  width: 95%;
+  height: 90%;
+  width: 75%;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
