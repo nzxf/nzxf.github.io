@@ -1,6 +1,28 @@
 {
   "projects": [
     {
+      "name": "weath",
+      "description": "This is a project done under The Odin Project: JavaScript path.",
+      "links": {
+        "live": "https://nzxf.github.io/weath/",
+        "code": "https://github.com/nzxf/weath"
+      },
+      "media": {
+        "image": "https://res.cloudinary.com/demjqq8d3/image/upload/v1687173861/showcase/weath_bdf8zb.png"
+      }
+    },
+    {
+      "name": "todo",
+      "description": "This is a project done under The Odin Project: JavaScript path.",
+      "links": {
+        "live": "https://nzxf.github.io/todo/",
+        "code": "https://github.com/nzxf/todo"
+      },
+      "media": {
+        "image": "https://res.cloudinary.com/demjqq8d3/image/upload/v1687173887/showcase/todo_vhjukr.png"
+      }
+    },
+    {
       "name": "rest",
       "description": "This is a project done under The Odin Project: JavaScript path.",
       "links": {
@@ -66,7 +88,7 @@
         "code": "hidden"
       },
       "media": {
-        "image": "https://res.cloudinary.com/demjqq8d3/image/upload/v1685534585/poke_s56mxf.png"
+        "image": "https://res.cloudinary.com/demjqq8d3/image/upload/v1687173906/showcase/poke_bacrtg.png"
       }
     },
     {
