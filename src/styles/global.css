@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+@plugin "tailwind-scrollbar-hide";
+@theme {
+  --variable-name: value;
+}
+
+:root {
+  font-family: Inter, sans-serif;
+
+}
+@supports (font-variation-settings: normal) {
+  /* Use variable font if supported */
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
