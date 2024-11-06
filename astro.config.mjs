@@ -7,6 +7,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   // Add your domain name here
-  site: "https://lexingtonthemes.com/",
+  site: "https://nzxf.my.id",
+  base: "nzxf.github.io",
   integrations: [ sitemap()]
 });
