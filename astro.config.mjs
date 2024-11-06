@@ -8,6 +8,5 @@ export default defineConfig({
   },
   // Add your domain name here
   site: "https://nzxf.my.id",
-  base: "nzxf.github.io",
   integrations: [ sitemap()]
 });
