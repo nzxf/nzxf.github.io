@@ -1,23 +1,37 @@
 ---
-import BaseLayout from "@/layouts/BaseLayout.astro";
-import Hero from "@/components/landing/Hero.astro";
-import LogoCloud from "@/components/landing/LogoCloud.astro";
-import Work from "@/components/landing/Work.astro";
-import Howitworks from "@/components/landing/Howitworks.astro";
-import AllScope from "@/components/landing/AllScope.astro";
-import Testimonials from "@/components/landing/Testimonials.astro";
-import Pricing from "@/components/landing/Pricing.astro";
-import Faq from "@/components/landing/Faq.astro";
-import Cta from "@/components/global/Cta.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import SearchForm from "../components/SearchForm.astro";
+import ArticleCard from "../components/ArticleCard.astro";
+import MostRecentArticle from '../components/MostRecentArticle.astro'
+import { HOMEPAGE_ARTICLE_LIMIT } from "../constants";
+
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+const allBlogArticles: CollectionEntry<'blog'> [] = (await getCollection('blog'))
+  .sort((a:CollectionEntry<'blog'>, b:CollectionEntry<'blog'>) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+
+const mostRecentArticle: CollectionEntry<'blog'> = allBlogArticles[0];
+const otherArticles: CollectionEntry<'blog'>[] = allBlogArticles.slice(1);
+
 ---
-<BaseLayout>
-  <Hero />
-  <LogoCloud />
-  <Work />
-  <Howitworks />
-  <AllScope />
-  <Testimonials />
-  <Pricing />
-  <Faq />
-  <Cta />
-</BaseLayout>
+<MainLayout>
+      <!-- Top Grid -->
+    <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
+        <div>
+          	<h1 class="text-5xl font-bold mt-4 mb-8 leading-tight xl:text-6xl">
+            	Articles, Stories & Tutorials for Tech People
+			</h1>
+			<SearchForm />
+		</div>
+		<MostRecentArticle article={mostRecentArticle}/>
+    </div>
+      	<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+			{otherArticles.slice(0, HOMEPAGE_ARTICLE_LIMIT).map(article => (
+				<ArticleCard article={article} />
+			))}
+    </div>
+	
+	
+</MainLayout>

@@ -1,12 +1,13 @@
+// @ts-check
 import { defineConfig } from 'astro/config';
-import tailwindcss from '@tailwindcss/vite';
-import sitemap from "@astrojs/sitemap";
+
+import tailwind from '@astrojs/tailwind';
+
+import vercel from '@astrojs/vercel/serverless';
+
 // https://astro.build/config
 export default defineConfig({
-  vite: {
-    plugins: [tailwindcss()],
-  },
-  // Add your domain name here
-  site: "https://nzxf.my.id",
-  integrations: [ sitemap()]
+  integrations: [tailwind()],
+  output: 'server',
+  adapter: vercel(),
 });
