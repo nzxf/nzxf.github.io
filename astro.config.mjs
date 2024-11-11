@@ -5,6 +5,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://nzxf.my.id',
+  site: 'https://nzxf.github.io',
+  output: 'static',
   integrations: [tailwind()],
 });
