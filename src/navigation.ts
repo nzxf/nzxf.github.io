@@ -4,7 +4,7 @@ import { getPermalink, getBlogPermalink } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'Home',
       links: [
         {
           text: 'SaaS',
@@ -25,7 +25,7 @@ export const headerData = {
       ],
     },
     {
-      text: 'Pages',
+      text: 'Product',
       links: [
         {
           text: 'Features (Anchor Link)',
@@ -58,7 +58,7 @@ export const headerData = {
       ],
     },
     {
-      text: 'Landing',
+      text: 'Portofolio',
       links: [
         {
           text: 'Lead Generation',
@@ -112,11 +112,11 @@ export const headerData = {
       ],
     },
     {
-      text: 'Widgets',
-      href: '#',
+      text: 'About',
+      href: getPermalink('/about'),
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: 'Whatsapp', href: 'https://wa.me/6285176712656', target: '_blank' }],
 };
 
 export const footerData = {
@@ -133,28 +133,28 @@ export const footerData = {
         { text: 'Resources', href: '#' },
       ],
     },
-    // {
-    //   title: 'Platform',
-    //   links: [
-    //     { text: 'Developer API', href: '#' },
-    //     { text: 'Partners', href: '#' },
-    //     { text: 'Atom', href: '#' },
-    //     { text: 'Electron', href: '#' },
-    //     { text: 'AstroWind Desktop', href: '#' },
-    //   ],
-    // },
-    // {
-    //   title: 'Support',
-    //   links: [
-    //     { text: 'Docs', href: '#' },
-    //     { text: 'Community Forum', href: '#' },
-    //     { text: 'Professional Services', href: '#' },
-    //     { text: 'Skills', href: '#' },
-    //     { text: 'Status', href: '#' },
-    //   ],
-    // },
     {
-      title: 'Company',
+      title: 'Platform',
+      links: [
+        { text: 'Developer API', href: '#' },
+        { text: 'Partners', href: '#' },
+        { text: 'Atom', href: '#' },
+        { text: 'Electron', href: '#' },
+        { text: 'AstroWind Desktop', href: '#' },
+      ],
+    },
+    {
+      title: 'Support',
+      links: [
+        { text: 'Docs', href: '#' },
+        { text: 'Community Forum', href: '#' },
+        { text: 'Professional Services', href: '#' },
+        { text: 'Skills', href: '#' },
+        { text: 'Status', href: '#' },
+      ],
+    },
+    {
+      title: 'Blog',
       links: [
         { text: 'About', href: '#' },
         { text: 'Blog', href: '#' },
@@ -171,13 +171,12 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
+    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://x.com/mbangunkreasi' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/mitrabangunkreasi/' },
     { ariaLabel: 'Tiktok', icon: 'tabler:brand-tiktok', href: 'https://www.tiktok.com/@mitrabangunkreasi' },
     { ariaLabel: 'Youtube', icon: 'tabler:brand-youtube', href: 'http://www.youtube.com/@mitrabangunkreasi' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://m.facebook.com/people/Mitra-Bangun-Kreasi/61564505944795/' },
+    // { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://m.facebook.com/people/Mitra-Bangun-Kreasi/61564505944795/' },
     // { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    // { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
   footNote: `
   Made by <a class="text-blue-600 underline dark:text-muted" href="https://nzxf.my.id/"> nzxf </a> · All rights reserved.

@@ -11,7 +11,7 @@ metadata:
   title:
     default: Mitra Bangun Kreasi
     template: '%s — Mitra Bangun Kreasi'
-  description: "\U0001F680 Solusi Pengerjaan Konstruksi Anda"
+  description: "Kualitas adalah Prioritas"
   robots:
     index: true
     follow: true
