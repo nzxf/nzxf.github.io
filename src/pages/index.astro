@@ -3,8 +3,8 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 // import Note from '~/components/widgets/Note.astro';
-import Prices from '~/components/widgets/Pricing.astro';
-import Features from '~/components/widgets/Features.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
+// import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 // import Content from '~/components/widgets/Content.astro';
@@ -57,96 +57,52 @@ const metadata = {
 
   <!-- Pricing Widget ******************* -->
 
-  <Prices
-    title="Our prices"
-    subtitle="Only pay for what you need"
+  <Pricing
+    title="Harga Miring Kualitas Bersaing"
     prices={[
-      {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
-        period: 'per month',
-        items: [
-          {
-            description: 'Etiam in libero, et volutpat',
+        {
+          title: 'Pagar Besi Minimalis',
+          subtitle: 'mulai dari',
+          price: '599.500',
+          period: '/m²',
+          callToAction: {
+            target: '_blank',
+            text: 'Lihat Katalog',
+            href: '#',
           },
-          {
-            description: 'Aenean ac nunc dolor tristique',
-          },
-          {
-            description: 'Cras scelerisque accumsan lib',
-          },
-          {
-            description: 'In hac habitasse',
-          },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
         },
-      },
-      {
-        title: 'standard',
-        subtitle: 'Optimal choice for small teams',
-        price: 69,
-        period: 'Per Month',
-        items: [
-          {
-            description: 'Proin vel laoreet',
+        {
+          title: 'Mezzanine',
+          subtitle: 'mulai dari',
+          price: '899.500',
+          period: '/m²',
+          callToAction: {
+            target: '_blank',
+            text: 'Lihat Katalog',
+            href: '#',
           },
-          {
-            description: 'Ut efficitur habitasse egestas',
-          },
-          {
-            description: 'Volutpat hac curabitur',
-          },
-          {
-            description: 'Pellentesque blandit ut nibh',
-          },
-          {
-            description: 'Donec fringilla sem',
-          },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
+          hasRibbon: true,
+          ribbonTitle: 'Promo',
         },
-        hasRibbon: true,
-        ribbonTitle: 'popular',
-      },
-      {
-        title: 'premium',
-        subtitle: 'Optimal choice for companies',
-        price: 199,
-        period: 'Per Month',
-        items: [
-          {
-            description: 'Curabitur suscipit risus',
+        {
+          title: 'Kanopi/Carport',
+          subtitle: 'mulai dari',
+          price: '349.500',
+          period: '/m²',
+          callToAction: {
+            target: '_blank',
+            text: 'Lihat Katalog',
+            href: '#',
           },
-          {
-            description: 'Aliquam habitasse malesuada',
-          },
-          {
-            description: 'Suspendisse sit amet blandit',
-          },
-          {
-            description: 'Suspendisse auctor blandit dui',
-          },
-        ],
-        callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
+          hasRibbon: true,
+          ribbonTitle: 'Terlaris',
         },
-      },
-    ]}
-  />
+      ]}
+    />
 
   <!-- Features Widget *************** -->
 
-  <Features
+  <!-- <Features
     id="features"
     tagline="Features"
     title="What you get with AstroWind"
@@ -189,7 +145,7 @@ const metadata = {
         icon: 'tabler:bulb',
       },
     ]}
-  />
+  /> -->
 
   <!-- Content Widget **************** -->
 
@@ -310,7 +266,7 @@ const metadata = {
     title="Tahapan Transaksi dengan Mitra Bangun Kreasi"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Tanya Jawab</span>',
+        title: 'Step 1: <span class="font-medium">Konsultasi</span>',
         description:
           "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
         icon: 'tabler:package',
@@ -548,12 +504,12 @@ images={[
     alt: 'Google',
   },
   {
-    src: 'https://cdn.pixabay.com/photo/2021/12/06/13/45/meta-6850393_1280.png',
-    alt: 'Meta',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx-w5zslKWwLt5J-nUQDefY7hIVJDfA2UVWA&s',
+    alt: 'Angkasa Pura',
   },
   {
-    src: 'https://cdn.pixabay.com/photo/2013/01/29/22/53/yahoo-76684_1280.png',
-    alt: 'Yahoo',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzOHyLbTwTpDxj3C5Rcd4V20XDQ2fLLVkJMQ&s',
+    alt: 'Bale Bebakaran',
   },
 ]}
 />
