@@ -74,7 +74,7 @@ const { post, url } = Astro.props;
         post.image ? (
           <Image
             src={post.image}
-            class="max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400 dark:bg-slate-700"
+            class=" max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400 dark:bg-slate-700"
             widths={[400, 900]}
             sizes="(max-width: 900px) 400px, 900px"
             alt={post?.excerpt || ''}
@@ -82,6 +82,7 @@ const { post, url } = Astro.props;
             height={506}
             loading="eager"
             decoding="async"
+            format='webp'
           />
         ) : (
           <div class="max-w-3xl mx-auto px-4 sm:px-6">
