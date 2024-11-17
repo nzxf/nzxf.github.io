@@ -2,7 +2,7 @@
 publishDate: 2023-07-17T00:00:00Z
 title: AstroWind template in depth
 excerpt: While easy to get started, Astrowind is quite complex internally.  This page provides documentation on some of the more intricate parts.
-image: https://images.unsplash.com/photo-1534307671554-9a6d81f4d629?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1651&q=80
+# image: https://images.unsplash.com/photo-1534307671554-9a6d81f4d629?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1651&q=80
 category: Documentation
 tags:
   - astro
@@ -15,6 +15,8 @@ metadata:
 import DListItem from '~/components/ui/DListItem.astro';
 import ToggleTheme from '~/components/common/ToggleTheme.astro';
 
+![Picture Added](https://images.unsplash.com/photo-1534307671554-9a6d81f4d629)
+
 ## Overview
 
 It can be a somewhat daunting task trying to get a handle on _AstroWind_ internals, and particularly various points of usage.
@@ -24,6 +26,7 @@ This page outlines and clarifies some of the techniques found in _AstroWind_. Us
 ## Styling
 
 As the name suggests, _AstroWind_ relies on _TailWind_ for styling. Furthermore, _AstroWind_ defines custom low level style settings which are incorporated into _TailWind_ seamlessly, and which provides consistency for higher level styling constructs, as well as enabling dark mode.
+
 
 The styling mechanism consists of the following files (all paths are prefixed with `/src/` ):
 

@@ -146,6 +146,7 @@ export interface Price {
   subtitle?: string;
   description?: string;
   price?: number | string;
+  image?: string;
   period?: string;
   items?: Array<Item>;
   callToAction?: CallToAction;

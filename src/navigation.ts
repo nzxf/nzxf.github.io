@@ -87,11 +87,19 @@ export const headerData = {
       ],
     },
     {
-      text: 'Blog',
+      text: 'Service',
       links: [
         {
-          text: 'Blog List',
+          text: 'Semua Post',
           href: getBlogPermalink(),
+        },
+        {
+          text: 'Kategori: Blog',
+          href: getPermalink('tutorials', 'category'),
+        },
+        {
+          text: 'Kategori: Produk & Jasa',
+          href: getPermalink('produk-and-jasa', 'category'),
         },
         {
           text: 'Article',
@@ -102,17 +110,21 @@ export const headerData = {
           href: getPermalink('markdown-elements-demo-post', 'post'),
         },
         {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
           text: 'Tag Page',
           href: getPermalink('astro', 'tag'),
         },
       ],
     },
     {
-      text: 'About',
+      text: 'Produk & Jasa',
+      href: getPermalink('/category/produk-and-jasa'),
+    },
+    {
+      text: 'Blog',
+      href: getPermalink('/category/blog'),
+    },
+    {
+      text: 'Tentang',
       href: getPermalink('/about'),
     },
   ],
