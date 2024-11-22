@@ -15,7 +15,10 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import Brands from '~/components/widgets/Brands.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
+// Import Image for Pricing
+import pbg from "~/assets/products/pbg.png"
 import product1 from "~/assets/products/product1.png"
+
 
 const metadata = {
   title: 'Home - Mitra Bangun Kreasi',
@@ -64,6 +67,36 @@ const metadata = {
     subtitle="Dengan pengalaman bertahun-tahun dalam industri konstruksi, kami selalu berkomitmen untuk memberikan hasil terbaik."
     tagline="Harga Miring Kualitas Bersaing"
     prices={[
+          {
+          image: {
+            src: pbg,
+            alt: 'Paypal',
+          },
+          title: ['Pengurusan PBG & SLF'],
+          subtitle: 'mulai dari',
+          price: '6.999.500',
+          period: '/rmh',
+          callToAction: {
+            target: '_blank',
+            text: 'Lihat Detail Jasa',
+            href: '/p/pengurusan-pbg-slf',
+          },
+        },
+          {
+          image: {
+            src: product1,
+            alt: 'Paypal',
+          },
+          title: 'Desain & Bangun Rumah',
+          subtitle: 'mulai dari',
+          price: '3.199.500',
+          period: '/m²',
+          callToAction: {
+            target: '_blank',
+            text: 'Lihat Detail Jasa',
+            href: '/p/bangun-rumah',
+          },
+        },
         {
           title: 'Pagar Besi',
           image: {
@@ -118,14 +151,14 @@ const metadata = {
             src: product1,
             alt: 'Paypal',
           },
-          title: 'Pengurusan PBG',
+          title: 'Rangka Atap',
           subtitle: 'mulai dari',
-          price: '6.999.500',
-          period: '/srt',
+          price: '349.500',
+          period: '/m²',
           callToAction: {
             target: '_blank',
-            text: 'Lihat Detail Jasa',
-            href: '/p/jasa-pengurusan-pbg',
+            text: 'Lihat Katalog Kanopi',
+            href: '/tag/kanopi',
           },
         },
       ]}
