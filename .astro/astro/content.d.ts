@@ -156,70 +156,70 @@ declare module 'astro:content' {
   slug: "astrowind-template-in-depth";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".mdx"] };
 "get-started-website-with-astro-tailwind-css.md": {
 	id: "get-started-website-with-astro-tailwind-css.md";
   slug: "get-started-website-with-astro-tailwind-css";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "how-to-customize-astrowind-to-your-brand.md": {
 	id: "how-to-customize-astrowind-to-your-brand.md";
   slug: "how-to-customize-astrowind-to-your-brand";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "jendela.md": {
 	id: "jendela.md";
   slug: "jendela";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "jj003.md": {
 	id: "jj003.md";
   slug: "jj003";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "landing.md": {
 	id: "landing.md";
   slug: "landing";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "markdown-elements-demo-post.mdx": {
 	id: "markdown-elements-demo-post.mdx";
   slug: "markdown-elements-demo-post";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".mdx"] };
 "pengurusan-pbg-slf.mdx": {
 	id: "pengurusan-pbg-slf.mdx";
   slug: "pengurusan-pbg-slf";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".mdx"] };
 "pengurusan-pbg-slf2.md": {
 	id: "pengurusan-pbg-slf2.md";
   slug: "pengurusan-pbg-slf2";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "useful-resources-to-create-websites.md": {
 	id: "useful-resources-to-create-websites.md";
   slug: "useful-resources-to-create-websites";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 };
 
@@ -231,5 +231,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = never;
+	export type ContentConfig = typeof import("../../src/content/config.js");
 }

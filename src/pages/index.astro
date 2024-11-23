@@ -358,52 +358,49 @@ const metadata = {
         icon: 'tabler:check',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
-    }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
+    title="Kenapa Mitra Bangun Kreasi (MBK)?"
+    subtitle="Poin lebih MBK dibanding dengan kontraktor lain"
     tagline="Components"
+    columns={2}
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
+        title: 'Banyak Model',
         description:
           "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
         icon: 'flat-color-icons:gallery',
       },
       {
-        title: 'Features',
+        title: 'Harga Bersahabat',
+        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
+        icon: 'flat-color-icons:currency-exchange',
+      },
+      {
+        title: 'Legal & Terdaftar',
         description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
+        'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
         icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Content',
+        title: 'Efisien',
+        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Detail',
         description:
           "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Call-to-Action',
+        title: 'Selalu Available',
         description:
           'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
         icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
       },
       {
         title: 'Testimonial',
@@ -416,11 +413,6 @@ const metadata = {
           'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
         icon: 'flat-color-icons:business-contact',
       },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
-      },
     ]}
   >
     <Fragment slot="bg">
@@ -431,11 +423,8 @@ const metadata = {
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
+    title="Cari Tahu Lebih Banyak Tentang Konstruksi Bersama MBK"
+    information={`Kami akan terus mengupdate blog dan produk berdasarkan trend dan lifestyle terbaru                `}
   />
 
   <!-- FAQs Widget ******************* -->
@@ -452,7 +441,7 @@ const metadata = {
           "The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
       },
       {
-        title: 'Sudah punya desain sendiri?',
+        title: 'Pakai e-faktur bisa?',
         description:
           "Its five-year mission: to explore strange new worlds. Many say exploration is our destiny, but our duty to future generations.",
       },
@@ -484,8 +473,8 @@ const metadata = {
   <Stats
     stats={[
       { title: 'Tahun Pengalaman', amount: '13' },
-      { title: 'Projects', amount: '2032' },
-      { title: 'Reviews', amount: '985' },
+      { title: 'Project Selesai', amount: '2032' },
+      { title: 'Total Review', amount: '985' },
       { title: 'Variasi Produk', amount: '242' },
     ]}
   />
@@ -493,12 +482,13 @@ const metadata = {
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Tetimoni dari Pelanggan"
+    title="Testimoni"
+    subtitle='Feedback dan testimoni dari pelanggan merupakan jalan kami untuk menjamin kepuasan, membangun kepercayaan, dan meningkatkan kualitas layanan kami.'
     testimonials={[
       {
         testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Emily Kennedy',
-        job: 'Front-end developer',
+        name: 'Bpk. Rijali',
+        job: 'Umbulharjo, Yogyakarta',
         image: {
           src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
           alt: 'Emily Kennedy Image',
@@ -506,8 +496,8 @@ const metadata = {
       },
       {
         testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Sarah Hansen',
-        job: 'Photographer',
+        name: 'Ibu Irene',
+        job: 'Kasihan, Bantul',
         image: {
           src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
           alt: 'Sarah Hansen Image',
@@ -515,57 +505,69 @@ const metadata = {
       },
       {
         testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Mark Wilkinson',
-        job: 'Small business owner',
+        name: 'Kak Chendra Wilky',
+        job: 'Maguwoharjo, Sleman',
+        image: {
+          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
+          alt: 'Mark Wilkinson Image',
+        },
+      },
+      {
+        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
+        name: 'Bpk. Rijali',
+        job: 'Umbulharjo, Yogyakarta',
+        image: {
+          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+          alt: 'Emily Kennedy Image',
+        },
+      },
+      {
+        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
+        name: 'Ibu Irene',
+        job: 'Kasihan, Bantul',
+        image: {
+          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Sarah Hansen Image',
+        },
+      },
+      {
+        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
+        name: 'Kak Chendra Wilky',
+        job: 'Maguwoharjo, Sleman',
         image: {
           src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
           alt: 'Mark Wilkinson Image',
         },
       },
     ]}
-    callToAction={{
-      target: '_blank',
-      text: 'More testimonials...',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:chevron-right',
-    }}
   />
 
 <!-- Brands Widget ****************** -->
 
 <Brands
-title="Partnerships & Collaborations"
-subtitle="At Astrowind, we believe in the power of collaboration to drive innovation and create exceptional experiences."
+title="Klien Kami"
+subtitle="Membangun Hubungan, Mewujudkan Impian Bersama."
 icons={[]}
 images={[
   {
-    src: 'https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_1280.png',
-    alt: 'Paypal',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzOHyLbTwTpDxj3C5Rcd4V20XDQ2fLLVkJMQ&s',
+    alt: 'Bale Bebakaran',
   },
   {
-    src: 'https://cdn.pixabay.com/photo/2021/12/06/13/48/visa-6850402_1280.png',
-    alt: 'Visa',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx-w5zslKWwLt5J-nUQDefY7hIVJDfA2UVWA&s',
+    alt: 'Angkasa Pura',
   },
   {
-    src: 'https://cdn.pixabay.com/photo/2013/10/01/10/29/ebay-189064_1280.png',
-    alt: 'Ebay',
-  },
-
-  {
-    src: 'https://cdn.pixabay.com/photo/2015/04/13/17/45/icon-720944_1280.png',
-    alt: 'Youtube',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzOHyLbTwTpDxj3C5Rcd4V20XDQ2fLLVkJMQ&s',
+    alt: 'Bale Bebakaran',
   },
   {
-    src: 'https://cdn.pixabay.com/photo/2013/02/12/09/07/microsoft-80658_1280.png',
-    alt: 'Microsoft',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx-w5zslKWwLt5J-nUQDefY7hIVJDfA2UVWA&s',
+    alt: 'Angkasa Pura',
   },
   {
-    src: 'https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_1280.png',
-    alt: 'Node JS',
-  },
-  {
-    src: 'https://cdn.pixabay.com/photo/2015/10/31/12/54/google-1015751_1280.png',
-    alt: 'Google',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzOHyLbTwTpDxj3C5Rcd4V20XDQ2fLLVkJMQ&s',
+    alt: 'Bale Bebakaran',
   },
   {
     src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx-w5zslKWwLt5J-nUQDefY7hIVJDfA2UVWA&s',
