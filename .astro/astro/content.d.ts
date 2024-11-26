@@ -214,6 +214,13 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
+"rm0001-rumah-modern-minimalis.md": {
+	id: "rm0001-rumah-modern-minimalis.md";
+  slug: "rm0001-rumah-modern-minimalis";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
 "useful-resources-to-create-websites.md": {
 	id: "useful-resources-to-create-websites.md";
   slug: "useful-resources-to-create-websites";

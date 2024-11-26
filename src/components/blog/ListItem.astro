@@ -40,6 +40,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
                 aspectRatio="16:9"
                 loading="lazy"
                 decoding="async"
+                format='webp'
               />
             )}
           </div>
@@ -57,12 +58,13 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
               aspectRatio="16:9"
               loading="lazy"
               decoding="async"
+              format='webp'
             />
           )}
         </div>
       ))
   }
-  <div class="mt-2">
+  <div class="mt-1">
     <header>
       <div class="mb-1">
         <span class="text-sm">
@@ -107,14 +109,73 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
     </header>
 
     {post.excerpt && <p class="flex-grow text-muted dark:text-slate-400 text-lg">{post.excerpt}</p>}
+    
     {
       post.tags && Array.isArray(post.tags) ? (
-        <footer class="mt-5">
+        <footer class="mt-2">
           <PostTags tags={post.tags} />
         </footer>
       ) : (
         <Fragment />
       )
     }
+
+
+    <!-- SPECIFIC FOR PRODUCT: HOUSE -->
+    <div class="text-muted grid grid-cols-2 grid-rows-2 content-normal">
+      <span class="text-sm">
+        {
+          post.bedroom && (
+            <>
+            {' '}
+            <Icon name="tabler:bed" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
+            <span>{post.bedroom} Kamar Tidur</span>
+            </>
+          )
+        }
+      </span>     
+      <span class="text-sm">
+        {
+          post.space && (
+            <>
+              {' '}
+              <Icon name="tabler:shape" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
+              <span>Luas Tanah {post.space} &#13217;</span>
+            </>
+          )
+        }
+      </span>
+      <span class="text-sm">
+        {
+          post.bathroom && (
+            <>
+              {' '}
+              <Icon name="tabler:bath" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
+              <span>{post.bathroom} Kamar Mandi</span>
+            </>
+          )
+        }     
+      </span>
+      <span>
+        {
+          post.building && (
+            <>
+              {' '}
+              <Icon name="tabler:home-2" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
+              <span>Luas Bangunan {post.building} &#x33A1;</span>
+            </>
+          )
+        }
+      </span>
+    </div>
+
+    <div class="my-3 grid">
+
+    {post.price && <p class="my-2 flex-grow font-bold text-center dark:text-slate-400 text-3xl">{post.price}</p>}
+
+    {link && <a href={link} class="btn btn-primary mt-3">Lihat Detail</a>}
+    
+    </div>
+
   </div>
 </article>

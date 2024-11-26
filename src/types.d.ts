@@ -30,6 +30,13 @@ export interface Post {
   /**  */
   author?: string;
 
+  // ONLY FOR HOUSE OR BUILDING
+  price?: string;
+  bedroom?: number;
+  bathroom?: number;
+  space?: number;
+  building?: number;
+
   /**  */
   metadata?: MetaData;
 
@@ -42,6 +49,8 @@ export interface Post {
 
   /**  */
   readingTime?: number;
+
+
 }
 
 export interface Taxonomy {
