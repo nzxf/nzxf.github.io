@@ -151,6 +151,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"post": {
+"article/jendela.md": {
+	id: "article/jendela.md";
+  slug: "article/jendela";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
 "astrowind-template-in-depth.mdx": {
 	id: "astrowind-template-in-depth.mdx";
   slug: "astrowind-template-in-depth";
@@ -172,20 +179,6 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"jendela.md": {
-	id: "jendela.md";
-  slug: "jendela";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".md"] };
-"jj003.md": {
-	id: "jj003.md";
-  slug: "jj003";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".md"] };
 "landing.md": {
 	id: "landing.md";
   slug: "landing";
@@ -200,23 +193,44 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".mdx"] };
-"pengurusan-pbg-slf.mdx": {
-	id: "pengurusan-pbg-slf.mdx";
-  slug: "pengurusan-pbg-slf";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".mdx"] };
-"pengurusan-pbg-slf2.md": {
-	id: "pengurusan-pbg-slf2.md";
-  slug: "pengurusan-pbg-slf2";
+"product/jj003.md": {
+	id: "product/jj003.md";
+  slug: "product/jj003";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"rm0001-rumah-modern-minimalis.md": {
-	id: "rm0001-rumah-modern-minimalis.md";
-  slug: "rm0001-rumah-modern-minimalis";
+"property/bn001-rumah-modern-minimalis.md": {
+	id: "property/bn001-rumah-modern-minimalis.md";
+  slug: "property/bn001-rumah-modern-minimalis";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"property/bn002-rumah-modern.md": {
+	id: "property/bn002-rumah-modern.md";
+  slug: "property/bn002-rumah-modern";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"property/bn003-rumah-minimalis copy.md": {
+	id: "property/bn003-rumah-minimalis copy.md";
+  slug: "property/bn003-rumah-minimalis-copy";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"service/pengurusan-pbg-slf.mdx": {
+	id: "service/pengurusan-pbg-slf.mdx";
+  slug: "service/pengurusan-pbg-slf";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".mdx"] };
+"service/pengurusan-pbg-slf2.md": {
+	id: "service/pengurusan-pbg-slf2.md";
+  slug: "service/pengurusan-pbg-slf2";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">

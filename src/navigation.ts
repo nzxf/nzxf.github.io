@@ -1,127 +1,186 @@
 // import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
-import { getPermalink, getBlogPermalink } from './utils/permalinks';
+import { getPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
+    // {
+    //   text: 'Home',
+    //   links: [
+    //     {
+    //       text: 'SaaS',
+    //       href: getPermalink('/homes/saas'),
+    //     },
+    //     {
+    //       text: 'Startup',
+    //       href: getPermalink('/homes/startup'),
+    //     },
+    //     {
+    //       text: 'Mobile App',
+    //       href: getPermalink('/homes/mobile-app'),
+    //     },
+    //     {
+    //       text: 'Personal',
+    //       href: getPermalink('/homes/personal'),
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'Product',
+    //   links: [
+    //     {
+    //       text: 'Features (Anchor Link)',
+    //       href: getPermalink('/#features'),
+    //     },
+    //     {
+    //       text: 'Services',
+    //       href: getPermalink('/services'),
+    //     },
+    //     {
+    //       text: 'Pricing',
+    //       href: getPermalink('/pricing'),
+    //     },
+    //     {
+    //       text: 'About us',
+    //       href: getPermalink('/about'),
+    //     },
+    //     {
+    //       text: 'Contact',
+    //       href: getPermalink('/contact'),
+    //     },
+    //     {
+    //       text: 'Terms',
+    //       href: getPermalink('/terms'),
+    //     },
+    //     {
+    //       text: 'Privacy policy',
+    //       href: getPermalink('/privacy'),
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'Portofolio',
+    //   links: [
+    //     {
+    //       text: 'Lead Generation',
+    //       href: getPermalink('/landing/lead-generation'),
+    //     },
+    //     {
+    //       text: 'Long-form Sales',
+    //       href: getPermalink('/landing/sales'),
+    //     },
+    //     {
+    //       text: 'Click-Through',
+    //       href: getPermalink('/landing/click-through'),
+    //     },
+    //     {
+    //       text: 'Product Details (or Services)',
+    //       href: getPermalink('/landing/product'),
+    //     },
+    //     {
+    //       text: 'Coming Soon or Pre-Launch',
+    //       href: getPermalink('/landing/pre-launch'),
+    //     },
+    //     {
+    //       text: 'Subscription',
+    //       href: getPermalink('/landing/subscription'),
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'Service',
+    //   links: [
+    //     {
+    //       text: 'Semua Post',
+    //       href: getBlogPermalink(),
+    //     },
+    //     {
+    //       text: 'Kategori: Blog',
+    //       href: getPermalink('tutorials', 'category'),
+    //     },
+    //     {
+    //       text: 'Kategori: Produk & Jasa',
+    //       href: getPermalink('produk-and-jasa', 'category'),
+    //     },
+    //     {
+    //       text: 'Article',
+    //       href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
+    //     },
+    //     {
+    //       text: 'Article (with MDX)',
+    //       href: getPermalink('markdown-elements-demo-post', 'post'),
+    //     },
+    //     {
+    //       text: 'Tag Page',
+    //       href: getPermalink('astro', 'tag'),
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: "Kategori",
+    //   links: [
+    //     {
+    //       text: 'Article',
+    //       href: getPermalink('category/article')
+    //     },
+    //     {
+    //       text: 'Jasa',
+    //       href: getPermalink('category/service')
+    //     },
+    //     {
+    //       text: 'Produk',
+    //       href: getPermalink('category/product')
+    //     },
+    //     {
+    //       text: 'Properti',
+    //       href: getPermalink('category/property')
+    //     },
+    //   ]
+    // },
+    // {
+    //   text: 'Produk & Jasa',
+    //   href: getPermalink('/category/produk-and-jasa'),
+    // },
+    // {
+    //   text: 'Blog',
+    //   href: getPermalink('/category/blog'),
+    // },
     {
       text: 'Home',
+      href: getPermalink('/')
+    },
+    {
+      text: 'Jasa',
+      href: getPermalink('category/jasa')
+    },
+    {
+      text: 'Produk',
       links: [
         {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
+          text: 'Kanopi',
+          href: getPermalink('/produk/kanopi')
         },
         {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
+          text: 'Pagar',
+          href: getPermalink('/produk/kanopi')
         },
         {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
+          text: 'Rangka Atap',
+          href: getPermalink('/produk/kanopi')
         },
         {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
+          text: 'Partisi',
+          href: getPermalink('/produk/kanopi')
         },
-      ],
+        
+      ]
     },
     {
-      text: 'Product',
-      links: [
-        {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
-        },
-        {
-          text: 'Services',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
-      ],
+      text: 'Properti',
+      href: getPermalink('category/properti')
     },
     {
-      text: 'Portofolio',
-      links: [
-        {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
-        },
-        {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
-        },
-      ],
-    },
-    {
-      text: 'Service',
-      links: [
-        {
-          text: 'Semua Post',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Kategori: Blog',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Kategori: Produk & Jasa',
-          href: getPermalink('produk-and-jasa', 'category'),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
-      ],
-    },
-    {
-      text: 'Produk & Jasa',
-      href: getPermalink('/category/produk-and-jasa'),
-    },
-    {
-      text: 'Blog',
-      href: getPermalink('/category/blog'),
+      text: 'Artikel',
+      href: getPermalink('category/artikel')
     },
     {
       text: 'Tentang',
