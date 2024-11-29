@@ -214,27 +214,34 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"property/bn003-rumah-minimalis copy.md": {
-	id: "property/bn003-rumah-minimalis copy.md";
-  slug: "property/bn003-rumah-minimalis-copy";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".md"] };
-"service/pengurusan-pbg-slf.mdx": {
-	id: "service/pengurusan-pbg-slf.mdx";
-  slug: "service/pengurusan-pbg-slf";
+"service/bangun-rumah.mdx": {
+	id: "service/bangun-rumah.mdx";
+  slug: "service/bangun-rumah";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".mdx"] };
-"service/pengurusan-pbg-slf2.md": {
-	id: "service/pengurusan-pbg-slf2.md";
-  slug: "service/pengurusan-pbg-slf2";
+"service/desain-bangun-rumah.mdx": {
+	id: "service/desain-bangun-rumah.mdx";
+  slug: "service/desain-bangun-rumah";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
+"service/pengurusan-pbg-slf copy.mdx": {
+	id: "service/pengurusan-pbg-slf copy.mdx";
+  slug: "service/pengurusan-pbg-slf-copy";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".mdx"] };
+"service/sample-service-jasa.mdx": {
+	id: "service/sample-service-jasa.mdx";
+  slug: "service/sample-service-jasa";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".mdx"] };
 "useful-resources-to-create-websites.md": {
 	id: "useful-resources-to-create-websites.md";
   slug: "useful-resources-to-create-websites";

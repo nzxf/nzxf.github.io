@@ -109,7 +109,8 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
         }
       </h2>
     </header>
-    {post.excerpt && <p class="mb-3 flex-grow text-muted dark:text-slate-400 text-lg">{post.excerpt}</p>}
+
+    {post.excerpt && <p class="my-3 flex-grow text-muted dark:text-slate-400 text-lg">{post.excerpt}</p>}
 
     {
       post.tags && Array.isArray(post.tags) ? (
@@ -123,7 +124,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
 
     
     <!-- SPECIFIC FOR PRODUCT: HOUSE -->
-    <div class="text-muted border-y-1 flex grid grid-cols-2 grid-rows-2 content-normal">
+    <div class="text-muted  text-nowrap flex grid grid-rows-2 content-normal">
       <span class="text-sm">
         {
           post.bedroom && (
@@ -137,17 +138,6 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
       </span>     
       <span class="text-sm">
         {
-          post.space && (
-            <>
-              {' '}
-              <Icon name="tabler:shape" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
-              <span>Luas Tanah {post.space} &#13217;</span>
-            </>
-          )
-        }
-      </span>
-      <span class="text-sm">
-        {
           post.bathroom && (
             <>
               {' '}
@@ -156,6 +146,17 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
             </>
           )
         }     
+      </span>
+      <span class="text-sm">
+        {
+          post.space && (
+            <>
+              {' '}
+              <Icon name="tabler:shape" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
+              <span>Luas Tanah {post.space} &#13217;</span>
+            </>
+          )
+        }
       </span>
       <span class="text-sm">
         {
@@ -170,13 +171,18 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
       </span>
     </div>
     
-    <div class="my-3 grid">
+    <div class="my-1 grid">
 
-    {post.price && <p class="my-2 flex-grow font-bold text-center dark:text-slate-400 text-3xl">{post.price}</p>}
-
-    <!-- {link && <a href={link} class="btn btn-primary mt-3">Lihat Detail</a>} -->
+      {post.price && <p class="my-2 flex-grow font-bold text-center text-3xl">{post.price}</p>}
     
     </div>
+
+    <div class="my-3 mx-1 grid grid-cols-2 gap-2">
+      {link && <a href={link} class="btn btn-primary mt-2">Lihat Detail</a>}
+      <!-- {link && <a href={`https://wa.me/6285176712656?text=MBK,%20mau%20tanya%20tentang%20` + post.category.title + ": " + post.title} class="btn btn-primary mt-2">Tanya ini</a>} -->
+      {link && <a href={`https://wa.me/6285176712656?text=MBK,%20mau%20tanya%20tentang%20` + post.title} class="btn btn-primary mt-2">Tanyakan ini</a>}
+    </div>
+    
 
   </div>
 </article>

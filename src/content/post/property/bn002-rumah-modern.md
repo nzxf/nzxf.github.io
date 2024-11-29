@@ -1,15 +1,14 @@
 ---
 publishDate: 2024-11-26T00:00:00Z
 author: Zan
-title: Rumah Modern Minimalis
-excerpt: Gedongkuning, Yogyakarta
-price: Rp 350.000.000
+title: Rumah Sudut Lengkung Putih
+excerpt: Maguwoharjo, Sleman
+price: Rp 550.000.000
 bedroom: 3
 bathroom: 2
-space: 120
+space: 150
 building: 90
-# image: https://asset.kompas.com/crops/_16fzbb0a7JWjgh7c38me_X8k7E=/0x0:780x520/1200x800/data/photo/2023/08/21/64e2ec07a40f4.jpg
-image: https://images.unsplash.com/photo-1434082033009-b81d41d32e1c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fHNpbXBsZSUyMG1vZGVybiUyMGhvdXNlfGVufDB8fDB8fHww
+image: ~/assets/images/property/bn002.png
 category: Properti
 
 metadata:
@@ -18,7 +17,6 @@ metadata:
 
 Rumah Baru Siap Huni dalam Cluster Di Gedongkuning Yogyakarta. Akses mudah, Dekat pusat kota jogja, wilayah nyaman, Akses jalan lebar, One gate sistem, Pos satpam, dan CCTV
 
-![Gambar Rumah Tampak Depan](~/assets/products/b/bn001.jpeg)
 
 ## Detail
 

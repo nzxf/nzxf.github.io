@@ -16,8 +16,8 @@ import Brands from '~/components/widgets/Brands.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 // Import Image for Pricing
-import pbg from "~/assets/products/pbg.png"
-import product1 from "~/assets/products/product1.png"
+import pbg from "~/assets/images/service/pbg.png"
+import product1 from "~/assets/images/product/product1.png"
 
 
 const metadata = {
@@ -39,7 +39,7 @@ const metadata = {
       },
       {
         variant: 'primary',
-        text: 'Mau Tanya Dulu',
+        text: 'Mau Tanya',
         href: `https://wa.me/6285176712656?text=MBK,%20saya%20mau%20tanya%20...`,
         target: '_blank',
       },
@@ -478,61 +478,99 @@ const metadata = {
     title="Testimoni"
     subtitle='Feedback dan testimoni dari pelanggan merupakan jalan kami untuk menjamin kepuasan, membangun kepercayaan, dan meningkatkan kualitas layanan kami.'
     testimonials={[
-      {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Bpk. Rijali',
-        job: 'Umbulharjo, Yogyakarta',
-        image: {
-          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
-        },
-      },
-      {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Ibu Irene',
-        job: 'Kasihan, Bantul',
-        image: {
-          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
-        },
-      },
-      {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Kak Chendra Wilky',
-        job: 'Maguwoharjo, Sleman',
-        image: {
-          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
-        },
-      },
-      {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Bpk. Rijali',
-        job: 'Umbulharjo, Yogyakarta',
-        image: {
-          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
-        },
-      },
-      {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Ibu Irene',
-        job: 'Kasihan, Bantul',
-        image: {
-          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
-        },
-      },
-      {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Kak Chendra Wilky',
-        job: 'Maguwoharjo, Sleman',
-        image: {
-          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
-        },
-      },
-    ]}
+
+  {
+    "testimonial": "Wah, aku baru pakai Mitra Bangun Kreasi buat renovasi rumah. Hasilnya? Kualitasnya juara! Materialnya bagus banget, dan pengerjaannya sangat rapi. Bener-bener recommended!",
+    "name": "Dewi Sari",
+    "job": "Jl. Gejayan No. 17, Kota Yogyakarta, DI Yogyakarta",
+    "image": {
+      "src": "~/assets/images/product/product1.png",
+      "alt": "Dewi Sari Image"
+    }
+  },
+  {
+    "testimonial": "Tim di MBK itu profesional banget! Dari awal sampai akhir, mereka komunikatif dan selalu kasih update. Pokoknya, kerjaan mereka mantap! 🙌",
+    "name": "Budi Santoso",
+    "job": "Jl. Panembahan Senopati No. 17, Ngupasan, Kota Yogyakarta, DI Yogyakarta",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80",
+      "alt": "Budi Santoso Image"
+    }
+  },
+  {
+    "testimonial": "Jujur, harga di Mitra Bangun Kreasi itu oke banget! Mereka kasih penawaran yang jelas tanpa biaya tersembunyi. Kerja cepat dan efisien, jadi nilai lebih buat dompet saya.",
+    "name": "Rina Lestari",
+    "job": "Jl. Prawirotaman No. 12, Kota Yogyakarta, DI Yogyakarta",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80",
+      "alt": "Rina Lestari Image"
+    }
+  },
+  {
+    "testimonial": "Saya seneng banget sama layanan pelanggan di MBK. Mereka ramah dan cepat tanggap! Gak nyangka bisa dapet pelayanan sebaik ini di dunia konstruksi.",
+    "name": "Andi Prasetyo",
+    "job": "Jl. Suryodiningratan No. 45, Kota Yogyakarta, DI Yogyakarta",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80",
+      "alt": "Andi Prasetyo Image"
+    }
+  },
+  {
+    "testimonial": "Proyek saya dengan Mitra Bangun Kreasi ini bener-bener bisa diandalkan. Selesai lebih cepat dari yang direncanakan! Mereka bisa adaptasi dengan baik saat ada masalah. Keren deh!",
+    "name": "Siti Aminah",
+    "job": "Jl. Cendana No. 33, Gunungkidul, DI Yogyakarta",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80",
+      "alt": "Siti Aminah Image"
+    }
+  },
+  {
+    "testimonial": "Hasil akhir dek baru saya itu cakep banget! Detailnya diperhatikan dengan baik. Temen-temen pada bilang, 'Wah, ini sih bikin betah nongkrong!' Terima kasih ya!",
+    "name": "Rudi Hartono",
+    "job": "Jl. Sugeng Riyadi No. 21, Bantul, DI Yogyakarta",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80",
+      "alt": "Rudi Hartono Image"
+    }
+  },
+  {
+    "testimonial": "Staf di Mitra Bangun Kreasi itu berpengalaman banget soal material dan teknik bangunan. Mereka bantu saya milih produk yang pas, jadi saya merasa yakin deh sama pilihan saya. 🏡✨",
+    "name": "Lina Widiastuti",
+    "job": "Jl. Gejayan No. 15, Sleman, Kota Yogyakarta, DI Yogyakarta",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80",
+      "alt": "Lina Widiastuti Image"
+    }
+  },
+  {
+    "testimonial": "Saya merasa MBK itu terpercaya banget. Mereka datang tepat waktu dan kerja sesuai janji. Gak nyesel deh milih mereka!",
+    "name": "Toni Nugroho",
+    "job": "Jl. Tamansiswa No. 5, Kulon Progo, DI Yogyakarta",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80",
+      "alt": "Toni Nugroho Image"
+    }
+  },
+  {
+    "testimonial": 'Saya butuh solusi kustom untuk ruang unik saya, dan Mitra Bangun Kreasi berhasil banget! Mereka dengerin ide-ide saya dan mewujudkannya dengan sempurna. Sumpah, puas banget!',
+    'name': 'Fani Nursyifa',
+    'job': 'Jl. Poncowinatan No. 15, Kulon Progo, DI Yogyakarta',
+    'image': {
+      'src': 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+      'alt': 'Fani Nursyifa Image'
+    }
+  },
+  {
+    'testimonial': 'Setelah proyek selesai, MBK masih ngontak saya buat nanya kabar. Mereka kasih tips perawatan juga. Ini sih pelayanan yang bikin hati adem!',
+    'name': 'Eko Susanto',
+    'job': 'Jl. Jendral Sudirman No. 30, Kota Yogyakarta, DI Yogyakarta',
+    'image': {
+       'src': 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+       'alt': 'Eko Susanto Image'
+     }
+   }
+]
+}
   />
 
 <!-- Brands Widget ****************** -->
