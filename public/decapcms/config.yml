@@ -25,11 +25,16 @@ collections:
         }
       - { label: 'Image', name: 'image', widget: 'string' }
       - { label: 'Publish Date', name: 'publishDate', widget: 'datetime', required: false }
-
       - { label: 'Author', name: 'author', widget: 'string' }
-      - { label: 'Price', name: 'price', widget: 'number' }
+
+      - { label: 'Code', name: 'code', widget: 'string' }
+      - { label: 'Price', name: 'price', widget: 'string' }
+      - { label: 'Price Before', name: 'priceBefore', widget: 'string' }
+      - { label: 'Status', name: 'status', widget: 'string' }
+
       - { label: 'Bedroom', name: 'bedroom', widget: 'number' }
       - { label: 'Bathroom', name: 'bathroom', widget: 'number' }
       - { label: 'Space', name: 'space', widget: 'number' }
       - { label: 'Building', name: 'building', widget: 'number' }
+
       - { label: 'Content', name: 'body', widget: 'markdown' }

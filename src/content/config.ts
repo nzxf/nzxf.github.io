@@ -58,7 +58,12 @@ const postCollection = defineCollection({
     category: z.string().optional(),
     tags: z.array(z.string()).optional(),
     author: z.string().optional(),
+
+    code: z.string().optional(),
     price: z.string().optional(),
+    priceBefore: z.string().optional(),
+    status: z.string().optional(),
+
     bedroom: z.number().optional(),
     bathroom: z.number().optional(),
     space: z.number().optional(),

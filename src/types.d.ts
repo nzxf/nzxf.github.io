@@ -29,29 +29,32 @@ export interface Post {
   tags?: Taxonomy[];
   /**  */
   author?: string;
+  
+  // ADDITIONAL DATA
+  code?: string;
+  price?: string;
+  priceBefore?: string;
+  status?: string;
 
   // ONLY FOR HOUSE OR BUILDING
-  price?: string;
   bedroom?: number;
   bathroom?: number;
   space?: number;
   building?: number;
-
+  
   /**  */
   metadata?: MetaData;
-
+  
   /**  */
   draft?: boolean;
-
+  
   /**  */
   Content?: AstroComponentFactory;
   content?: string;
-
+  
   /**  */
   readingTime?: number;
-
-
-}
+  }
 
 export interface Taxonomy {
   slug: string;

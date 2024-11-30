@@ -200,16 +200,16 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"property/bn001-rumah-modern-minimalis.md": {
-	id: "property/bn001-rumah-modern-minimalis.md";
-  slug: "property/bn001-rumah-modern-minimalis";
+"property/rm001.md": {
+	id: "property/rm001.md";
+  slug: "property/rm001";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"property/bn002-rumah-modern.md": {
-	id: "property/bn002-rumah-modern.md";
-  slug: "property/bn002-rumah-modern";
+"property/rm002.md": {
+	id: "property/rm002.md";
+  slug: "property/rm002";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
