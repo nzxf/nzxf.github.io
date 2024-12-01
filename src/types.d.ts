@@ -32,8 +32,9 @@ export interface Post {
   
   // ADDITIONAL DATA
   code?: string;
-  price?: string;
-  priceBefore?: string;
+  price?: number;
+  priceBefore?: number;
+  priceTail?: string;
   status?: string;
 
   // ONLY FOR HOUSE OR BUILDING

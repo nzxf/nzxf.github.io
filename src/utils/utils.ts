@@ -50,3 +50,15 @@ export const toUiAmount = (amount: number) => {
 
   return value;
 };
+
+// Function to add dot for numbers by thousands
+export const dotByThousand = (num: number) => {
+  return Intl.NumberFormat('de-DE').format(num)
+}
+
+// Function to count discount
+export const countDiscount = (partialValue: number, totalValue: number) => {
+  const percentage = (100 * partialValue) / totalValue;
+  const discount = 100 - percentage
+  return Math.round(discount)
+} 

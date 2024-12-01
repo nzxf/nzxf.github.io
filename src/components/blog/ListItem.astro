@@ -10,6 +10,8 @@ import type { Post } from '~/types';
 import { getPermalink } from '~/utils/permalinks';
 import { findImage } from '~/utils/images';
 // import { getFormattedDate } from '~/utils/utils';
+import { dotByThousand, countDiscount } from '~/utils/utils';
+
 
 export interface Props {
   post: Post;
@@ -23,9 +25,9 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
 
 <!-- class={`max-w-md mx-auto md:max-w-none grid gap-6 md:gap-8 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade ${image ? 'md:grid-cols-2' : ''}`} -->
 <article
-  class={`gap-6 md:gap-6 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade`}
+  class={`gap-4 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade`}
 >
-  <div class="mt-1 h-full rounded-lg backdrop-blur border border-gray-300 dark:border-gray-700 bg-white dark:bg-slate-900 shadow px-2 py-3 flex w-full max-w-sm flex-col justify-between text-center">
+  <div class="mt-1 rounded-lg backdrop-blur border border-gray-300 dark:border-gray-700 bg-white dark:bg-slate-900 shadow px-2 py-3 flex w-full max-w-sm flex-col justify-between text-center">
     <header>
       <div class="mb-2">
         <span class="text-sm">
@@ -135,7 +137,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
     
     <!-- SPECIFIC FOR PRODUCT: HOUSE -->
     <div class="text-muted text-nowrap flex grid">
-      <span class="mt-3 text-sm">
+      <span class="mt-2 text-sm">
         {
           post.bedroom && (
             <>
@@ -168,7 +170,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
           )
         }
       </span>
-      <span class="text-sm">
+      <span class="text-sm mb-2">
         {
           post.building && (
             <>
@@ -184,9 +186,23 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
     <!-- {post.status && <p class="my-2 flex-grow font-bold text-center text-3xl">{post.status}</p>}    -->
 
     <!-- PRICE -->
-    <div class="grid">
-      {post.priceBefore && <p class="mt-3 text-muted text-center text-xl line-through">{post.priceBefore}</p>}   
-      {post.price && <p class="mb-3 flex-grow font-bold text-center text-2xl">{post.price}</p>}   
+    <div>
+      {post.priceBefore && 
+        <div class="mt-2 flex justify-center items-center">
+          <span class="text-muted text-center text-xs line-through">Rp</span>
+          <span class="text-muted text-center font-bold text-lg line-through">{dotByThousand(post.priceBefore)}</span>
+          {post.price && 
+            <span class="text-center font-extrabold  text-lg text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">-{countDiscount(post.price, post.priceBefore)}%</span>
+          }
+        </div>
+      }
+      {post.price && 
+        <div class="mb-3 flex justify-center items-center">
+          <span class="text-sm">Rp</span>
+          <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
+          <span class="text-sm">{post.priceTail}</span>
+        </div>
+      }
     </div>
     
     <!-- BUTTONs -->

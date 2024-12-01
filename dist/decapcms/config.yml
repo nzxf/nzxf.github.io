@@ -28,8 +28,9 @@ collections:
       - { label: 'Author', name: 'author', widget: 'string' }
       
       - { label: 'Code', name: 'code', widget: 'string' }
-      - { label: 'Price', name: 'price', widget: 'string' }
-      - { label: 'Price Before', name: 'priceBefore', widget: 'string' }
+      - { label: 'Price', name: 'price', widget: 'number' }
+      - { label: 'Price Before', name: 'priceBefore', widget: 'number' }
+      - { label: 'Price Tail', name: 'priceTail', widget: 'string' }
       - { label: 'Status', name: 'status', widget: 'string' }
 
       - { label: 'Bedroom', name: 'bedroom', widget: 'number' }

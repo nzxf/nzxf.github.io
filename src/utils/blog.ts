@@ -57,6 +57,7 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
     code,
     price,
     priceBefore,
+    priceTail,
     status,
 
     bedroom,
@@ -103,6 +104,7 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
     code: code,
     price: price,
     priceBefore: priceBefore,
+    priceTail: priceTail,
     status: status,
 
     bedroom: bedroom,

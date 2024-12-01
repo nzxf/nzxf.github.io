@@ -60,8 +60,9 @@ const postCollection = defineCollection({
     author: z.string().optional(),
 
     code: z.string().optional(),
-    price: z.string().optional(),
-    priceBefore: z.string().optional(),
+    price: z.number().optional(),
+    priceBefore: z.number().optional(),
+    priceTail: z.string().optional(),
     status: z.string().optional(),
 
     bedroom: z.number().optional(),
