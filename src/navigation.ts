@@ -179,8 +179,8 @@ export const headerData = {
       href: getPermalink('category/properti')
     },
     {
-      text: 'Artikel',
-      href: getPermalink('category/artikel')
+      text: 'Blog',
+      href: getPermalink('category/blog')
     },
     {
       text: 'Tentang',
