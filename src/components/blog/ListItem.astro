@@ -90,24 +90,26 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
                       format='webp'
                     />
                   )}
+                  {post.status && <p class="absolute bottom-3 right-4 text-3xl font-extrabold text-red-500">{post.status.toUpperCase()}</p>}
                 </div>
               </a>
             ) : (
               <div class="relative h-0 pb-[56.25%] md:pb-[75%] md:h-72 lg:pb-[56.25%] overflow-hidden bg-gray-400 dark:bg-slate-700 rounded shadow-lg">
                 {image && (
                   <Image
-                    src={image}
-                    class="absolute inset-0 object-cover w-full h-full mb-6 rounded shadow-lg bg-gray-400 dark:bg-slate-700"
-                    widths={[400, 900]}
-                    width={900}
-                    sizes="(max-width: 900px) 400px, 900px"
-                    alt={post.title}
-                    aspectRatio="16:9"
-                    loading="lazy"
-                    decoding="async"
-                    format='webp'
+                  src={image}
+                  class="absolute inset-0 object-cover w-full h-full mb-6 rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                  widths={[400, 900]}
+                  width={900}
+                  sizes="(max-width: 900px) 400px, 900px"
+                  alt={post.title}
+                  aspectRatio="16:9"
+                  loading="lazy"
+                  decoding="async"
+                  format='webp'
                   />
                 )}
+                {post.status && <p class="absolute bottom-3 right-4 text-3xl font-extrabold text-red-500">{post.status.toUpperCase()}</p>}
               </div>
             ))
         }
