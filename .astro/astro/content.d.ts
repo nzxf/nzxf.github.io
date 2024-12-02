@@ -156,98 +156,98 @@ declare module 'astro:content' {
   slug: "astrowind-template-in-depth";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".mdx"] };
 "blog/jendela.md": {
 	id: "blog/jendela.md";
   slug: "blog/jendela";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "get-started-website-with-astro-tailwind-css.md": {
 	id: "get-started-website-with-astro-tailwind-css.md";
   slug: "get-started-website-with-astro-tailwind-css";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "how-to-customize-astrowind-to-your-brand.md": {
 	id: "how-to-customize-astrowind-to-your-brand.md";
   slug: "how-to-customize-astrowind-to-your-brand";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "landing.md": {
 	id: "landing.md";
   slug: "landing";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "markdown-elements-demo-post.mdx": {
 	id: "markdown-elements-demo-post.mdx";
   slug: "markdown-elements-demo-post";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".mdx"] };
 "product/jj003.md": {
 	id: "product/jj003.md";
   slug: "product/jj003";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "property/rm001.md": {
 	id: "property/rm001.md";
   slug: "property/rm001";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "property/rm002.md": {
 	id: "property/rm002.md";
   slug: "property/rm002";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
-"service/bangun-rumah.mdx": {
-	id: "service/bangun-rumah.mdx";
-  slug: "service/bangun-rumah";
+"service/js001-bangun.md": {
+	id: "service/js001-bangun.md";
+  slug: "service/js001-bangun";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".mdx"] };
-"service/desain-bangun-rumah.mdx": {
-	id: "service/desain-bangun-rumah.mdx";
-  slug: "service/desain-bangun-rumah";
+  data: any
+} & { render(): Render[".md"] };
+"service/js002-desain-dan-bangun.md": {
+	id: "service/js002-desain-dan-bangun.md";
+  slug: "service/js002-desain-dan-bangun";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".mdx"] };
+  data: any
+} & { render(): Render[".md"] };
 "service/pengurusan-pbg-slf copy.mdx": {
 	id: "service/pengurusan-pbg-slf copy.mdx";
   slug: "service/pengurusan-pbg-slf-copy";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".mdx"] };
 "service/sample-service-jasa.mdx": {
 	id: "service/sample-service-jasa.mdx";
   slug: "service/sample-service-jasa";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".mdx"] };
 "useful-resources-to-create-websites.md": {
 	id: "useful-resources-to-create-websites.md";
   slug: "useful-resources-to-create-websites";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 };
 
@@ -259,5 +259,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = never;
 }
