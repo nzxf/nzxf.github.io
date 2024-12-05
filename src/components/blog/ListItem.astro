@@ -138,46 +138,44 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
       } -->
 
       {
-        post.bedroom &&
-        <div class="text-nowrap grid gap-0">
-          <span class="mt-2 text-sm">
-            {' '}
-            <Icon name="tabler:bed" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
-            <span>{post.bedroom} Kamar Tidur</span>
-          </span>     
-          <span class="text-sm">
+        post.building &&
+        <div class="my-3 h-full flex justify-center gap-3">
             {
-              post.bathroom && (
-                <>
+              post.bedroom && (
+                <span class="text-sm"> 
                   {' '}
                   <Icon name="tabler:bath" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
-                  <span>{post.bathroom} Kamar Mandi</span>
-                </>
+                  <span>{post.bedroom}</span>
+                </span>
               )
             }     
-          </span>
-          <span class="text-sm">
+            {
+              post.bathroom && (
+                <span class="text-sm">
+                  {' '}
+                  <Icon name="tabler:bath" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
+                  <span>{post.bathroom}</span>
+                </span>
+              )
+            }     
             {
               post.space && (
-                <>
+                <span class="text-sm">
                   {' '}
                   <Icon name="tabler:shape" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
-                  <span>Luas Tanah {post.space} &#13217;</span>
-                </>
+                  <span>{post.space} &#13217;</span>
+                </span>
               )
             }
-          </span>
-          <span class="text-sm mb-2">
             {
               post.building && (
-                <>
+                <span class="text-sm">
                   {' '}
                   <Icon name="tabler:home-2" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
-                  <span>Luas Bangunan {post.building} &#x33A1;</span>
-                </>
+                  <span>{post.building} &#x33A1;</span>
+                </span>
               )
             }
-          </span>
         </div>
       }
     </body>

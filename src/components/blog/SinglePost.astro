@@ -86,7 +86,7 @@ const { post, url } = Astro.props;
               class=" max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400 dark:bg-slate-700"
               widths={[400, 900]}
               sizes="(max-width: 900px) 400px, 900px"
-              alt={post?.excerpt || ''}
+              alt={post?.title || ''}
               width={900}
               height={506}
               loading="eager"
@@ -114,12 +114,7 @@ const { post, url } = Astro.props;
     <div class="flex flex-col">
       {post.price && 
         <h2>Harga</h2>
-        <div class="pl-3 flex">
-          <span class="font-bold text-2xl">Rp</span>
-          <span class="pl-1 font-bold text-2xl">{dotByThousand(post.price)}</span>
-          <span class="font-bold text-2xl">{post.priceTail}</span>
-        </div>
-      }  
+      }
       {post.priceBefore && 
         <div class="pl-3 flex">
           <span class="text-gray-500 font-bold text-lg line-through">Rp</span>
@@ -129,10 +124,17 @@ const { post, url } = Astro.props;
           }
         </div>
       }
+      {post.price &&   
+        <div class="pl-3 flex">
+          <span class="font-bold text-2xl">Rp</span>
+          <span class="pl-1 font-bold text-2xl">{dotByThousand(post.price)}</span>
+          <span class="font-bold text-2xl">{post.priceTail}</span>
+        </div>
+      }
     </div>
 
     {
-      post.bedroom ? (
+      post.building ? (
         <div class="flex flex-col">
           <h2>Detail</h2>
           <span class="pl-3">
@@ -172,12 +174,9 @@ const { post, url } = Astro.props;
         <></>
       )
     }
-
-
     
-      <slot />
-    </div>
-    
+    <slot />
+      
     {
       post.code && (   
         <CallToAction
@@ -187,19 +186,21 @@ const { post, url } = Astro.props;
               text: 'Hubungi MBK',
               href: 'https://wa.me/6285176712656?text=MBK,%20saya%20tertarik%20dengan%20' + post.code.toUpperCase() + ": " + post.title,
               target: '_blank',
-              icon: 'tabler:brand-whatsapp',
+              icon: 'tabler:brand-whatsapp'
             },
           ]}
-        >
+          >
           <Fragment slot="title">
-            Tertarik dengan produk ini?<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
+            Tertarik dengan {post.category?.title.toLowerCase()} ini?<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
           </Fragment>
           <Fragment slot="subtitle">
-            Silakan klik tombol di bawah jika ada pertanyaan atau ingin pesan produk ini.
+            Silakan klik tombol di bawah jika memiliki pertanyaan, <br/> atau ingin langsung memesan {post.title}.
           </Fragment>
         </CallToAction>
       )
     }
+    </div>
+
 
 
     <div class="mx-auto px-6 sm:px-6 max-w-3xl mt-8 flex justify-between flex-col sm:flex-row">
