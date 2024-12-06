@@ -139,22 +139,6 @@ const { post, url } = Astro.props;
           <h2>Detail</h2>
           <span class="pl-3">
             {
-              post.bedroom && (
-                <Icon name="tabler:bed" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
-                <span class="pl-1">{post.bedroom} Kamar Tidur</span>
-              )
-            }
-          </span>     
-          <span class="pl-3">
-            {
-              post.bathroom && (
-                <Icon name="tabler:bath" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
-                <span class="pl-1">{post.bathroom} Kamar Mandi</span>
-              )
-            }     
-          </span>
-          <span class="pl-3">
-            {
               post.space && (
                   <Icon name="tabler:shape" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
                   <span class="pl-1">Luas Tanah {post.space} &#13217;</span>
@@ -168,6 +152,22 @@ const { post, url } = Astro.props;
                   <span class="pl-1">Luas Bangunan {post.building} &#x33A1;</span>
               )
             }
+          </span>
+          <span class="pl-3">
+            {
+              post.bedroom && (
+                <Icon name="tabler:bed" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
+                <span class="pl-1">{post.bedroom} Kamar Tidur</span>
+              )
+            }
+          </span>     
+          <span class="pl-3">
+            {
+              post.bathroom && (
+                <Icon name="tabler:bath" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
+                <span class="pl-1">{post.bathroom} Kamar Mandi</span>
+              )
+            }     
           </span>
         </div>
       ) : (
@@ -194,7 +194,7 @@ const { post, url } = Astro.props;
             Tertarik dengan {post.category?.title.toLowerCase()} ini?<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
           </Fragment>
           <Fragment slot="subtitle">
-            Silakan klik tombol di bawah jika memiliki pertanyaan, <br/> atau ingin langsung memesan {post.title}.
+            Tunggu apa lagi, langsung klik tombol di bawah untuk membeli {post.category?.title.toLowerCase()}: {post.title}.
           </Fragment>
         </CallToAction>
       )

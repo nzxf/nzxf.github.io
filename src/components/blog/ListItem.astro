@@ -2,7 +2,7 @@
 import type { ImageMetadata } from 'astro';
 import { Icon } from 'astro-icon/components';
 import Image from '~/components/common/Image.astro';
-import Button from '../ui/Button.astro';
+// import Button from '../ui/Button.astro';
 // import PostTags from '~/components/blog/Tags.astro';
 
 import { APP_BLOG } from 'astrowind:config';
@@ -28,12 +28,12 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
 <article
   class={`h-full gap-4 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade`}
 >
-  <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-300 dark:border-gray-700 bg-white dark:bg-slate-900 shadow px-2 py-3 flex w-full max-w-sm">
-    <header>
+  <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm">
+    <!-- <header>
       <div class="mb-2">
         <span class="text-sm">
-          <!-- <Icon name="tabler:clock" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
-          <time datetime={String(post.publishDate)} class="inline-block">{getFormattedDate(post.publishDate)}</time> -->
+          <Icon name="tabler:clock" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
+          <time datetime={String(post.publishDate)} class="inline-block">{getFormattedDate(post.publishDate)}</time>
           {
             post.author && (
               <>
@@ -66,158 +66,166 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
           }
         </span>
       </div>
-    </header>
-   
-    <body class="self-start">
-        {
-          image &&
-            (link ? (
-              <a class="relative block group" href={link ?? 'javascript:void(0)'}>
-                <div class="relative h-0 pb-[56.25%] md:pb-[75%] md:h-72 lg:pb-[56.25%] overflow-hidden bg-gray-400 dark:bg-slate-700 rounded shadow-lg">
+    </header> -->
+
+        <header>
+          {
+            image &&
+              (link ? (
+                // <a class="relative block group" href={link ?? 'javascript:void(0)'}>
+                  <div class="relative h-0 pb-[56.25%] md:pb-[75%] md:h-72 lg:pb-[56.25%] overflow-hidden">
+                    {image && (
+                      <Image
+                        src={image}
+                        class="absolute inset-0 object-cover w-full h-full mb-6 rounded-t-lg bg-gray-400"
+                        widths={[400, 900]}
+                        width={900}
+                        sizes="(max-width: 900px) 400px, 900px"
+                        alt={post.title}
+                        aspectRatio="16:9"
+                        loading="lazy"
+                        decoding="async"
+                        format='webp'
+                      />
+                    )}
+                    {post.status && <p class="absolute bottom-2 right-2 text-xl font-extrabold text-red-500 border-double border-8 px-2 border-red-500 rounded-lg">{post.status.toUpperCase()}</p>}
+                  </div>
+                // </a>
+              ) : (
+                <div class="relative h-0 pb-[56.25%] md:pb-[75%] md:h-72 lg:pb-[56.25%] overflow-hidden bg-gray-400">
                   {image && (
                     <Image
-                      src={image}
-                      class="absolute inset-0 object-cover w-full h-full mb-6 rounded shadow-lg bg-gray-400 dark:bg-slate-700"
-                      widths={[400, 900]}
-                      width={900}
-                      sizes="(max-width: 900px) 400px, 900px"
-                      alt={post.title}
-                      aspectRatio="16:9"
-                      loading="lazy"
-                      decoding="async"
-                      format='webp'
+                    src={image}
+                    class="absolute inset-0 object-cover w-full h-full mb-6 rounded-t-lg bg-gray-400"
+                    widths={[400, 900]}
+                    width={900}
+                    sizes="(max-width: 900px) 400px, 900px"
+                    alt={post.title}
+                    aspectRatio="16:9"
+                    loading="lazy"
+                    decoding="async"
+                    format='webp'
                     />
                   )}
-                  {post.status && <p class="absolute bottom-2 right-2 text-3xl font-extrabold text-red-500 border-double border-8 px-2 border-red-500 rounded-lg">{post.status.toUpperCase()}</p>}
+                  {post.status && <p class="absolute bottom-2 right-2 text-xl font-extrabold text-red-500 border-double border-8 px-2 border-red-500 rounded-lg">{post.status.toUpperCase()}</p>}
                 </div>
-              </a>
-            ) : (
-              <div class="relative h-0 pb-[56.25%] md:pb-[75%] md:h-72 lg:pb-[56.25%] overflow-hidden bg-gray-400 dark:bg-slate-700 rounded shadow-lg">
-                {image && (
-                  <Image
-                  src={image}
-                  class="absolute inset-0 object-cover w-full h-full mb-6 rounded shadow-lg bg-gray-400 dark:bg-slate-700"
-                  widths={[400, 900]}
-                  width={900}
-                  sizes="(max-width: 900px) 400px, 900px"
-                  alt={post.title}
-                  aspectRatio="16:9"
-                  loading="lazy"
-                  decoding="async"
-                  format='webp'
-                  />
-                )}
-                {post.status && <p class="absolute bottom-2 right-2 text-3xl font-extrabold text-red-500 border-double border-8 px-2 border-red-500 rounded-lg">{post.status.toUpperCase()}</p>}
-              </div>
-            ))
-        }
-        <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300">
+              ))
+            }
+        </header>
+    
+        <body>
+          <div class="grid grid-col px-2">
+            <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300">
+              {
+                link ? (
+                  <a
+                    class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200"
+                    href={link}
+                    >
+                    {post.title}
+                  </a>
+                ) : (
+                  post.title
+                )
+              }
+            </h2>
+            {post.excerpt && <p class="mb-2 text-muted dark:text-slate-400 text-base">{post.excerpt}</p>}
+          </div>
+        <!-- 
           {
-            link ? (
-              <a
-                class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200"
-                href={link}
-              >
-                {post.title}
-              </a>
+            post.tags && Array.isArray(post.tags) ? (
+              <span class="mt-2">
+                <PostTags tags={post.tags} />
+              </span>
             ) : (
-              post.title
+              <Fragment />
             )
+          } -->
+        
+          {
+            post.building &&
+            <div class="h-full flex flex-col justify-center">
+              {
+                post.space && (
+                  <span class="text-sm">
+                    {' '}
+                    <Icon name="tabler:shape" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
+                    <span>Luas Tanah {post.space} &#13217;</span>
+                  </span>
+                )
+              }
+              {
+                post.building && (
+                  <span class="text-sm">
+                    {' '}
+                    <Icon name="tabler:home-2" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
+                    <span>Luas Bangunan {post.building} &#x33A1;</span>
+                  </span>
+                )
+              }
+              {
+                post.bedroom && (
+                  <span class="text-sm"> 
+                    {' '}
+                    <Icon name="tabler:bed" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
+                    <span>{post.bedroom} Kamar Tidur</span>
+                  </span>
+                )
+              }     
+              {
+                post.bathroom && (
+                  <span class="text-sm">
+                    {' '}
+                    <Icon name="tabler:bath" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
+                    <span>{post.bathroom} Kamar Tidur</span>
+                  </span>
+                )
+              }     
+            </div>
           }
-        </h2>
-      {post.excerpt && <p class="mb-2 text-muted dark:text-slate-400 text-base">{post.excerpt}</p>}
-    <!-- 
-      {
-        post.tags && Array.isArray(post.tags) ? (
-          <span class="mt-2">
-            <PostTags tags={post.tags} />
-          </span>
-        ) : (
-          <Fragment />
-        )
-      } -->
-
-      {
-        post.building &&
-        <div class="my-3 h-full flex justify-center gap-3">
-            {
-              post.bedroom && (
-                <span class="text-sm"> 
-                  {' '}
-                  <Icon name="tabler:bath" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
-                  <span>{post.bedroom}</span>
-                </span>
-              )
-            }     
-            {
-              post.bathroom && (
-                <span class="text-sm">
-                  {' '}
-                  <Icon name="tabler:bath" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
-                  <span>{post.bathroom}</span>
-                </span>
-              )
-            }     
-            {
-              post.space && (
-                <span class="text-sm">
-                  {' '}
-                  <Icon name="tabler:shape" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
-                  <span>{post.space} &#13217;</span>
-                </span>
-              )
-            }
-            {
-              post.building && (
-                <span class="text-sm">
-                  {' '}
-                  <Icon name="tabler:home-2" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
-                  <span>{post.building} &#x33A1;</span>
-                </span>
-              )
-            }
-        </div>
-      }
-    </body>
+        </body>
+   
 
     <div class="flex-grow flex flex-col justify-end">
       {post.priceBefore && 
           <div class="mt-2 flex justify-center items-center">
             <span class="text-gray-500 text-center text-xs line-through">Rp</span>
-            <span class="text-gray-500 text-center font-bold text-lg line-through">{dotByThousand(post.priceBefore)}</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
             {post.price && 
-              <span class="text-center font-bold text-lg text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">-{countDiscount(post.price, post.priceBefore)}%</span>
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">-{countDiscount(post.price, post.priceBefore)}%</span>
             }
           </div>
         }
         {post.price && 
           <div class="pl-2 flex justify-center items-center">
             <span class="text-sm">Rp</span>
-            <span class="font-bold text-3xl">{dotByThousand(post.price)}</span>
+            <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
             <span class="text-sm">{post.priceTail}</span>
           </div>
         }  
     </div>
 
-    <footer>
-      {
+    <footer class="my-2">
+      <!-- {
         post.code && (
-          <div class="mt-3 mb-2 grid grid-cols-2 gap-2">
+          <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
-              class="text-sm px-0"
+              class="text-sm m-0 p-2 rounded-xl"
               text="Lihat Detail"
               href={link}
               variant="primary">
             </Button>
             <Button
-              class="text-sm px-0 cursor-not-allowed"
+              class="text-sm p-0 rounded-xl"
               text="Tanyakan Ini" 
               href={`https://wa.me/6285176712656?text=MBK,%20mau%20tanya%20tentang%20` + `${post.code.toUpperCase()}: ` + post.title}>
             </Button>
           </div>
         )
-      }
+      } -->
     </footer>
+
+ 
     
   </div>
 </article>
