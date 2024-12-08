@@ -81,8 +81,9 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
         <ToggleMenu />
       </div>
     </div>
+
     <nav
-      class="items-center w-full justify-self-sretch md:w-auto hidden md:flex md:mx-5 text-default overflow-y-auto overflow-x-hidden md:overflow-y-visible md:overflow-x-auto md:justify-self-center"
+      class="items-center w-full justify-self-start md:w-auto hidden md:flex md:mx-5 text-default overflow-y-auto overflow-x-hidden md:overflow-y-visible md:overflow-x-auto md:justify-self-start"
       aria-label="Main navigation"
     >
       <ul
@@ -132,6 +133,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
         }
       </ul>
     </nav>
+
     <div
       class:list={[
         { 'ml-auto rtl:ml-0 rtl:mr-auto': position === 'left' },
@@ -170,5 +172,6 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
         } -->
       </div>
     </div>
+
   </div>
 </header>

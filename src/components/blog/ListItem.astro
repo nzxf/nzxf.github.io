@@ -25,10 +25,12 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
 ---
 
 <!-- class={`max-w-md mx-auto md:max-w-none grid gap-6 md:gap-8 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade ${image ? 'md:grid-cols-2' : ''}`} -->
+
 <article
   class={`h-full gap-4 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade`}
 >
   <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm">
+    
     <!-- <header>
       <div class="mb-2">
         <span class="text-sm">
@@ -71,13 +73,12 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
         <header>
           {
             image &&
-              (link ? (
-                // <a class="relative block group" href={link ?? 'javascript:void(0)'}>
+                <a class="relative block group" href={link ?? 'javascript:void(0)'}>
                   <div class="relative h-0 pb-[56.25%] md:pb-[75%] md:h-72 lg:pb-[56.25%] overflow-hidden">
                     {image && (
                       <Image
                         src={image}
-                        class="absolute inset-0 object-cover w-full h-full mb-6 rounded-t-lg bg-gray-400"
+                        class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg bg-gray-400"
                         widths={[400, 900]}
                         width={900}
                         sizes="(max-width: 900px) 400px, 900px"
@@ -90,26 +91,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
                     )}
                     {post.status && <p class="absolute bottom-2 right-2 text-xl font-extrabold text-red-500 border-double border-8 px-2 border-red-500 rounded-lg">{post.status.toUpperCase()}</p>}
                   </div>
-                // </a>
-              ) : (
-                <div class="relative h-0 pb-[56.25%] md:pb-[75%] md:h-72 lg:pb-[56.25%] overflow-hidden bg-gray-400">
-                  {image && (
-                    <Image
-                    src={image}
-                    class="absolute inset-0 object-cover w-full h-full mb-6 rounded-t-lg bg-gray-400"
-                    widths={[400, 900]}
-                    width={900}
-                    sizes="(max-width: 900px) 400px, 900px"
-                    alt={post.title}
-                    aspectRatio="16:9"
-                    loading="lazy"
-                    decoding="async"
-                    format='webp'
-                    />
-                  )}
-                  {post.status && <p class="absolute bottom-2 right-2 text-xl font-extrabold text-red-500 border-double border-8 px-2 border-red-500 rounded-lg">{post.status.toUpperCase()}</p>}
-                </div>
-              ))
+                </a>
             }
         </header>
     
@@ -189,16 +171,16 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
     <div class="flex-grow flex flex-col justify-end">
       {post.priceBefore && 
           <div class="mt-2 flex justify-center items-center">
-            <span class="text-gray-500 text-center text-xs line-through">Rp</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
             <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
             {post.price && 
-              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">-{countDiscount(post.price, post.priceBefore)}%</span>
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
             }
           </div>
         }
         {post.price && 
-          <div class="pl-2 flex justify-center items-center">
-            <span class="text-sm">Rp</span>
+          <div class="flex justify-center items-center">
+            <span class="font-bold text-2xl">Rp</span>
             <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
             <span class="text-sm">{post.priceTail}</span>
           </div>
@@ -225,7 +207,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
       } -->
     </footer>
 
- 
     
+    <a href={link ?? 'javascript:void(0)'} class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a>
   </div>
 </article>

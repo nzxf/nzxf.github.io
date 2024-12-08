@@ -1,7 +1,7 @@
 {
-  "name": "@onwidget/astrowind",
-  "version": "1.0.0-beta.48",
-  "description": "AstroWind: A free template using Astro 4.0 and Tailwind CSS. Astro starter theme.",
+  "name": "@mitrabangunkreasi/zan",
+  "version": "1.0.0-beta.24",
+  "description": "Website MBK: Website Official for Mitra Bangun Kreasi.",
   "type": "module",
   "private": true,
   "engines": {

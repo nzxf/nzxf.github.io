@@ -7,7 +7,7 @@ code: js002
 title: Desain dan Bangun Rumah
 excerpt: Mau paket lengkap desain dan bangun rumah impian anda?
 image: ~/assets/images/service/desain.webp
-category: Jasa
+category: Konstruksi
 price: 3499000
 priceTail: /m2
 tags:

@@ -302,3 +302,23 @@ export async function getRelatedPosts(originalPost: Post, maxResults: number = 4
 
   return selectedPosts;
 }
+
+// SHOW ALL TAGS WITH EACH TOTAL NUMBER
+
+// export const findTagsWithOccurrences = async (): Promise<Record<string, number>> => {
+//   const posts = await fetchPosts();
+//   const allTags = posts.flatMap(({ tags = [] }) => [...tags]).map(({ title }) => title);
+//   return allTags.reduce((acc, tag) => ({ ...acc, [tag]: acc[tag] ? acc[tag] + 1 : 1 }), {} as Record<string, number>);
+// };
+
+// export const findCategoriesWithOccurrences = async (): Promise<Record<string, number>> => {
+//   const posts = await fetchPosts();
+//   const allCategories = posts
+//     .map(({ category }) => category)
+//     .filter((category) => category !== undefined)
+//     .map(({ title }) => title);
+//   return allCategories.reduce(
+//     (acc, category) => ({ ...acc, [category]: acc[category] ? acc[category] + 1 : 1 }),
+//     {} as Record<string, number>
+//   );
+// };

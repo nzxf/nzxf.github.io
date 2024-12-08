@@ -151,13 +151,6 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"post": {
-"astrowind-template-in-depth.mdx": {
-	id: "astrowind-template-in-depth.mdx";
-  slug: "astrowind-template-in-depth";
-  body: string;
-  collection: "post";
-  data: any
-} & { render(): Render[".mdx"] };
 "blog/jendela.md": {
 	id: "blog/jendela.md";
   slug: "blog/jendela";
@@ -172,16 +165,16 @@ declare module 'astro:content' {
   collection: "post";
   data: any
 } & { render(): Render[".md"] };
-"how-to-customize-astrowind-to-your-brand.md": {
-	id: "how-to-customize-astrowind-to-your-brand.md";
-  slug: "how-to-customize-astrowind-to-your-brand";
+"konstruksi/js001-desain-dan-bangun-rumah.md": {
+	id: "konstruksi/js001-desain-dan-bangun-rumah.md";
+  slug: "konstruksi/js001-desain-dan-bangun-rumah";
   body: string;
   collection: "post";
   data: any
 } & { render(): Render[".md"] };
-"landing.md": {
-	id: "landing.md";
-  slug: "landing";
+"konstruksi/js002-desain-dan-bangun-gudang.md": {
+	id: "konstruksi/js002-desain-dan-bangun-gudang.md";
+  slug: "konstruksi/js002-desain-dan-bangun-gudang";
   body: string;
   collection: "post";
   data: any
@@ -193,6 +186,41 @@ declare module 'astro:content' {
   collection: "post";
   data: any
 } & { render(): Render[".mdx"] };
+"product/jj003 copy 2.md": {
+	id: "product/jj003 copy 2.md";
+  slug: "product/jj003-copy-2";
+  body: string;
+  collection: "post";
+  data: any
+} & { render(): Render[".md"] };
+"product/jj003 copy 3.md": {
+	id: "product/jj003 copy 3.md";
+  slug: "product/jj003-copy-3";
+  body: string;
+  collection: "post";
+  data: any
+} & { render(): Render[".md"] };
+"product/jj003 copy 4.md": {
+	id: "product/jj003 copy 4.md";
+  slug: "product/jj003-copy-4";
+  body: string;
+  collection: "post";
+  data: any
+} & { render(): Render[".md"] };
+"product/jj003 copy 5.md": {
+	id: "product/jj003 copy 5.md";
+  slug: "product/jj003-copy-5";
+  body: string;
+  collection: "post";
+  data: any
+} & { render(): Render[".md"] };
+"product/jj003 copy.md": {
+	id: "product/jj003 copy.md";
+  slug: "product/jj003-copy";
+  body: string;
+  collection: "post";
+  data: any
+} & { render(): Render[".md"] };
 "product/jj003.md": {
 	id: "product/jj003.md";
   slug: "product/jj003";
@@ -284,20 +312,6 @@ declare module 'astro:content' {
   collection: "post";
   data: any
 } & { render(): Render[".md"] };
-"service/js001-bangun.md": {
-	id: "service/js001-bangun.md";
-  slug: "service/js001-bangun";
-  body: string;
-  collection: "post";
-  data: any
-} & { render(): Render[".md"] };
-"service/js002-desain-dan-bangun.md": {
-	id: "service/js002-desain-dan-bangun.md";
-  slug: "service/js002-desain-dan-bangun";
-  body: string;
-  collection: "post";
-  data: any
-} & { render(): Render[".md"] };
 "service/pengurusan-pbg-slf copy.mdx": {
 	id: "service/pengurusan-pbg-slf copy.mdx";
   slug: "service/pengurusan-pbg-slf-copy";
@@ -312,13 +326,6 @@ declare module 'astro:content' {
   collection: "post";
   data: any
 } & { render(): Render[".mdx"] };
-"useful-resources-to-create-websites.md": {
-	id: "useful-resources-to-create-websites.md";
-  slug: "useful-resources-to-create-websites";
-  body: string;
-  collection: "post";
-  data: any
-} & { render(): Render[".md"] };
 };
 
 	};

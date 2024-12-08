@@ -149,31 +149,39 @@ export const headerData = {
       href: getPermalink('/')
     },
     {
-      text: 'Jasa',
-      href: getPermalink('category/jasa')
+      text: 'Konstruksi',
+      href: getPermalink('category/konstruksi')
     },
     {
       text: 'Produk',
-      links: [
-        {
-          text: 'Kanopi',
-          href: getPermalink('/produk/kanopi')
-        },
-        {
-          text: 'Pagar',
-          href: getPermalink('/produk/kanopi')
-        },
-        {
-          text: 'Rangka Atap',
-          href: getPermalink('/produk/kanopi')
-        },
-        {
-          text: 'Partisi',
-          href: getPermalink('/produk/kanopi')
-        },
-        
-      ]
+      href: getPermalink('category/produk')
     },
+    {
+      text: 'Jasa',
+      href: getPermalink('category/jasa')
+    },
+    // {
+    //   text: 'Produk',
+    //   links: [
+    //     {
+    //       text: 'Kanopi',
+    //       href: getPermalink('/produk/kanopi')
+    //     },
+    //     {
+    //       text: 'Pagar',
+    //       href: getPermalink('/produk/kanopi')
+    //     },
+    //     {
+    //       text: 'Rangka Atap',
+    //       href: getPermalink('/produk/kanopi')
+    //     },
+    //     {
+    //       text: 'Partisi',
+    //       href: getPermalink('/produk/kanopi')
+    //     },
+        
+    //   ]
+    // },
     {
       text: 'Properti',
       href: getPermalink('category/properti')
@@ -193,47 +201,41 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Konstruksi',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Rumah', href: '#' },
+        { text: 'Kos-kosan', href: '#' },
+        { text: 'Gudang', href: '#' },
+        { text: 'GOR', href: '#' },
+        { text: 'Kantor', href: '#' },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Produk',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Kanopi', href: '#' },
+        { text: 'Mezzanine', href: '#' },
+        { text: 'Pagar Besi', href: '#' },
+        { text: 'Rangka Atap', href: '#' },
+        { text: 'Sekat/Partisi', href: '#' },
       ],
     },
     {
-      title: 'Support',
+      title: 'Jasa',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'PBG', href: '#' },
+        { text: 'SLF', href: '#' },
+        { text: 'KRK', href: '#' },
       ],
     },
     {
-      title: 'Blog',
+      title: 'Properti',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'Rumah', href: '#' },
+        { text: 'Toko', href: '#' },
+        { text: 'Ruko', href: '#' },
+        { text: 'Gazebo', href: '#' },
+        { text: 'Gudang', href: '#' },
       ],
     },
   ],

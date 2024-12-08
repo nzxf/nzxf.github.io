@@ -7,7 +7,7 @@ code: js001
 title: Bangun Rumah
 excerpt: Sudah punya desain rumah, tapi bingung cari kontraktor yang cocok?
 image: ~/assets/images/service/bangun.png
-category: Jasa
+category: Konstruksi
 price: 3199000
 priceTail: /m2
 tags:
