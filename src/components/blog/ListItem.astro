@@ -71,9 +71,15 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
     </header> -->
 
         <header>
+          {post.status && (
+          <div class="absolute right-[-5px] 2xl:right-[-8px] rtl:right-auto rtl:left-[-8px] rtl:2xl:left-[-10px] top-[-5px] 2xl:top-[-10px] z-[1] h-[100px] w-[100px] overflow-hidden text-right">
+            <span class="absolute top-[19px] right-[-21px] rtl:right-auto rtl:left-[-21px] block w-full rotate-45 rtl:-rotate-45 bg-red-600 text-center text-[12px] font-bold uppercase leading-5 text-white shadow-[0_3px_10px_-5px_rgba(0,0,0,0.3)] before:absolute before:left-0 before:top-full before:z-[-1] before:border-[3px] before:border-r-transparent before:border-b-transparent before:border-l-red-800 before:border-t-green-800 before:content-[''] after:absolute after:right-0 after:top-full after:z-[-1] after:border-[3px] after:border-l-transparent after:border-b-transparent after:border-r-green-800 after:border-t-red-800 after:content-['']">
+              {post.status}
+            </span>
+          </div>
+          )}
           {
             image &&
-                <a class="relative block group" href={link ?? 'javascript:void(0)'}>
                   <div class="relative h-0 pb-[56.25%] md:pb-[75%] md:h-72 lg:pb-[56.25%] overflow-hidden">
                     {image && (
                       <Image
@@ -89,9 +95,8 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
                         format='webp'
                       />
                     )}
-                    {post.status && <p class="absolute bottom-2 right-2 text-xl font-extrabold text-red-500 border-double border-8 px-2 border-red-500 rounded-lg">{post.status.toUpperCase()}</p>}
+                    {/* {post.status && <p class="absolute bottom-2 right-2 text-xl font-extrabold text-red-500 border-double border-8 px-2 border-red-500 rounded-lg">{post.status.toUpperCase()}</p>} */}
                   </div>
-                </a>
             }
         </header>
     

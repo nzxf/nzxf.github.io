@@ -18,7 +18,8 @@ tags:
   - aluminium
   - kaca
 metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
+  canonical: https://mitrabangunkreasi.com/blog/berbagai-macam-jenis-jendela-untuk-inspirasi-2024
+
   
 ---
 

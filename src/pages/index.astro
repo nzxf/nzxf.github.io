@@ -18,6 +18,7 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 // Import Image for Pricing
 import pbg from "~/assets/images/service/pbg.png"
 import product1 from "~/assets/images/product/product1.png"
+import Catalog from '~/components/widgets/Catalog.astro';
 
 const metadata = {
   title: 'Mitra Bangun Kreasi',
@@ -28,6 +29,7 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
+  <!-- image={{ src: '~/assets/images/hero-image.png', alt: 'Mitra Bangun Kreasi Hero Image' }} -->
   <Hero
     actions={[
       {
@@ -44,7 +46,6 @@ const metadata = {
       },
       // { text: 'Read More', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'Mitra Bangun Kreasi Hero Image' }}
   >
     <Fragment slot="title">
       Konstruksi Rumah Yang Berkualitas, <span class="text-red-600 highlight"> Renovasi Yang Berkelas.  </span>
@@ -61,9 +62,49 @@ const metadata = {
 
   <!-- Pricing Widget ******************* -->
 
+  <Catalog
+  title="Produk & Jasa Unggulan MBK"
+  subtitle=""
+  tagline="Harga Miring Kualitas Bersaing"
+  prices={[
+      {
+        title: 'Pagar Besi',
+        image: {
+          src: product1,
+          alt: 'Image of Pagar Besi',
+        },
+        subtitle: 'mulai dari',
+        price: '599.500',
+        period: '/m²',
+        callToAction: {
+          target: '_blank',
+          text: 'Lihat Katalog Pagar',
+          href: '/category/pagar',
+        },
+      },
+      {
+        title: 'Mezzanine',
+        image: {
+          src: product1,
+          alt: 'Image of Mezzanine',
+        },
+        subtitle: 'mulai dari',
+        price: '899.500',
+        period: '/m²',
+        callToAction: {
+          target: '_blank',
+          text: 'Lihat Katalog Mezzanine',
+          href: '/tag/mezzanine',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'Promo',
+      },
+    ]}
+    ></Catalog>
+
   <Pricing
     title="Produk & Jasa Unggulan MBK"
-    subtitle="Dengan pengalaman bertahun-tahun dalam industri konstruksi, kami selalu berkomitmen untuk memberikan hasil terbaik."
+    subtitle=""
     tagline="Harga Miring Kualitas Bersaing"
     prices={[
           {
@@ -363,8 +404,8 @@ const metadata = {
 
   <Features2
     title="Kenapa Mitra Bangun Kreasi (MBK)?"
-    subtitle="Poin lebih MBK dibanding dengan kontraktor lain"
-    tagline="Components"
+    subtitle="Dengan pengalaman bertahun-tahun dalam industri konstruksi, kami selalu berkomitmen untuk memberikan hasil terbaik."
+    tagline=""
     columns={2}
     items={[
       {
@@ -559,15 +600,6 @@ const metadata = {
       'alt': 'Fani Nursyifa Image'
     }
   },
-  {
-    'testimonial': 'Setelah proyek selesai, MBK masih ngontak saya buat nanya kabar. Mereka kasih tips perawatan juga. Ini sih pelayanan yang bikin hati adem!',
-    'name': 'Eko Susanto',
-    'job': 'Jl. Jendral Sudirman No. 30, Kota Yogyakarta, DI Yogyakarta',
-    'image': {
-       'src': 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-       'alt': 'Eko Susanto Image'
-     }
-   }
 ]
 }
   />
@@ -614,7 +646,7 @@ images={[
 
   <BlogLatestPosts
     title="Cari Tahu Lebih Banyak Tentang Konstruksi Bersama MBK"
-    information={`Kami akan terus mengupdate blog dan produk berdasarkan trend dan lifestyle terbaru                `}
+    information={`Kami akan terus mengupdate blog dan produk berdasarkan trend dan lifestyle terbaru`}
   />
 
   <!-- CallToAction Widget *********** -->

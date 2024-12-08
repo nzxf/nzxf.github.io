@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-11-12T00:00:00Z
-author: zan
+author: Admin MBK
 title: Berbagai macam jenis jendela untuk inspirasi 2024
 excerpt: Berbagai macam jenis jendela untuk inspirasi 2024
 image: https://images.unsplash.com/photo-1509644851169-2acc08aa25b5
@@ -10,7 +10,7 @@ tags:
   - aluminium
   - kaca
 metadata:
-  canonical: https://mitrabangunkreasi.com/blog/jendela
+  canonical: https://mitrabangunkreasi.com/blog/berbagai-macam-jenis-jendela-untuk-inspirasi-2024
   
 ---
 Jendela sliding yang terbuat dari aluminium dan kaca semakin populer di Indonesia, terutama dalam desain rumah modern. Meskipun memiliki banyak keuntungan, jendela ini juga memiliki beberapa kelemahan. Berikut adalah analisis positif dan negatif dari jendela sliding aluminium dan kaca.
