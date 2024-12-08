@@ -95,7 +95,14 @@ const { post, url } = Astro.props;
               decoding="async"
               format='webp'
             />
-            {post.status && <p class="absolute bottom-3 right-8 text-3xl font-extrabold text-red-500 border-double border-8 px-2 border-red-500 rounded-lg">{post.status.toUpperCase()}</p>}
+            {
+              post.status && (
+                <div class="absolute inset-0 bg-gray-700 opacity-50 rounded-md"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <h2 class="text-gray-100 text-4xl font-extrabold">{post.status.toUpperCase()}</h2>
+                </div>
+              )
+            }
           </div>
         ) : (
           <div class="max-w-3xl mx-auto px-4 sm:px-6">
@@ -179,24 +186,42 @@ const { post, url } = Astro.props;
       
     {
       post.code && (   
-        <CallToAction
-          actions={[
-            {
-              variant: 'primary',
-              text: 'Hubungi MBK',
-              href: 'https://wa.me/6285176712656?text=MBK,%20saya%20tertarik%20dengan%20' + post.code.toUpperCase() + ": " + post.title,
-              target: '_blank',
-              icon: 'tabler:brand-whatsapp'
-            },
-          ]}
-          >
-          <Fragment slot="title">
-            Tertarik dengan {post.category?.title.toLowerCase()} ini?<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
-          </Fragment>
-          <Fragment slot="subtitle">
-            Tunggu apa lagi, langsung klik tombol di bawah untuk membeli {post.category?.title.toLowerCase()}: {post.title}.
-          </Fragment>
-        </CallToAction>
+        post.code && post.status?  (
+          <CallToAction          >
+            <Fragment slot="title">
+              Tertarik dengan {post.category?.title.toLowerCase()} ini?<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
+            </Fragment>
+            <Fragment slot="subtitle">
+              Mohon maaf {post.category?.title.toLowerCase()} sudah {post.status.toLowerCase()}
+            </Fragment>
+          </CallToAction>
+        ): (
+          <CallToAction
+            actions={[
+              {
+                variant: 'primary',
+                text: 'Jadwalkan Survey',
+                href: 'https://wa.me/6285176712656?text=MBK,%20saya%20mau%20jadwalkan%20survey%20untuk%20' + post.code.toUpperCase() + ": " + post.title,
+                target: '_blank',
+                icon: 'tabler:calendar-plus'
+              },
+              {
+                variant: 'primary',
+                text: 'Tanyakan ini',
+                href: 'https://wa.me/6285176712656?text=MBK,%20saya%20mau%20tanya%20tentang%20' + post.code.toUpperCase() + ": " + post.title,
+                target: '_blank',
+                icon: 'tabler:message'
+              },
+            ]}
+            >
+              <Fragment slot="title">
+                Tertarik dengan {post.category?.title.toLowerCase()}?<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
+              </Fragment>
+              <Fragment slot="subtitle">
+                Tunggu apa lagi, langsung klik tombol di bawah ini.
+              </Fragment>
+            </CallToAction>
+          )
       )
     }
     </div>

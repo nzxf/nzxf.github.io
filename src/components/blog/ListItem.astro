@@ -30,7 +30,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
   class={`h-full gap-4 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade`}
 >
   <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm">
-    
+   
     <!-- <header>
       <div class="mb-2">
         <span class="text-sm">
@@ -71,13 +71,6 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
     </header> -->
 
         <header>
-          {post.status && (
-          <div class="absolute right-[-5px] 2xl:right-[-8px] rtl:right-auto rtl:left-[-8px] rtl:2xl:left-[-10px] top-[-5px] 2xl:top-[-10px] z-[1] h-[100px] w-[100px] overflow-hidden text-right">
-            <span class="absolute top-[19px] right-[-21px] rtl:right-auto rtl:left-[-21px] block w-full rotate-45 rtl:-rotate-45 bg-red-600 text-center text-[12px] font-bold uppercase leading-5 text-white shadow-[0_3px_10px_-5px_rgba(0,0,0,0.3)] before:absolute before:left-0 before:top-full before:z-[-1] before:border-[3px] before:border-r-transparent before:border-b-transparent before:border-l-red-800 before:border-t-green-800 before:content-[''] after:absolute after:right-0 after:top-full after:z-[-1] after:border-[3px] after:border-l-transparent after:border-b-transparent after:border-r-green-800 after:border-t-red-800 after:content-['']">
-              {post.status}
-            </span>
-          </div>
-          )}
           {
             image &&
                   <div class="relative h-0 pb-[56.25%] md:pb-[75%] md:h-72 lg:pb-[56.25%] overflow-hidden">
@@ -93,9 +86,17 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
                         loading="lazy"
                         decoding="async"
                         format='webp'
-                      />
-                    )}
+                        />
+                      )}
                     {/* {post.status && <p class="absolute bottom-2 right-2 text-xl font-extrabold text-red-500 border-double border-8 px-2 border-red-500 rounded-lg">{post.status.toUpperCase()}</p>} */}
+                    {
+                      post.status && (
+                        <div class="absolute inset-0 bg-gray-700 opacity-50 rounded-md"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                          <h2 class="text-gray-100 text-2xl font-extrabold">{post.status.toUpperCase()}</h2>
+                        </div>
+                      )
+                    }
                   </div>
             }
         </header>
