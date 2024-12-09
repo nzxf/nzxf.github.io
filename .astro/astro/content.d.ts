@@ -200,34 +200,6 @@ declare module 'astro:content' {
   collection: "post";
   data: any
 } & { render(): Render[".mdx"] };
-"product/jj003 copy 2.md": {
-	id: "product/jj003 copy 2.md";
-  slug: "product/jj003-copy-2";
-  body: string;
-  collection: "post";
-  data: any
-} & { render(): Render[".md"] };
-"product/jj003 copy 3.md": {
-	id: "product/jj003 copy 3.md";
-  slug: "product/jj003-copy-3";
-  body: string;
-  collection: "post";
-  data: any
-} & { render(): Render[".md"] };
-"product/jj003 copy 4.md": {
-	id: "product/jj003 copy 4.md";
-  slug: "product/jj003-copy-4";
-  body: string;
-  collection: "post";
-  data: any
-} & { render(): Render[".md"] };
-"product/jj003 copy 5.md": {
-	id: "product/jj003 copy 5.md";
-  slug: "product/jj003-copy-5";
-  body: string;
-  collection: "post";
-  data: any
-} & { render(): Render[".md"] };
 "product/jj003 copy.md": {
 	id: "product/jj003 copy.md";
   slug: "product/jj003-copy";

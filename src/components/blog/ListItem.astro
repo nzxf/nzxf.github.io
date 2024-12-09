@@ -194,7 +194,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
           <div class="mt-2 flex justify-center items-center">
             <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
             <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
-            <span class="text-gray-500 text-center font-bold text-sm line-through">{post.priceTail}</span>
+            <span class="text-sm">{post.priceTail}</span>
             {post.price && 
               <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
             }
@@ -204,7 +204,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
           <div class="flex justify-center items-center">
             <span class="font-bold text-2xl">Rp</span>
             <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
-            <span class="font-bold text-2xl">{post.priceTail}</span>
+            <span class="text-sm">{post.priceTail}</span>
           </div>
         }  
     </div>

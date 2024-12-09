@@ -8,9 +8,9 @@ title: Bangun Gudang Industrial
 excerpt: Usaha anda butuh ruang yand besar dan sirkulasi udara yang bagus?
 image: ~/assets/images/konstruksi/kn003.jpg
 category: Konstruksi
-price: 7995000
-priceBefore: 8249000
-priceTail: /m2
+price: 15000
+priceBefore: 25000
+priceTail: /kg
 tags:
   - bangun
   - kantor

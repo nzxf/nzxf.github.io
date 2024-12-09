@@ -37,12 +37,14 @@ const metadata = {
         text: 'Jadwalkan Survey',
         href: `https://wa.me/6285176712656?text=MBK,%20saya%20mau%20survey%20...`,
         target: '_blank',
+        icon: 'tabler:calendar-plus'
       },
       {
         variant: 'primary',
-        text: 'Mau Tanya',
+        text: 'Mau Konsultasi',
         href: `https://wa.me/6285176712656?text=MBK,%20saya%20mau%20tanya%20...`,
         target: '_blank',
+        icon: 'tabler:message'
       },
       // { text: 'Read More', href: '#features' },
     ]}
@@ -94,10 +96,25 @@ const metadata = {
         callToAction: {
           target: '_blank',
           text: 'Lihat Katalog Mezzanine',
-          href: '/tag/mezzanine',
+          href: '/category/mezzanine',
         },
         hasRibbon: true,
         ribbonTitle: 'Promo',
+      },
+      {
+        title: 'Kanopi/Carport',
+        image: {
+          src: product1,
+          alt: 'Image of Kanopi/Carport',
+        },
+        subtitle: 'mulai dari',
+        price: '499.500',
+        period: '/m²',
+        callToAction: {
+          target: '_blank',
+          text: 'Lihat Katalog Kanopi',
+          href: '/category/kanopi',
+        },
       },
     ]}
     ></Catalog>
@@ -646,7 +663,7 @@ images={[
 
   <BlogLatestPosts
     title="Cari Tahu Lebih Banyak Tentang Konstruksi Bersama MBK"
-    information={`Kami akan terus mengupdate blog dan produk berdasarkan trend dan lifestyle terbaru`}
+    information={`Kami akan terus mengupdate blog dan produk konstrukis berdasarkan trend dan lifestyle terbaru`}
   />
 
   <!-- CallToAction Widget *********** -->
@@ -656,7 +673,7 @@ images={[
       {
         variant: 'primary',
         text: 'Hubungi MBK',
-        href: 'https://wa.me/6285176712656?text=MBK,%20saya%20mau%20survey%20...',
+        href: 'https://wa.me/6285176712656?text=MBK,%20saya%20mau%buat%20...',
         target: '_blank',
         icon: 'tabler:brand-whatsapp',
       },
@@ -666,7 +683,7 @@ images={[
       Punya budget terbatas?<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
     </Fragment>
     <Fragment slot="subtitle">
-      Tenang saja, kami bisa bantu menyesuaikan dengan budget yang ada.
+      MBK bisa bantu memaksimalkan penggunaan budget yang ada.
     </Fragment>
   </CallToAction>
 

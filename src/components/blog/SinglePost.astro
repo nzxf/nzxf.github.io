@@ -82,15 +82,17 @@ const { post, url } = Astro.props;
 
       {
         post.image ? (
-          <div class="relative max-w-3xl mx-auto px-4 sm:px-6">
+          <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="relative">
             <Image
               src={post.image}
               alt={post?.title || ''}
-              class=" max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400 dark:bg-slate-700"
+              class="max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400 dark:bg-slate-700"
               widths={[400, 900]}
               sizes="(max-width: 900px) 400px, 900px"
               width={900}
               height={900}
+              aspectRatio="1:1"
               loading="eager"
               decoding="async"
               format='webp'
@@ -99,11 +101,12 @@ const { post, url } = Astro.props;
               post.status && (
                 <div class="absolute inset-0 bg-gray-700 opacity-50 rounded-md"></div>
                 <div class="absolute inset-0 flex items-center justify-center">
-                  <h2 class="text-gray-100 text-4xl font-extrabold">{post.status.toUpperCase()}</h2>
+                  <h2 class="text-gray-100 text-6xl font-extrabold">{post.status.toUpperCase()}</h2>
                 </div>
               )
             }
           </div>
+        </div>
         ) : (
           <div class="max-w-3xl mx-auto px-4 sm:px-6">
             <div class="border-t dark:border-slate-700" />

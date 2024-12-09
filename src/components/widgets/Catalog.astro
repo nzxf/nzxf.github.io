@@ -19,7 +19,7 @@ const {
 } = Astro.props;
 ---
 
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline}/>
   <div class="flex items-stretch justify-center">
     <div class="grid grid-cols-2 gap-4 dark:text-white sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
@@ -36,34 +36,27 @@ const {
                       </span>
                     </div>
                   )}
-                  <div class="px-2 py-0">
+                  <div>
                     {title && (
-                      <h3 class="text-center text-2xl font-extrabold uppercase leading-9 mb-6">{title}</h3>
+                      <h3 class="text-center text-2xl font-extrabold uppercase leading-9 mb-2">{title}</h3>
                     )}
                     {image && (
-                      <div class="flex justify-center my-5 rounded-md">
-                        {/* <Image 
-                          src={image.src}
-                          alt={image.alt || ''}
-                          width={400}
-                          height={400}
-                          format='webp'
-                          /> */}
+                      <div class="flex justify-center my-2 rounded-md">
                         <Image
                           src={image.src}
                           alt={image.alt || ''}
                           class=" max-w-full mx-auto mb-6 sm:rounded-md bg-gray-400 dark:bg-slate-700"
-                          widths={[400, 900]}
-                          sizes="(max-width: 900px) 400px, 900px"
+                          widths={[400, 700]}
+                          sizes="(max-width: 700px) 400px, 700px"
                           width={400}
-                          height={900}
+                          height={700}
                           loading="eager"
                           decoding="async"
                           format='webp'
                         />
                       </div>
                     )}               
-                    {subtitle && <span class="font-light sm:text-small text-black-400 dark:text-slate-400">{subtitle}</span>}
+                    {subtitle && <span class="font-bold text-sm sm:text-small text-black-400 dark:text-slate-400">{subtitle}</span>}
                     <div>
                       <div class="flex items-center justify-center text-center mb-1">
                         <span class="text 4xl">Rp</span>
