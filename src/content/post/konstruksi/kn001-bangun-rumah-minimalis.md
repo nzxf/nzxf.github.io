@@ -2,20 +2,22 @@
 publishDate: 2024-07-22T00:00:00Z
 
 author: Zan
-code: js001
+code: kn001
 
-title: Bangun Rumah
+title: Bangun Rumah Minimalis
 excerpt: Sudah punya desain rumah, tapi bingung cari kontraktor yang cocok?
-image: ~/assets/images/service/bangun.png
+image: ~/assets/images/konstruksi/kn001.png
 category: Konstruksi
 price: 3199000
+priceBefore: 3499000
 priceTail: /m2
-tags:
-  - bangun
-  - rumah
+# tags:
+#   - bangun
+#   - rumah
 
 metadata:
-  canonical: https://mitrabangunkreasi.com/b/bn001-rumah-modern-minimalis
+  canonical: https://mitrabangunkreasi.com/p/kn001-bangun-rumah-minimalis
+
 ---
 
 ## Deskripsi

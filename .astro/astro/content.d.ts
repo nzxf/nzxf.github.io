@@ -156,182 +156,189 @@ declare module 'astro:content' {
   slug: "astrowind-template-in-depth";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".mdx"] };
 "blog/jendela.md": {
 	id: "blog/jendela.md";
   slug: "blog/jendela";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "get-started-website-with-astro-tailwind-css.md": {
 	id: "get-started-website-with-astro-tailwind-css.md";
   slug: "get-started-website-with-astro-tailwind-css";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
-"konstruksi/js001-desain-dan-bangun-rumah.md": {
-	id: "konstruksi/js001-desain-dan-bangun-rumah.md";
-  slug: "konstruksi/js001-desain-dan-bangun-rumah";
+"konstruksi/kn001-bangun-rumah-minimalis.md": {
+	id: "konstruksi/kn001-bangun-rumah-minimalis.md";
+  slug: "konstruksi/kn001-bangun-rumah-minimalis";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
-"konstruksi/js002-desain-dan-bangun-gudang.md": {
-	id: "konstruksi/js002-desain-dan-bangun-gudang.md";
-  slug: "konstruksi/js002-desain-dan-bangun-gudang";
+"konstruksi/kn002-bangun-kantor-modern.md": {
+	id: "konstruksi/kn002-bangun-kantor-modern.md";
+  slug: "konstruksi/kn002-bangun-kantor-modern";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
+} & { render(): Render[".md"] };
+"konstruksi/kn003-bangun-gudang-industrial.md": {
+	id: "konstruksi/kn003-bangun-gudang-industrial.md";
+  slug: "konstruksi/kn003-bangun-gudang-industrial";
+  body: string;
+  collection: "post";
+  data: any
 } & { render(): Render[".md"] };
 "markdown-elements-demo-post.mdx": {
 	id: "markdown-elements-demo-post.mdx";
   slug: "markdown-elements-demo-post";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".mdx"] };
 "product/jj003 copy 2.md": {
 	id: "product/jj003 copy 2.md";
   slug: "product/jj003-copy-2";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "product/jj003 copy 3.md": {
 	id: "product/jj003 copy 3.md";
   slug: "product/jj003-copy-3";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "product/jj003 copy 4.md": {
 	id: "product/jj003 copy 4.md";
   slug: "product/jj003-copy-4";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "product/jj003 copy 5.md": {
 	id: "product/jj003 copy 5.md";
   slug: "product/jj003-copy-5";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "product/jj003 copy.md": {
 	id: "product/jj003 copy.md";
   slug: "product/jj003-copy";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "product/jj003.md": {
 	id: "product/jj003.md";
   slug: "product/jj003";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "property/rm001.md": {
 	id: "property/rm001.md";
   slug: "property/rm001";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "property/rm002.md": {
 	id: "property/rm002.md";
   slug: "property/rm002";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "property/rm003.md": {
 	id: "property/rm003.md";
   slug: "property/rm003";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "property/rm004.md": {
 	id: "property/rm004.md";
   slug: "property/rm004";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "property/rm005.md": {
 	id: "property/rm005.md";
   slug: "property/rm005";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "property/rm006.md": {
 	id: "property/rm006.md";
   slug: "property/rm006";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "property/rm007.md": {
 	id: "property/rm007.md";
   slug: "property/rm007";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "property/rm008.md": {
 	id: "property/rm008.md";
   slug: "property/rm008";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "property/rm009.md": {
 	id: "property/rm009.md";
   slug: "property/rm009";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "property/rm010.md": {
 	id: "property/rm010.md";
   slug: "property/rm010";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "property/rm011.md": {
 	id: "property/rm011.md";
   slug: "property/rm011";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "property/rm012.md": {
 	id: "property/rm012.md";
   slug: "property/rm012";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "service/pengurusan-pbg-slf copy.mdx": {
 	id: "service/pengurusan-pbg-slf copy.mdx";
   slug: "service/pengurusan-pbg-slf-copy";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".mdx"] };
 "service/sample-service-jasa.mdx": {
 	id: "service/sample-service-jasa.mdx";
   slug: "service/sample-service-jasa";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".mdx"] };
 };
 
@@ -343,5 +350,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = never;
 }

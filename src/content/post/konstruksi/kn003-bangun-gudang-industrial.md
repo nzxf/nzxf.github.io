@@ -2,21 +2,21 @@
 publishDate: 2024-07-22T00:00:00Z
 
 author: Zan
-code: js002
+code: kn003
 
-title: Desain dan Bangun Rumah
-excerpt: Mau paket lengkap desain dan bangun rumah impian anda?
-image: ~/assets/images/service/desain.webp
+title: Bangun Gudang Industrial
+excerpt: Usaha anda butuh ruang yand besar dan sirkulasi udara yang bagus?
+image: ~/assets/images/konstruksi/kn003.jpg
 category: Konstruksi
-price: 3499000
+price: 7995000
+priceBefore: 8249000
 priceTail: /m2
 tags:
-  - desain
   - bangun
-  - rumah
+  - kantor
 
 metadata:
-  canonical: https://mitrabangunkreasi.com/b/bn001-rumah-modern-minimalis
+  canonical: https://mitrabangunkreasi.com/p/kn003-bangun-gudang-industrial
 ---
 
 ## Deskripsi

@@ -4,7 +4,7 @@ author: Zan
 
 code: JJ003
 title: Jendela Aluminium Kaca
-excerpt: Ukuran Tinggi 100 cm x Lebar 60 cm
+excerpt: Tinggi 100 cm x Lebar 60 cm
 
 
 price: 900000

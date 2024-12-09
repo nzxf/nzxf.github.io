@@ -69,11 +69,11 @@ const { post, url } = Astro.props;
             ) : (
               post.readingTime && (
                 <>
-                    {' '}
-                    ·{' '}
-                    <Icon name="tabler:clock" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
-                    <span>Waktu Baca {post.readingTime}</span> menit
-                  </>
+                  {' '}
+                  ·{' '}
+                  <Icon name="tabler:clock" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
+                  <span>Waktu Baca {post.readingTime}</span> menit
+                </>
                 )
               )
           }
@@ -215,10 +215,10 @@ const { post, url } = Astro.props;
             ]}
             >
               <Fragment slot="title">
-                Tertarik dengan {post.category?.title.toLowerCase()}?<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
+                Tertarik dengan {post.category?.title.toLowerCase()} ini?<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
               </Fragment>
               <Fragment slot="subtitle">
-                Tunggu apa lagi, langsung klik tombol di bawah ini.
+                Tunggu apa lagi, langsung klik tombol di bawah.
               </Fragment>
             </CallToAction>
           )
