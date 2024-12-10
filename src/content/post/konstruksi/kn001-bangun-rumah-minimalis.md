@@ -10,7 +10,7 @@ image: ~/assets/images/konstruksi/kn001.png
 category: Konstruksi
 price: 3199000
 priceBefore: 3499000
-priceTail: /m2
+priceTail: /m²
 # tags:
 #   - bangun
 #   - rumah

@@ -13,12 +13,19 @@ priceBefore: 25000
 priceTail: /kg
 tags:
   - bangun
-  - kantor
+  - gudang
+  - industri
 
 metadata:
   canonical: https://mitrabangunkreasi.com/p/kn003-bangun-gudang-industrial
 ---
 
-## Deskripsi
+## Pilihan Besi Baja Struktural
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Besi struktural adalah baja pendukung yang utamanya digunakan untuk keperluan struktural dan konstruksi. Oleh sebab itu besi struktural juga bisa disebut dengan kanal besi. Penggunaan besi struktural disesuaikan dengan proyek pembangunannya. Besi
+
+1. Wide Flange (WF)
+2. U Channel atau Kanal U/UNP
+3. C Channel (Kanal C, CNP)
+4. Besi Hollow Besar / Rectangular Hollow Section
+5. Pipa Besi / Steel Pipe

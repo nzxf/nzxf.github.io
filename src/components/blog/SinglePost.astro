@@ -87,9 +87,9 @@ const { post, url } = Astro.props;
             <Image
               src={post.image}
               alt={post?.title || ''}
-              class="max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400 dark:bg-slate-700"
-              widths={[400, 900]}
-              sizes="(max-width: 900px) 400px, 900px"
+              class="max-w-full lg:max-w-[1200px] mx-auto mb-6 rounded-md sm:rounded-lg bg-gray-400 dark:bg-slate-700"
+              widths={[600, 900]}
+              sizes="(max-width: 1200px) 600px, 1200px"
               width={900}
               height={900}
               aspectRatio="1:1"
@@ -99,9 +99,10 @@ const { post, url } = Astro.props;
             />
             {
               post.status && (
-                <div class="absolute inset-0 bg-gray-700 opacity-50 rounded-md"></div>
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <h2 class="text-gray-100 text-6xl font-extrabold">{post.status.toUpperCase()}</h2>
+                <div class="absolute inset-0 bg-gray-900 opacity-80 rounded-t-lg"></div>
+                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                  <h2 class="text-gray-100 text-3xl lg:text-4xl font-extrabold">{post.category?.title.toUpperCase()}</h2>
+                  <h2 class="text-gray-100 text-3xl lg:text-4xl font-extrabold">{post.status.toUpperCase()}</h2>
                 </div>
               )
             }
@@ -118,12 +119,12 @@ const { post, url } = Astro.props;
     </header>
 
     <div
-      class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px] prose-li:my-0"
+      class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-2 prose-headings:scroll-mt-[80px] prose-li:my-0"
     >
 
     <div class="flex flex-col">
       {post.price && 
-        <h2>Harga</h2>
+        <h2>HARGA</h2>
       }
       {post.priceBefore && 
         <div class="pl-3 flex">

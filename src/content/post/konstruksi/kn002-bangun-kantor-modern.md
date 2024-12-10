@@ -10,7 +10,7 @@ image: ~/assets/images/konstruksi/kn002.webp
 category: Konstruksi
 price: 4499000
 priceBefore: 5249000
-priceTail: /m2
+priceTail: /m²
 tags:
   - bangun
   - kantor

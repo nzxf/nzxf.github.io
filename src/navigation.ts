@@ -95,11 +95,11 @@ export const headerData = {
     //     },
     //     {
     //       text: 'Kategori: Blog',
-    //       href: getPermalink('tutorials', 'category'),
+    //       href: getPermalink('tutorials', 'kategori'),
     //     },
     //     {
     //       text: 'Kategori: Produk & Jasa',
-    //       href: getPermalink('produk-and-jasa', 'category'),
+    //       href: getPermalink('produk-and-jasa', 'kategori'),
     //     },
     //     {
     //       text: 'Article',
@@ -120,29 +120,29 @@ export const headerData = {
     //   links: [
     //     {
     //       text: 'Article',
-    //       href: getPermalink('category/article')
+    //       href: getPermalink('kategori/article')
     //     },
     //     {
     //       text: 'Jasa',
-    //       href: getPermalink('category/service')
+    //       href: getPermalink('kategori/service')
     //     },
     //     {
     //       text: 'Produk',
-    //       href: getPermalink('category/product')
+    //       href: getPermalink('kategori/product')
     //     },
     //     {
     //       text: 'Properti',
-    //       href: getPermalink('category/property')
+    //       href: getPermalink('kategori/property')
     //     },
     //   ]
     // },
     // {
     //   text: 'Produk & Jasa',
-    //   href: getPermalink('/category/produk-and-jasa'),
+    //   href: getPermalink('/kategori/produk-and-jasa'),
     // },
     // {
     //   text: 'Blog',
-    //   href: getPermalink('/category/blog'),
+    //   href: getPermalink('/kategori/blog'),
     // },
     {
       text: 'Home',
@@ -150,49 +150,75 @@ export const headerData = {
     },
     {
       text: 'Konstruksi',
-      href: getPermalink('category/konstruksi')
-    },
-    {
-      text: 'Produk',
-      href: getPermalink('category/produk')
+      href: getPermalink('/kategori/konstruksi')
     },
     {
       text: 'Jasa',
-      href: getPermalink('category/jasa')
+      href: getPermalink('/kategori/jasa')
     },
     // {
     //   text: 'Produk',
-    //   links: [
-    //     {
-    //       text: 'Kanopi',
-    //       href: getPermalink('/produk/kanopi')
-    //     },
-    //     {
-    //       text: 'Pagar',
-    //       href: getPermalink('/produk/kanopi')
-    //     },
-    //     {
-    //       text: 'Rangka Atap',
-    //       href: getPermalink('/produk/kanopi')
-    //     },
-    //     {
-    //       text: 'Partisi',
-    //       href: getPermalink('/produk/kanopi')
-    //     },
-        
-    //   ]
+    //   href: getPermalink('kategori/produk')
     // },
     {
+      text: 'Produk',
+      links: [
+        {
+          text: 'Kanopi',
+          href: getPermalink('/kategori/kanopi')
+        },
+        {
+          text: 'Pagar',
+          href: getPermalink('/kategori/pagar')
+        },
+        {
+          text: 'Mezzanine',
+          href: getPermalink('/kategori/mezzanine')
+        },
+        {
+          text: 'Rangka',
+          href: getPermalink('/kategori/rangka')
+        },
+        {
+          text: 'Partisi',
+          href: getPermalink('/kategori/partisi')
+        },
+        
+      ]
+    },
+    {
       text: 'Properti',
-      href: getPermalink('category/properti')
+      href: getPermalink('/kategori/properti')
     },
     {
       text: 'Blog',
-      href: getPermalink('category/blog')
+      href: getPermalink('/kategori/blog')
     },
     {
       text: 'Tentang',
-      href: getPermalink('/about'),
+      links: [
+        {
+          text: 'Kontak',
+          href: getPermalink('/kontak')
+        },
+        {
+          text: 'Alamat',
+          href: getPermalink('/alamat')
+        },
+        {
+          text: 'Sosial Media',
+          href: getPermalink('/sosial')
+        },
+        {
+          text: 'Testimoni',
+          href: getPermalink('/testimoni')
+        },
+        {
+          text: 'Klien',
+          href: getPermalink('/klien')
+        },
+        
+      ]
     },
   ],
   actions: [{ text: 'Whatsapp', href: 'https://wa.me/6285176712656', target: '_blank' }],
@@ -213,11 +239,11 @@ export const footerData = {
     {
       title: 'Produk',
       links: [
-        { text: 'Kanopi', href: '#' },
-        { text: 'Mezzanine', href: '#' },
-        { text: 'Pagar Besi', href: '#' },
-        { text: 'Rangka Atap', href: '#' },
-        { text: 'Sekat/Partisi', href: '#' },
+        { text: 'Kanopi/carport', href: '/kategori/kanopi' },
+        { text: 'Pagar Besi', href: '/kategori/pagar' },
+        { text: 'Mezzanine', href: '/kategori/mezzanine' },
+        { text: 'Rangka Atap', href: '/kategori/rangka' },
+        { text: 'Sekat/Partisi', href: '/kategori/partisi' },
       ],
     },
     {
