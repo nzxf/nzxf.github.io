@@ -3,7 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 // import Note from '~/components/widgets/Note.astro';
-import Pricing from '~/components/widgets/Pricing.astro';
+// import Pricing from '~/components/widgets/Pricing.astro';
 // import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
@@ -16,12 +16,20 @@ import Brands from '~/components/widgets/Brands.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 // Import Image for Pricing
-import pbg from "~/assets/images/service/pbg.png"
 import product1 from "~/assets/images/product/product1.png"
 import Catalog from '~/components/widgets/Catalog.astro';
 
+import logoBi from "~/assets/images/klien/logoBi.png"
 import logoBni from "~/assets/images/klien/logoBni.png"
 import logoBri from "~/assets/images/klien/logoBri.png"
+import logoAngkasaPura from "~/assets/images/klien/logoAngkasaPura.png"
+import logoPaBantul from "~/assets/images/klien/logoPaBantul.png"
+import logoRskbSinduadi from "~/assets/images/klien/logoRskbSinduadi.png"
+import logoBaleTimoho from "~/assets/images/klien/logoBaleTimoho.png"
+import logoSangTimur from "~/assets/images/klien/logoSangTimur.png"
+import logoTarakanita from "~/assets/images/klien/logoTarakanita.png"
+
+
 
 const metadata = {
   title: 'Mitra Bangun Kreasi',
@@ -68,7 +76,7 @@ const metadata = {
   <!-- Pricing Widget ******************* -->
 
   <Catalog
-  title="Produk & Jasa Unggulan MBK"
+  title="Katalog Produk & Jasa Unggulan MBK"
   subtitle=""
   tagline="Harga Miring Kualitas Bersaing"
   prices={[
@@ -84,7 +92,7 @@ const metadata = {
         callToAction: {
           target: '_blank',
           text: 'Lihat Katalog Pagar',
-          href: '/category/pagar',
+          href: '/kategori/pagar',
         },
       },
       {
@@ -99,10 +107,10 @@ const metadata = {
         callToAction: {
           target: '_blank',
           text: 'Lihat Katalog Mezzanine',
-          href: '/category/mezzanine',
+          href: '/kategori/mezzanine',
         },
         hasRibbon: true,
-        ribbonTitle: 'Promo',
+        ribbonTitle: 'Terlaris',
       },
       {
         title: 'Kanopi/Carport',
@@ -116,114 +124,107 @@ const metadata = {
         callToAction: {
           target: '_blank',
           text: 'Lihat Katalog Kanopi',
-          href: '/category/kanopi',
+          href: '/kategori/kanopi',
+        },
+      },
+      {
+        title: 'Pagar Besi',
+        image: {
+          src: product1,
+          alt: 'Image of Pagar Besi',
+        },
+        subtitle: 'mulai dari',
+        price: '599.500',
+        period: '/m²',
+        callToAction: {
+          target: '_blank',
+          text: 'Lihat Katalog Pagar',
+          href: '/kategori/pagar',
+        },
+      },
+      {
+        title: 'Mezzanine',
+        image: {
+          src: product1,
+          alt: 'Image of Mezzanine',
+        },
+        subtitle: 'mulai dari',
+        price: '899.500',
+        period: '/m²',
+        callToAction: {
+          target: '_blank',
+          text: 'Lihat Katalog Mezzanine',
+          href: '/kategori/mezzanine',
+        },
+      },
+      {
+        title: 'Kanopi/Carport',
+        image: {
+          src: product1,
+          alt: 'Image of Kanopi/Carport',
+        },
+        subtitle: 'mulai dari',
+        price: '499.500',
+        period: '/m²',
+        callToAction: {
+          target: '_blank',
+          text: 'Lihat Katalog Kanopi',
+          href: '/kategori/kanopi',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'Promo',
+      },
+      {
+        title: 'Pagar Besi',
+        image: {
+          src: product1,
+          alt: 'Image of Pagar Besi',
+        },
+        subtitle: 'mulai dari',
+        price: '599.500',
+        period: '/m²',
+        callToAction: {
+          target: '_blank',
+          text: 'Lihat Katalog Pagar',
+          href: '/kategori/pagar',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'Terbaru',
+      },
+      {
+        title: 'Mezzanine',
+        image: {
+          src: product1,
+          alt: 'Image of Mezzanine',
+        },
+        subtitle: 'mulai dari',
+        price: '899.500',
+        period: '/m²',
+        callToAction: {
+          target: '_blank',
+          text: 'Lihat Katalog Mezzanine',
+          href: '/kategori/mezzanine',
+        },
+      },
+      {
+        title: 'Kanopi/Carport',
+        image: {
+          src: product1,
+          alt: 'Image of Kanopi/Carport',
+        },
+        subtitle: 'mulai dari',
+        price: '499.500',
+        period: '/m²',
+        callToAction: {
+          target: '_blank',
+          text: 'Lihat Katalog Kanopi',
+          href: '/kategori/kanopi',
         },
       },
     ]}
     ></Catalog>
 
-  <Pricing
-    title="Produk & Jasa Unggulan MBK"
-    subtitle=""
-    tagline="Harga Miring Kualitas Bersaing"
-    prices={[
-          {
-          image: {
-            src: pbg,
-            alt: 'Paypal',
-          },
-          title: ['Pengurusan PBG & SLF'],
-          subtitle: 'mulai dari',
-          price: '6.999.500',
-          period: '/rmh',
-          callToAction: {
-            target: '_blank',
-            text: 'Lihat Detail Jasa',
-            href: '/p/pengurusan-pbg-slf',
-          },
-        },
-          {
-          image: {
-            src: product1,
-            alt: 'Paypal',
-          },
-          title: 'Desain & Bangun Rumah',
-          subtitle: 'mulai dari',
-          price: '3.199.500',
-          period: '/m²',
-          callToAction: {
-            target: '_blank',
-            text: 'Lihat Detail Jasa',
-            href: '/p/bangun-rumah',
-          },
-        },
-        {
-          title: 'Pagar Besi',
-          image: {
-            src: product1,
-            alt: 'Paypal',
-          },
-          subtitle: 'mulai dari',
-          price: '599.500',
-          period: '/m²',
-          callToAction: {
-            target: '_blank',
-            text: 'Lihat Katalog Pagar',
-            href: '/tag/pagar',
-          },
-        },
-        {
-          title: 'Mezzanine',
-          image: {
-            src: product1,
-            alt: 'Paypal',
-          },
-          subtitle: 'mulai dari',
-          price: '899.500',
-          period: '/m²',
-          callToAction: {
-            target: '_blank',
-            text: 'Lihat Katalog Mezzanine',
-            href: '/tag/mezzanine',
-          },
-          hasRibbon: true,
-          ribbonTitle: 'Promo',
-        },
-        {
-          image: {
-            src: product1,
-            alt: 'Paypal',
-          },
-          title: 'Kanopi/Carport',
-          subtitle: 'mulai dari',
-          price: '349.500',
-          period: '/m²',
-          callToAction: {
-            target: '_blank',
-            text: 'Lihat Katalog Kanopi',
-            href: '/tag/kanopi',
-          },
-          hasRibbon: true,
-          ribbonTitle: 'Terlaris',
-        },
-        {
-          image: {
-            src: product1,
-            alt: 'Paypal',
-          },
-          title: 'Rangka Atap',
-          subtitle: 'mulai dari',
-          price: '349.500',
-          period: '/m²',
-          callToAction: {
-            target: '_blank',
-            text: 'Lihat Katalog Kanopi',
-            href: '/tag/kanopi',
-          },
-        },
-      ]}
-    />
-
+ 
   <!-- Features Widget *************** -->
 
   <!-- <Features
@@ -426,7 +427,7 @@ const metadata = {
     title="Kenapa Mitra Bangun Kreasi (MBK)?"
     subtitle="Dengan pengalaman bertahun-tahun dalam industri konstruksi, kami selalu berkomitmen untuk memberikan hasil terbaik."
     tagline=""
-    columns={2}
+    columns={3}
     items={[
       {
         title: 'Banyak Model',
@@ -575,6 +576,24 @@ const metadata = {
       "alt": "Andi Prasetyo Image"
     }
   },
+  {
+    "testimonial": "Jujur, harga di Mitra Bangun Kreasi itu oke banget! Mereka kasih penawaran yang jelas tanpa biaya tersembunyi. Kerja cepat dan efisien, jadi nilai lebih buat dompet saya.",
+    "name": "Rina Lestari",
+    "job": "Jl. Prawirotaman No. 12, Kota Yogyakarta, DI Yogyakarta",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80",
+      "alt": "Rina Lestari Image"
+    }
+  },
+  {
+    "testimonial": "Saya seneng banget sama layanan pelanggan di MBK. Mereka ramah dan cepat tanggap! Gak nyangka bisa dapet pelayanan sebaik ini di dunia konstruksi.",
+    "name": "Andi Prasetyo",
+    "job": "Jl. Suryodiningratan No. 45, Kota Yogyakarta, DI Yogyakarta",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80",
+      "alt": "Andi Prasetyo Image"
+    }
+  },
 ]
 }
   />
@@ -587,12 +606,8 @@ subtitle="Membangun Hubungan, Mewujudkan Impian Bersama."
 icons={[]}
 images={[
   {
-    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzOHyLbTwTpDxj3C5Rcd4V20XDQ2fLLVkJMQ&s',
-    alt: 'Bale Bebakaran',
-  },
-  {
-    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx-w5zslKWwLt5J-nUQDefY7hIVJDfA2UVWA&s',
-    alt: 'Angkasa Pura',
+    src: logoBi,
+    alt: 'Bank Indonesia',
   },
   {
     src: logoBni,
@@ -602,14 +617,38 @@ images={[
     src: logoBri,
     alt: 'Bank BRI',
   },
+  {
+    src: logoAngkasaPura,
+    alt: 'Angkasa Pura',
+  },
+  {
+    src: logoPaBantul,
+    alt: 'Pengadilan Agama Bantul',
+  },
+  {
+    src: logoRskbSinduadi,
+    alt: 'Rumah Sakit Khusus Bedah Sinduadi',
+  },
+  {
+    src: logoBaleTimoho,
+    alt: '',
+  },
+  {
+    src: logoSangTimur,
+    alt: 'Yayasan Sang Timur',
+  },
+  {
+    src: logoTarakanita,
+    alt: 'Yayasan Tarakanita',
+  },
 ]}
 />
 
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Cari Tahu Lebih Banyak Tentang Konstruksi Bersama MBK"
-    information={`Kami akan terus mengupdate blog dan produk konstrukis berdasarkan trend dan lifestyle terbaru`}
+    title="Cari Tahu Lebih Banyak Tentang Konstruksi"
+    information={`Kami akan terus mengupdate blog dan produk berdasarkan trend terbaru`}
   />
 
   <!-- CallToAction Widget *********** -->

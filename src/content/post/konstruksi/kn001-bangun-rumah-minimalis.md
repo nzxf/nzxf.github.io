@@ -4,8 +4,8 @@ publishDate: 2024-07-22T00:00:00Z
 author: Zan
 code: kn001
 
-title: Bangun Rumah Minimalis
-excerpt: Sudah punya desain rumah, tapi bingung cari kontraktor yang cocok?
+title: Bangun Rumah 2 Lantai
+# excerpt: Sudah punya desain rumah, tapi bingung cari kontraktor yang cocok?
 image: ~/assets/images/konstruksi/kn001.png
 category: Konstruksi
 price: 3199000

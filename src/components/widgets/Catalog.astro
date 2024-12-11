@@ -22,7 +22,7 @@ const {
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline}/>
   <div class="flex items-stretch justify-center">
-    <div class="grid grid-cols-2 gap-4 dark:text-white sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+    <div class="grid grid-cols-3 gap-4 dark:text-white sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
       {
         prices &&
           prices.map(({ title, image, subtitle, price, period, items, callToAction, hasRibbon = false, ribbonTitle }) => (
@@ -45,7 +45,7 @@ const {
                         <Image
                           src={image.src}
                           alt={image.alt || ''}
-                          class=" max-w-full mx-auto mb-6 sm:rounded-md bg-gray-400 dark:bg-slate-700"
+                          class=" max-w-full mx-auto mb-6 rounded-md lg:rounded-lg bg-gray-400 dark:bg-slate-700"
                           widths={[400, 700]}
                           sizes="(max-width: 700px) 400px, 700px"
                           width={400}

@@ -28,9 +28,16 @@ const {
         images.map(
           (image) =>
             image.src && (
-              <div class="flex justify-center my-2 lg:my-1 py-1 px-3 rounded-md">
-                <Image src={image.src} alt={image.alt || ''} class="max-h-12 rounded-md" width={120} height={68} format='webp'/>
+              <div 
+                class="flex justify-center my-2 lg:my-1 py-1 px-3 rounded-md">         
+                  <Image 
+                    src={image.src} 
+                    alt={image.alt || ''} 
+                    class="rounded-md"
+                    width={100} 
+                    height={100} format='webp'/>
               </div>
+ 
             )
         )
     }
