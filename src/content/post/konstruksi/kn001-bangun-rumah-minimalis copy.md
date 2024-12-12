@@ -1,22 +1,23 @@
 ---
-publishDate: 2024-07-22T00:00:00Z
+publishDate: 2023-07-22T00:00:00Z
 
 author: Zan
-code: kn002
+code: kn001
 
-title: Bangun Kantor Modern
-excerpt: Mau paket lengkap desain dan bangun kantor anda?
-image: ~/assets/images/konstruksi/kn002.webp
+title: Bangun Rumah 1 Lantai
+# excerpt: Sudah punya desain rumah, tapi bingung cari kontraktor yang cocok?
+image: ~/assets/images/konstruksi/kn001.png
 category: Konstruksi
-price: 4499000
-priceBefore: 5249000
+price: 3099000
+priceBefore: 3399000
 priceTail: /m²
-tags:
-  - bangun
-  - kantor
+# tags:
+#   - bangun
+#   - rumah
 
 metadata:
-  canonical: https://mitrabangunkreasi.com/p/kn002-bangun-kantor-modern
+  canonical: https://mitrabangunkreasi.com/p/kn001-bangun-rumah-minimalis
+
 ---
 
 ## Deskripsi

@@ -1,12 +1,12 @@
 ---
-publishDate: 2024-07-22T00:00:00Z
+publishDate: 2023-07-22T00:00:00Z
 
 author: Zan
 code: bg001
 
 title: Bangun Gudang Industrial
-excerpt: Usaha anda butuh ruang yang besar dan bangunan yang kokoh?
-image: ~/assets/images/konstruksi/bg001c.png
+excerpt: Untuk bisnis yang butuh ruang yang besar dan bangunan yang kokoh
+image: ~/assets/images/konstruksi/bg001a.png
 category: Konstruksi
 price: 15000
 priceBefore: 25000

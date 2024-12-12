@@ -90,7 +90,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
                 )}
               {
                 post.status && (
-                  <div class="absolute inset-0 bg-gray-900 opacity-80 rounded-t-lg"></div>
+                  <div class="absolute inset-0 bg-gray-900 opacity-60 rounded-t-lg"></div>
                   <div class="absolute inset-0 flex flex-col items-center justify-center">
                     <h2 class="text-gray-100 text-2xl font-extrabold">{post.category?.title.toUpperCase()}</h2>
                     <h2 class="text-gray-100 text-2xl font-extrabold">{post.status.toUpperCase()}</h2>
@@ -215,6 +215,6 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
     </footer>
 
     
-    <!-- <a href={link ?? 'javascript:void(0)'} class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> -->
+    <a href={link ?? 'javascript:void(0)'} class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a>
   </div>
 </article>

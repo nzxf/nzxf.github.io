@@ -1,20 +1,21 @@
 ---
-publishDate: 2024-07-22T00:00:00Z
+publishDate: 2023-07-22T00:00:00Z
 
 author: Zan
-code: bg001
+code: bg002
 
-title: Bangun Gudang Industrial
-excerpt: Usaha anda butuh ruang yang besar dan bangunan yang kokoh?
-image: ~/assets/images/konstruksi/bg001a.png
+title: Bangun Lapangan Futsal/Basket/Volley Indoor
+excerpt: Cocok untuk usaha rental lapangan olahraga
+image: ~/assets/images/konstruksi/bg001b.png
 category: Konstruksi
-price: 15000
-priceBefore: 25000
+price: 25000
+priceBefore: 35000
 priceTail: /kg
 tags:
   - bangun
-  - gudang
-  - industri
+  - gor
+  - lapangan
+  - olahraga
 
 metadata:
   canonical: https://mitrabangunkreasi.com/p/bg001-bangun-gudang-industrial

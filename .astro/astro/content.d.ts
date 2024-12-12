@@ -156,161 +156,147 @@ declare module 'astro:content' {
   slug: "astrowind-template-in-depth";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".mdx"] };
 "blog/2024/bangun rumah jogja.md": {
 	id: "blog/2024/bangun rumah jogja.md";
   slug: "blog/2024/bangun-rumah-jogja";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "blog/2024/kanopi murah jogja.md": {
 	id: "blog/2024/kanopi murah jogja.md";
   slug: "blog/2024/kanopi-murah-jogja";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "blog/2024/mezzanine jogja.md": {
 	id: "blog/2024/mezzanine jogja.md";
   slug: "blog/2024/mezzanine-jogja";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "blog/2024/pagar besi jogja.md": {
 	id: "blog/2024/pagar besi jogja.md";
   slug: "blog/2024/pagar-besi-jogja";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "get-started-website-with-astro-tailwind-css.md": {
 	id: "get-started-website-with-astro-tailwind-css.md";
   slug: "get-started-website-with-astro-tailwind-css";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "jasa/pengurusan-pbg-slf copy.mdx": {
 	id: "jasa/pengurusan-pbg-slf copy.mdx";
   slug: "jasa/pengurusan-pbg-slf-copy";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".mdx"] };
-"jasa/sample-service-jasa.mdx": {
-	id: "jasa/sample-service-jasa.mdx";
-  slug: "jasa/sample-service-jasa";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".mdx"] };
 "kanopi/KN003.md": {
 	id: "kanopi/KN003.md";
   slug: "kanopi/kn003";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "kanopi/KN004.md": {
 	id: "kanopi/KN004.md";
   slug: "kanopi/kn004";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".md"] };
-"konstruksi/bg001-bangun-gudang-industrial copy 2.md": {
-	id: "konstruksi/bg001-bangun-gudang-industrial copy 2.md";
-  slug: "konstruksi/bg001-bangun-gudang-industrial-copy-2";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".md"] };
-"konstruksi/bg001-bangun-gudang-industrial copy.md": {
-	id: "konstruksi/bg001-bangun-gudang-industrial copy.md";
-  slug: "konstruksi/bg001-bangun-gudang-industrial-copy";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "konstruksi/bg001-bangun-gudang-industrial.md": {
 	id: "konstruksi/bg001-bangun-gudang-industrial.md";
   slug: "konstruksi/bg001-bangun-gudang-industrial";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
+} & { render(): Render[".md"] };
+"konstruksi/bg001-bangun-lapangan-olahraga-futsal-basket-volley.md": {
+	id: "konstruksi/bg001-bangun-lapangan-olahraga-futsal-basket-volley.md";
+  slug: "konstruksi/bg001-bangun-lapangan-olahraga-futsal-basket-volley";
+  body: string;
+  collection: "post";
+  data: any
+} & { render(): Render[".md"] };
+"konstruksi/bg001-bangun-tempat-parkirl.md": {
+	id: "konstruksi/bg001-bangun-tempat-parkirl.md";
+  slug: "konstruksi/bg001-bangun-tempat-parkirl";
+  body: string;
+  collection: "post";
+  data: any
+} & { render(): Render[".md"] };
+"konstruksi/kn001-bangun-rumah-minimalis copy.md": {
+	id: "konstruksi/kn001-bangun-rumah-minimalis copy.md";
+  slug: "konstruksi/kn001-bangun-rumah-minimalis-copy";
+  body: string;
+  collection: "post";
+  data: any
 } & { render(): Render[".md"] };
 "konstruksi/kn001-bangun-rumah-minimalis.md": {
 	id: "konstruksi/kn001-bangun-rumah-minimalis.md";
   slug: "konstruksi/kn001-bangun-rumah-minimalis";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
-"konstruksi/kn002-bangun-kantor-modern.md": {
-	id: "konstruksi/kn002-bangun-kantor-modern.md";
-  slug: "konstruksi/kn002-bangun-kantor-modern";
+"konstruksi/kn002-bangun-kos-kosan.md": {
+	id: "konstruksi/kn002-bangun-kos-kosan.md";
+  slug: "konstruksi/kn002-bangun-kos-kosan";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "markdown-elements-demo-post.mdx": {
 	id: "markdown-elements-demo-post.mdx";
   slug: "markdown-elements-demo-post";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".mdx"] };
 "pagar/GG005.md": {
 	id: "pagar/GG005.md";
   slug: "pagar/gg005";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "properti/rm001.md": {
 	id: "properti/rm001.md";
   slug: "properti/rm001";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "properti/rm002.md": {
 	id: "properti/rm002.md";
   slug: "properti/rm002";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "properti/rm003.md": {
 	id: "properti/rm003.md";
   slug: "properti/rm003";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 "properti/rm004.md": {
 	id: "properti/rm004.md";
   slug: "properti/rm004";
   body: string;
   collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".md"] };
-"properti/rm005.md": {
-	id: "properti/rm005.md";
-  slug: "properti/rm005";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".md"] };
-"properti/rm006.md": {
-	id: "properti/rm006.md";
-  slug: "properti/rm006";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
+  data: any
 } & { render(): Render[".md"] };
 };
 
@@ -322,5 +308,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = never;
 }

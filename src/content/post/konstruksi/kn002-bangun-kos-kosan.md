@@ -2,22 +2,21 @@
 publishDate: 2023-07-22T00:00:00Z
 
 author: Zan
-code: kn001
+code: kn002
 
-title: Bangun Rumah 2 Lantai
-# excerpt: Sudah punya desain rumah, tapi bingung cari kontraktor yang cocok?
-image: ~/assets/images/konstruksi/kn001.png
+title: Bangun Kos-kosan
+excerpt: Mau paket lengkap desain dan bangun kos-kosan anda?
+image: ~/assets/images/konstruksi/kn002.webp
 category: Konstruksi
-price: 3199000
-priceBefore: 3499000
+price: 4499000
+priceBefore: 5249000
 priceTail: /m²
-# tags:
-#   - bangun
-#   - rumah
+tags:
+  - bangun
+  - kos-kosan
 
 metadata:
-  canonical: https://mitrabangunkreasi.com/p/kn001-bangun-rumah-minimalis
-
+  canonical: https://mitrabangunkreasi.com/p/kn002-bangun-kantor-modern
 ---
 
 ## Deskripsi
