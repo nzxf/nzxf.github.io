@@ -158,9 +158,30 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".mdx"] };
-"blog/jendela.md": {
-	id: "blog/jendela.md";
-  slug: "blog/jendela";
+"blog/2024/bangun rumah jogja.md": {
+	id: "blog/2024/bangun rumah jogja.md";
+  slug: "blog/2024/bangun-rumah-jogja";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"blog/2024/kanopi murah jogja.md": {
+	id: "blog/2024/kanopi murah jogja.md";
+  slug: "blog/2024/kanopi-murah-jogja";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"blog/2024/mezzanine jogja.md": {
+	id: "blog/2024/mezzanine jogja.md";
+  slug: "blog/2024/mezzanine-jogja";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"blog/2024/pagar besi jogja.md": {
+	id: "blog/2024/pagar besi jogja.md";
+  slug: "blog/2024/pagar-besi-jogja";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
@@ -200,6 +221,27 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
+"konstruksi/bg001-bangun-gudang-industrial copy 2.md": {
+	id: "konstruksi/bg001-bangun-gudang-industrial copy 2.md";
+  slug: "konstruksi/bg001-bangun-gudang-industrial-copy-2";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"konstruksi/bg001-bangun-gudang-industrial copy.md": {
+	id: "konstruksi/bg001-bangun-gudang-industrial copy.md";
+  slug: "konstruksi/bg001-bangun-gudang-industrial-copy";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"konstruksi/bg001-bangun-gudang-industrial.md": {
+	id: "konstruksi/bg001-bangun-gudang-industrial.md";
+  slug: "konstruksi/bg001-bangun-gudang-industrial";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
 "konstruksi/kn001-bangun-rumah-minimalis.md": {
 	id: "konstruksi/kn001-bangun-rumah-minimalis.md";
   slug: "konstruksi/kn001-bangun-rumah-minimalis";
@@ -210,13 +252,6 @@ declare module 'astro:content' {
 "konstruksi/kn002-bangun-kantor-modern.md": {
 	id: "konstruksi/kn002-bangun-kantor-modern.md";
   slug: "konstruksi/kn002-bangun-kantor-modern";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".md"] };
-"konstruksi/kn003-bangun-gudang-industrial.md": {
-	id: "konstruksi/kn003-bangun-gudang-industrial.md";
-  slug: "konstruksi/kn003-bangun-gudang-industrial";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">

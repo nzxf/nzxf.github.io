@@ -19,6 +19,9 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import product1 from "~/assets/images/product/product1.png"
 import Catalog from '~/components/widgets/Catalog.astro';
 
+import pbg from "~/assets/images/jasa/pbg.png"
+import gudang from "~/assets/images/konstruksi/bg001a.png"
+
 import logoBi from "~/assets/images/klien/logoBi.png"
 import logoBni from "~/assets/images/klien/logoBni.png"
 import logoBri from "~/assets/images/klien/logoBri.png"
@@ -81,36 +84,34 @@ const metadata = {
   tagline="Harga Miring Kualitas Bersaing"
   prices={[
       {
-        title: 'Pagar Besi',
+        title: 'Jasa Pengurusan',
         image: {
-          src: product1,
-          alt: 'Image of Pagar Besi',
+          src: pbg,
+          alt: 'Image of Jasa Pengurusan',
         },
         subtitle: 'mulai dari',
-        price: '599.500',
-        period: '/m²',
+        price: '6.499.500',
+        period: '/srt',
         callToAction: {
           target: '_blank',
-          text: 'Lihat Katalog Pagar',
-          href: '/kategori/pagar',
+          text: 'Lihat Katalog Jasa',
+          href: '/kategori/jasa',
         },
       },
       {
-        title: 'Mezzanine',
+        title: 'Konstruksi',
         image: {
-          src: product1,
-          alt: 'Image of Mezzanine',
+          src: gudang,
+          alt: 'Image of Konstruksi',
         },
         subtitle: 'mulai dari',
-        price: '899.500',
-        period: '/m²',
+        price: '15.000',
+        period: '/kg',
         callToAction: {
           target: '_blank',
-          text: 'Lihat Katalog Mezzanine',
-          href: '/kategori/mezzanine',
+          text: 'Lihat Katalog Konstruksi',
+          href: '/kategori/konstruksi',
         },
-        hasRibbon: true,
-        ribbonTitle: 'Terlaris',
       },
       {
         title: 'Kanopi/Carport',
