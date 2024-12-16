@@ -34,8 +34,7 @@ const { post, url } = Astro.props;
           {
             post.author && (
               <>
-                {' '}
-                ·{' '}
+                &nbsp;·&nbsp;
                 <Icon name="tabler:user" class="w-4 h-4 inline-block -mt-0.5 dark:text-gray-400" />
                 <span class="inline-block">{post.author}</span>
               </>
@@ -44,8 +43,7 @@ const { post, url } = Astro.props;
           {
             post.category && (
               <>
-                {' '}
-                ·{' '}
+                &nbsp;·&nbsp;
                 <Icon name="tabler:category" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
                 <a class="hover:underline inline-block" href={getPermalink(post.category.slug, 'category')}>
                   {post.category.title}
@@ -56,8 +54,7 @@ const { post, url } = Astro.props;
           {
             post.code && (
               <>
-                {' '}
-                ·{' '}
+                &nbsp;·&nbsp;
                 <Icon name="tabler:id" class="w-4 h-4 inline-block -mt-0.5 dark:text-gray-400" />
                 <span class="inline-block">{post.code.toUpperCase()}</span>
               </>
@@ -69,8 +66,7 @@ const { post, url } = Astro.props;
             ) : (
               post.readingTime && (
                 <>
-                  {' '}
-                  ·{' '}
+                  &nbsp;·&nbsp;
                   <Icon name="tabler:clock" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
                   <span>Waktu Baca {post.readingTime}</span> menit
                 </>
