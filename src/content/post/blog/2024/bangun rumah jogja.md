@@ -5,11 +5,11 @@ title: Bangun Rumah di Jogja
 excerpt: Wujudkan Hunian Impian di kota budaya
 image: ~/assets/images/blog/2024/bangun-rumah-jogja.jpg
 category: Blog
-tags:
-  - blog
-  - konstruksi
-  - bangun
-  - rumah
+# tags:
+#   - blog
+#   - konstruksi
+#   - bangun
+#   - rumah
 metadata:
   canonical: https://mitrabangunkreasi.com/blog/berbagai-macam-jenis-jendela-untuk-inspirasi-2024
   

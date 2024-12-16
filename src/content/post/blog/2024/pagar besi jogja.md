@@ -5,9 +5,9 @@ title: Pagar Besi di Jogja
 excerpt: Solusi Aman dan Estetis untuk Hunian Anda
 image: ~/assets/images/blog/2024/pagar-jogja.jpg
 category: Blog
-tags:
-  - blog
-  - pagar
+# tags:
+#   - blog
+#   - pagar
   
 metadata:
   canonical: https://mitrabangunkreasi.com/blog/berbagai-macam-jenis-jendela-untuk-inspirasi-2024

@@ -34,7 +34,7 @@ i18n:
 apps:
   blog:
     isEnabled: true
-    postsPerPage: 9
+    postsPerPage: 12
 
     post:
       isEnabled: true
@@ -62,7 +62,7 @@ apps:
         index: false
 
     isRelatedPostsEnabled: true
-    relatedPostsCount: 6
+    relatedPostsCount: 4
 
 analytics:
   vendors:

@@ -5,9 +5,9 @@ title: Mezzanine di Jogja
 excerpt: Efisien untuk Memaksimalkan Ruang
 image: ~/assets/images/blog/2024/mezanin-jogja.jpg
 category: Blog
-tags:
-  - blog
-  - mezzanine
+# tags:
+#   - blog
+#   - mezzanine
 
 metadata:
   canonical: https://mitrabangunkreasi.com/blog/berbagai-macam-jenis-jendela-untuk-inspirasi-2024

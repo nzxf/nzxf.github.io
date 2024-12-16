@@ -19,7 +19,7 @@ const {
 } = Astro.props;
 ---
 
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline}/>
   <div class="flex items-stretch justify-center">
     <div class="grid grid-cols-3 gap-4 dark:text-white sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
@@ -56,12 +56,12 @@ const {
                         />
                       </div>
                     )}               
-                    {subtitle && <span class="font-bold text-sm sm:text-small text-black-400 dark:text-slate-400">{subtitle}</span>}
+                    {subtitle && <span class="text-sm text-muted sm:text-small text-black-400 dark:text-slate-400">{subtitle}</span>}
                     <div>
                       <div class="flex items-center justify-center text-center mb-1">
-                        <span class="text 4xl">Rp</span>
+                        <span class="text 4xl text-muted">Rp</span>
                         <span class="text-4xl font-bold">{price}</span>
-                        <span class="text 4xl">{period}</span>
+                        <span class="text 4xl text-muted">{period}</span>
                       </div>
                     </div>
                     {items && (

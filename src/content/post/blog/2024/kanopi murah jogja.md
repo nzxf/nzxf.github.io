@@ -5,9 +5,9 @@ title: Kanopi Murah Jogja
 excerpt: Solusi Praktis untuk Hunian dan Kendaraan Anda
 image: ~/assets/images/blog/2024/kanopi-jogja.jpg
 category: Blog
-tags:
-  - blog
-  - kanopi
+# tags:
+#   - blog
+#   - kanopi
 metadata:
   canonical: https://mitrabangunkreasi.com/blog/berbagai-macam-jenis-jendela-untuk-inspirasi-2024
   
