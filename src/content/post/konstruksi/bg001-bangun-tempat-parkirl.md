@@ -8,8 +8,8 @@ title: Bangun Tempat Parkir Semi Indoor
 excerpt: Usaha anda butuh ruang parkir yang luas?
 image: ~/assets/images/konstruksi/bg001c.png
 category: Konstruksi
-price: 15000
-priceBefore: 25000
+price: 30000
+priceBefore: 35000
 priceTail: /kg
 tags:
   - bangun

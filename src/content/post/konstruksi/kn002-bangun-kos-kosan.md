@@ -8,8 +8,8 @@ title: Bangun Kos-kosan
 excerpt: Mau paket lengkap desain dan bangun kos-kosan anda?
 image: ~/assets/images/konstruksi/kn002.webp
 category: Konstruksi
-price: 4499000
-priceBefore: 5249000
+price: 3499000
+priceBefore: 4249000
 priceTail: /m²
 tags:
   - bangun

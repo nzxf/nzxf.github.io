@@ -8,8 +8,8 @@ title: Bangun Gudang Industrial
 excerpt: Untuk bisnis yang butuh ruang yang besar dan bangunan yang kokoh
 image: ~/assets/images/konstruksi/bg001a.png
 category: Konstruksi
-price: 15000
-priceBefore: 25000
+price: 35000
+priceBefore: 40000
 priceTail: /kg
 tags:
   - bangun

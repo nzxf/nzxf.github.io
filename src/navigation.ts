@@ -152,13 +152,9 @@ export const headerData = {
       text: 'Konstruksi',
       href: getPermalink('/kategori/konstruksi')
     },
-    {
-      text: 'Jasa',
-      href: getPermalink('/kategori/jasa')
-    },
     // {
-    //   text: 'Produk',
-    //   href: getPermalink('kategori/produk')
+    //   text: 'Jasa',
+    //   href: getPermalink('/kategori/jasa')
     // },
     {
       text: 'Produk',
@@ -246,14 +242,14 @@ export const footerData = {
         { text: 'Sekat/Partisi', href: '/kategori/partisi' },
       ],
     },
-    {
-      title: 'Jasa',
-      links: [
-        { text: 'PBG', href: '#' },
-        { text: 'SLF', href: '#' },
-        { text: 'KRK', href: '#' },
-      ],
-    },
+    // {
+    //   title: 'Jasa',
+    //   links: [
+    //     { text: 'PBG', href: '#' },
+    //     { text: 'SLF', href: '#' },
+    //     { text: 'KRK', href: '#' },
+    //   ],
+    // },
     {
       title: 'Properti',
       links: [

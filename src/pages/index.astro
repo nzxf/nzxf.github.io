@@ -26,6 +26,7 @@ import logoBi from "~/assets/images/klien/logoBi.png"
 import logoBni from "~/assets/images/klien/logoBni.png"
 import logoBri from "~/assets/images/klien/logoBri.png"
 import logoAngkasaPura from "~/assets/images/klien/logoAngkasaPura.png"
+import logoUmy from "~/assets/images/klien/logoUmy.png"
 import logoPaBantul from "~/assets/images/klien/logoPaBantul.png"
 import logoRskbSinduadi from "~/assets/images/klien/logoRskbSinduadi.png"
 import logoTarakanita from "~/assets/images/klien/logoTarakanita.png"
@@ -54,7 +55,7 @@ const metadata = {
       },
       {
         variant: 'primary',
-        text: 'Mau Konsultasi',
+        text: 'Tanya MBK',
         href: `https://wa.me/6285176712656?text=MBK,%20saya%20mau%20tanya%20...`,
         target: '_blank',
         icon: 'tabler:message'
@@ -66,10 +67,58 @@ const metadata = {
       Konstruksi Rumah Yang Berkualitas, <span class="text-red-600 highlight"> Renovasi Yang Berkelas.  </span>
     </Fragment>
 
-    <Fragment slot="subtitle">
+    <!-- <Fragment slot="subtitle">
       Selamat datang di <span class="font-semibold">Mitra Bangun Kreasi (MBK)</span>, tempat di mana kualitas merupakan prioritas. Kami selalu memastikan setiap rumah tak hanya dibangun dengan baik, tetapi juga mencerminkan lifestyle dan karakter pemiliknya.
-    </Fragment>
+    </Fragment> -->
   </Hero>
+
+  <Brands
+  title="Our Valued Clients"
+  subtitle="Kami Bangga Menjadi Bagian dari Perjalanan Mereka"
+  icons={[]}
+  images={[
+    {
+      src: logoBi,
+      alt: 'Bank Indonesia',
+    },
+    {
+      src: logoBni,
+      alt: 'Bank BNI',
+    },
+    {
+      src: logoBri,
+      alt: 'Bank BRI',
+    },
+    {
+      src: logoAngkasaPura,
+      alt: 'Angkasa Pura',
+    },
+    {
+      src: logoUmy,
+      alt: 'Universitas Muhammadiyah Yogyakarta',
+    },
+    {
+      src: logoPaBantul,
+      alt: 'Pengadilan Agama Bantul',
+    },
+    {
+      src: logoRskbSinduadi,
+      alt: 'Rumah Sakit Khusus Bedah Sinduadi',
+    },
+    {
+      src: logoTarakanita,
+      alt: 'Yayasan Tarakanita',
+    },
+    {
+      src: logoSangTimur,
+      alt: 'Yayasan Sang Timur',
+    },
+    {
+      src: logoBaleTimoho,
+      alt: 'Bale Timoho Resto',
+    },
+  ]}
+  />
 
   <!-- Note Widget ******************* -->
 
@@ -79,17 +128,32 @@ const metadata = {
 
   <Catalog
   title="Katalog Produk & Jasa Unggulan MBK"
-  subtitle=""
-  tagline="Harga Miring Kualitas Bersaing"
+  subtitle="Harga Miring Kualitas Bersaing"
+  tagline=""
   prices={[
       {
-        title: 'Konstruksi Bangunan',
+        title: 'Konstruksi Beton',
         image: {
           src: gudang,
           alt: 'Image of Konstruksi Bangunan',
         },
         subtitle: 'mulai dari',
-        price: '15.000',
+        price: '3.500.000',
+        period: '/m²',
+        callToAction: {
+          target: '_blank',
+          text: 'Lihat Katalog Konstruksi',
+          href: '/kategori/konstruksi',
+        },
+      },
+      {
+        title: 'Konstruksi Baja',
+        image: {
+          src: gudang,
+          alt: 'Image of Konstruksi Bangunan',
+        },
+        subtitle: 'mulai dari',
+        price: '35.000',
         period: '/kg',
         callToAction: {
           target: '_blank',
@@ -98,13 +162,13 @@ const metadata = {
         },
       },
       {
-        title: 'Kanopi/Carport/Garasi',
+        title: 'Kanopi/ Carport',
         image: {
           src: product1,
-          alt: 'Image of Kanopi/Carport/Garasi',
+          alt: 'Image of Kanopi/Carport',
         },
         subtitle: 'mulai dari',
-        price: '499.500',
+        price: '450.000',
         period: '/m²',
         callToAction: {
           target: '_blank',
@@ -112,16 +176,16 @@ const metadata = {
           href: '/kategori/kanopi',
         },
         hasRibbon: true,
-        ribbonTitle: 'Promo',
+        ribbonTitle: 'Terlaris',
       },
       {
-        title: 'Pagar Besi Minimalis',
+        title: 'Pagar Besi',
         image: {
           src: product1,
           alt: 'Image of Pagar Besi',
         },
         subtitle: 'mulai dari',
-        price: '499.500',
+        price: '500.000',
         period: '/m²',
         callToAction: {
           target: '_blank',
@@ -136,7 +200,7 @@ const metadata = {
           alt: 'Image of Partisi/Sekat Dinding',
         },
         subtitle: 'mulai dari',
-        price: '174.950',
+        price: '124.500',
         period: '/m²',
         callToAction: {
           target: '_blank',
@@ -144,7 +208,7 @@ const metadata = {
           href: '/kategori/partisi',
         },
         hasRibbon: true,
-        ribbonTitle: 'Termurah',
+        // ribbonTitle: 'Termurah',
       },
       {
         title: 'Pintu & Jendela Aluminium',
@@ -153,30 +217,13 @@ const metadata = {
           alt: 'Image of Pintu & Jendela',
         },
         subtitle: 'mulai dari',
-        price: '899.500',
+        price: '600.000',
         period: '/m²',
         callToAction: {
           target: '_blank',
           text: 'Lihat Katalog Aluminium',
           href: '/tag/aluminium',
         },
-      },
-      {
-        title: 'Pengurusan PBG & SLF',
-        image: {
-          src: pbg,
-          alt: 'Image of Pengurusan PBG & SLF',
-        },
-        subtitle: 'mulai dari',
-        price: '6.499.500',
-        period: '/srt',
-        callToAction: {
-          target: '_blank',
-          text: 'Lihat Katalog Jasa',
-          href: '/kategori/jasa',
-        },
-        hasRibbon: true,
-        ribbonTitle: 'Terbaru',
       },
       
     ]}
@@ -352,31 +399,38 @@ const metadata = {
       {
         title: 'Step 1: <span class="font-medium">Konsultasi</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          "Konsultasi via secara langsung maupun online dengan project manager MBK",
+        icon: 'tabler:brand-hipchat',
       },
       {
         title: 'Step 2: <span class="font-medium">Survey Lokasi</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          "Pengecekan keadaan di lokasi dan pengukuran yang dilakukan oleh teknisi/tim ahli MBK.",
+        icon: 'tabler:map-2',
       },
       {
         title: 'Step 3: <span class="font-medium">Pembuatan RAB</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          'Pembuatan surat dan isian rencana anggaran',
+        icon: 'tabler:checklist',
       },
       {
         title: 'Step 4: <span class="font-medium">Pembayaran</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+          'Sesuai dengan sistem dan tahapan pembayaran yang telah disepakati kedua belah pihak',
         icon: 'tabler:cash',
       },
       {
-        title: 'Ready!',
-        icon: 'tabler:check',
+        title: 'Step 5: <span class="font-medium">Pengerjaan</span>',
+        description:
+          'Proses pengerjaan project mulai dari fabrikasi, pengiriman dan instalasi.',
+        icon: 'tabler:crane',
       },
+      {
+        title: 'Step 5: <span class="font-medium">Done!</span>',
+        icon: 'tabler:rosette-discount-check',
+      },
+
     ]}
   />
 
@@ -384,7 +438,7 @@ const metadata = {
 
   <Features2
     title="Kenapa Mitra Bangun Kreasi (MBK)?"
-    subtitle="Dengan pengalaman bertahun-tahun dalam industri konstruksi, kami selalu berkomitmen untuk memberikan hasil terbaik."
+    subtitle="Dengan pengalaman bertahun-tahun dalam industri konstruksi dan renovasi, kami selalu berkomitmen untuk memberikan hasil terbaik."
     tagline=""
     columns={3}
     items={[
@@ -559,49 +613,6 @@ const metadata = {
 
 <!-- Brands Widget ****************** -->
 
-<Brands
-title="Klien Kami"
-subtitle="Membangun Hubungan, Mewujudkan Impian Bersama."
-icons={[]}
-images={[
-  {
-    src: logoBi,
-    alt: 'Bank Indonesia',
-  },
-  {
-    src: logoBni,
-    alt: 'Bank BNI',
-  },
-  {
-    src: logoBri,
-    alt: 'Bank BRI',
-  },
-  {
-    src: logoAngkasaPura,
-    alt: 'Angkasa Pura',
-  },
-  {
-    src: logoPaBantul,
-    alt: 'Pengadilan Agama Bantul',
-  },
-  {
-    src: logoRskbSinduadi,
-    alt: 'Rumah Sakit Khusus Bedah Sinduadi',
-  },
-  {
-    src: logoTarakanita,
-    alt: 'Yayasan Tarakanita',
-  },
-  {
-    src: logoSangTimur,
-    alt: 'Yayasan Sang Timur',
-  },
-  {
-    src: logoBaleTimoho,
-    alt: 'Bale Timoho Resto',
-  },
-]}
-/>
 
   <!-- HighlightedPosts Widget ******* -->
 

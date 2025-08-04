@@ -8,8 +8,8 @@ title: Bangun Lapangan Futsal/Basket/Volley Indoor
 excerpt: Cocok untuk usaha rental lapangan olahraga
 image: ~/assets/images/konstruksi/bg001b.png
 category: Konstruksi
-price: 25000
-priceBefore: 35000
+price: 35000
+priceBefore: 37500
 priceTail: /kg
 tags:
   - bangun

@@ -193,13 +193,6 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"jasa/pengurusan-pbg-slf copy.mdx": {
-	id: "jasa/pengurusan-pbg-slf copy.mdx";
-  slug: "jasa/pengurusan-pbg-slf-copy";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".mdx"] };
 "kanopi/KN003.md": {
 	id: "kanopi/KN003.md";
   slug: "kanopi/kn003";
