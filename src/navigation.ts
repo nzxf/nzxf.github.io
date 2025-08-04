@@ -148,17 +148,17 @@ export const headerData = {
       text: 'Home',
       href: getPermalink('/')
     },
-    {
-      text: 'Konstruksi',
-      href: getPermalink('/kategori/konstruksi')
-    },
     // {
     //   text: 'Jasa',
     //   href: getPermalink('/kategori/jasa')
     // },
     {
-      text: 'Produk',
+      text: 'Katalog Produk',
       links: [
+        {
+          text: 'Konstruksi',
+          href: getPermalink('/kategori/konstruksi')
+        },
         {
           text: 'Kanopi',
           href: getPermalink('/kategori/kanopi')
