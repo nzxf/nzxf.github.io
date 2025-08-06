@@ -3,7 +3,7 @@ import { Icon } from 'astro-icon/components';
 import Button from '~/components/ui/Button.astro';
 import Headline from '~/components/ui/Headline.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
-// import Image from 'astro/components/Image.astro';
+import Image from 'astro/components/Image.astro';
 // import type { Pricing as Props } from '~/types';
 
 const {
@@ -26,8 +26,7 @@ const {
     <div class="grid grid-cols-2 gap-4 dark:text-white sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
       {
         prices &&
-          // prices.map(({ title, image, subtitle, price, period, items, callToAction, hasRibbon = false, ribbonTitle }) => (
-          prices.map(({ title, subtitle, price, period, items, callToAction, hasRibbon = false, ribbonTitle }) => (
+          prices.map(({ title, image, subtitle, price, period, items, callToAction, hasRibbon = false, ribbonTitle }) => (
           // prices.map(({ title, subtitle, price, period, items, callToAction, hasRibbon = false, ribbonTitle }) => (
             <div class="justify-center col-span-3 mx-auto flex w-full sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-quarter">
               {price && period && (
@@ -44,7 +43,7 @@ const {
                       <h3 class="text-center text-2xl lg:text-4xl font-extrabold uppercase leading-9 mb-2">{title}</h3>
                     )}
                       <div class="flex justify-center my-4 rounded-md">
-                    {/* {image && (
+                    {image && (
                         <Image
                           src={image.src}
                           alt={image.alt || ''}
@@ -57,7 +56,7 @@ const {
                           decoding="async"
                           format='webp'
                         />
-                      )}                */}
+                      )}               
                       </div>
                     {subtitle && <span class="mt-2 font-bold text-muted sm:text-small text-black-400 dark:text-slate-400">{subtitle}</span>}
                     <div>

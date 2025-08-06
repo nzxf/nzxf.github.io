@@ -19,9 +19,7 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import product1 from "~/assets/images/product/product1.png"
 import Catalog from '~/components/widgets/Catalog.astro';
 
-// import pbg from "~/assets/images/jasa/pbg.png"
-import gudang from "~/assets/images/konstruksi/bg001a.png"
-
+// Import images for Client Logo
 import logoBi from "~/assets/images/klien/logoBi.png"
 import logoBni from "~/assets/images/klien/logoBni.png"
 import logoBri from "~/assets/images/klien/logoBri.png"
@@ -48,23 +46,27 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Jadwalkan Survey',
-        href: `https://wa.me/6285176712656?text=MBK,%20saya%20mau%20survey%20...`,
-        target: '_blank',
-        icon: 'tabler:calendar-plus'
-      },
-      {
-        variant: 'primary',
         text: 'Tanya MBK',
         href: `https://wa.me/6285176712656?text=MBK,%20saya%20mau%20tanya%20...`,
         target: '_blank',
         icon: 'tabler:message'
       },
+      {
+        variant: 'primary',
+        text: 'Jadwalkan Survey',
+        href: `https://wa.me/6285176712656?text=MBK,%20saya%20mau%20dijadwalkan%20survey,%20lokasi%20saya%20di...`,
+        target: '_blank',
+        icon: 'tabler:calendar-plus'
+      },
+
       // { text: 'Read More', href: '#features' },
     ]}
   >
     <Fragment slot="title">
-      Konstruksi Rumah Yang Berkualitas, <span class="text-red-600 highlight"> Renovasi Yang Berkelas.  </span>
+      Konstruksi Bangunan Berkualitas
+    </Fragment>
+    <Fragment slot="title">
+      <span class="text-red-600 highlight"> Renovasi Yang Berkelas  </span>
     </Fragment>
 
     <!-- <Fragment slot="subtitle">
@@ -80,13 +82,13 @@ const metadata = {
 
   <Catalog
   title="Katalog Produk & Jasa Unggulan MBK"
-  subtitle="Harga Miring Kualitas Bersaing"
+  subtitle="Kualitas Terdepan untuk Kebutuhan Anda"
   tagline=""
   prices={[
       {
         title: 'Konstruksi Beton',
         image: {
-          src: gudang,
+          src: product1,
           alt: 'Image of Konstruksi Bangunan',
         },
         subtitle: 'mulai dari',
@@ -94,23 +96,23 @@ const metadata = {
         period: '/m²',
         callToAction: {
           target: '_blank',
-          text: 'Lihat Katalog Konstruksi',
+          text: 'Lihat Pricelist Konstruksi',
           href: '/kategori/konstruksi',
         },
       },
       {
-        title: 'Konstruksi Baja',
+        title: 'Mezzanine',
         image: {
-          src: gudang,
+          src: product1,
           alt: 'Image of Konstruksi Bangunan',
         },
         subtitle: 'mulai dari',
-        price: '35.000',
+        price: '1.150.000',
         period: '/kg',
         callToAction: {
           target: '_blank',
-          text: 'Lihat Katalog Konstruksi',
-          href: '/kategori/konstruksi',
+          text: 'Lihat Katalog Mezzanine',
+          href: '/kategori/mezzanine',
         },
       },
       {
