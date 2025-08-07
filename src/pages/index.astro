@@ -16,8 +16,16 @@ import Brands from '~/components/widgets/Brands.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 // Import Image for Pricing
-import product1 from "~/assets/images/product/product1.png"
 import Catalog from '~/components/widgets/Catalog.astro';
+import konstruksi from "~/assets/images/katalog/konstruksi.png"
+import mez from "~/assets/images/katalog/mez.png"
+import kanopi from "~/assets/images/katalog/kanopi.png"
+import pagar from "~/assets/images/katalog/pagar.png"
+import partisi from "~/assets/images/katalog/partisi.jpg"
+import pintu from "~/assets/images/katalog/pintu.png"
+import tangga from "~/assets/images/katalog/tangga.png"
+import railing from "~/assets/images/katalog/railing.png"
+import teralis from "~/assets/images/katalog/teralis.png"
 
 // Import images for Client Logo
 import logoBi from "~/assets/images/klien/logoBi.png"
@@ -82,13 +90,13 @@ const metadata = {
 
   <Catalog
   title="Katalog Produk & Jasa Unggulan MBK"
-  subtitle="Kualitas Terdepan untuk Kebutuhan Anda"
+  subtitle="Kualitas Terdepan untuk Kebutuhan Hunian dan Kantor Anda"
   tagline=""
   prices={[
       {
-        title: 'Konstruksi Beton',
+        title: 'Konstruksi',
         image: {
-          src: product1,
+          src: konstruksi,
           alt: 'Image of Konstruksi Bangunan',
         },
         subtitle: 'mulai dari',
@@ -96,15 +104,15 @@ const metadata = {
         period: '/m²',
         callToAction: {
           target: '_blank',
-          text: 'Lihat Pricelist Konstruksi',
+          text: 'Lihat Katalog Konstruksi',
           href: '/kategori/konstruksi',
         },
       },
       {
         title: 'Mezzanine',
         image: {
-          src: product1,
-          alt: 'Image of Konstruksi Bangunan',
+          src: mez,
+          alt: 'Image of Mezzanine',
         },
         subtitle: 'mulai dari',
         price: '1.150.000',
@@ -116,9 +124,9 @@ const metadata = {
         },
       },
       {
-        title: 'Kanopi/ Carport',
+        title: 'Kanopi/Carport',
         image: {
-          src: product1,
+          src: kanopi,
           alt: 'Image of Kanopi/Carport',
         },
         subtitle: 'mulai dari',
@@ -135,7 +143,7 @@ const metadata = {
       {
         title: 'Pagar Besi',
         image: {
-          src: product1,
+          src: pagar,
           alt: 'Image of Pagar Besi',
         },
         subtitle: 'mulai dari',
@@ -143,14 +151,76 @@ const metadata = {
         period: '/m²',
         callToAction: {
           target: '_blank',
-          text: 'Lihat Katalog Pagar Besi',
+          text: 'Lihat Katalog Pagar',
           href: '/kategori/pagar',
         },
       },
       {
-        title: 'Partisi/Sekat Dinding',
+        title: 'Pintu & Jendela',
         image: {
-          src: product1,
+          src: pintu,
+          alt: 'Image of Pintu & Jendela',
+        },
+        subtitle: 'mulai dari',
+        price: '600.000',
+        period: '/m²',
+        callToAction: {
+          target: '_blank',
+          text: 'Lihat Katalog Pintu & Jendela',
+          href: '/tag/aluminium',
+        },
+      },
+      {
+        title: 'Tangga Besi',
+        image: {
+          src: tangga,
+          alt: 'Image of Tangga Besi',
+        },
+        subtitle: 'mulai dari',
+        price: '1.500.000',
+        period: '/m',
+        callToAction: {
+          target: '_blank',
+          text: 'Lihat Katalog Tangga',
+          href: '/kategori/tangga',
+        },
+      },
+      {
+        title: 'Railing/Handrailing',
+        image: {
+          src: railing,
+          alt: 'Image of Railing',
+        },
+        subtitle: 'mulai dari',
+        price: '450.000',
+        period: '/m²',
+        callToAction: {
+          target: '_blank',
+          text: 'Lihat Katalog Railing',
+          href: '/kategori/railing',
+        },
+        hasRibbon: true,
+        // ribbonTitle: 'Termurah',
+      },
+      {
+        title: 'Teralis Pengaman',
+        image: {
+          src: teralis,
+          alt: 'Image of Teralis',
+        },
+        subtitle: 'mulai dari',
+        price: '400.000',
+        period: '/m²',
+        callToAction: {
+          target: '_blank',
+          text: 'Lihat Katalog Teralis',
+          href: '/tag/teralis',
+        },
+      },
+      {
+        title: 'Partisi & Plafon',
+        image: {
+          src: partisi,
           alt: 'Image of Partisi/Sekat Dinding',
         },
         subtitle: 'mulai dari',
@@ -163,21 +233,6 @@ const metadata = {
         },
         hasRibbon: true,
         // ribbonTitle: 'Termurah',
-      },
-      {
-        title: 'Pintu & Jendela Aluminium',
-        image: {
-          src: product1,
-          alt: 'Image of Pintu & Jendela',
-        },
-        subtitle: 'mulai dari',
-        price: '600.000',
-        period: '/m²',
-        callToAction: {
-          target: '_blank',
-          text: 'Lihat Katalog Aluminium',
-          href: '/tag/aluminium',
-        },
       },
       
     ]}

@@ -191,31 +191,35 @@ export const headerData = {
       href: getPermalink('/kategori/blog')
     },
     {
-      text: 'Tentang',
-      links: [
-        {
-          text: 'Kontak',
-          href: getPermalink('/kontak')
-        },
-        {
-          text: 'Alamat',
-          href: getPermalink('/alamat')
-        },
-        {
-          text: 'Sosial Media',
-          href: getPermalink('/sosial')
-        },
-        {
-          text: 'Testimoni',
-          href: getPermalink('/testimoni')
-        },
-        {
-          text: 'Klien',
-          href: getPermalink('/klien')
-        },
+      text: 'Tentang Kami',
+      href: getPermalink('/tentang-kami')
+    }
+    // {
+    //   text: 'Tentang',
+    //   links: [
+    //     {
+    //       text: 'Kontak',
+    //       href: getPermalink('/kontak')
+    //     },
+    //     {
+    //       text: 'Alamat',
+    //       href: getPermalink('/alamat')
+    //     },
+    //     {
+    //       text: 'Sosial Media',
+    //       href: getPermalink('/sosial')
+    //     },
+    //     {
+    //       text: 'Testimoni',
+    //       href: getPermalink('/testimoni')
+    //     },
+    //     {
+    //       text: 'Klien',
+    //       href: getPermalink('/klien')
+    //     },
         
-      ]
-    },
+    //   ]
+    // },
   ],
   actions: [{ text: 'Whatsapp', href: 'https://wa.me/6285176712656', target: '_blank' }],
 };
