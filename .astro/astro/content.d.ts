@@ -263,6 +263,34 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
+"partisi/partisi-sekat-dinding-gypsum-grc-interior.md": {
+	id: "partisi/partisi-sekat-dinding-gypsum-grc-interior.md";
+  slug: "partisi/partisi-sekat-dinding-gypsum-grc-interior";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"partisi/partisi-sekat-kamar-mandi-shower-kaca-temper.md": {
+	id: "partisi/partisi-sekat-kamar-mandi-shower-kaca-temper.md";
+  slug: "partisi/partisi-sekat-kamar-mandi-shower-kaca-temper";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"partisi/partisi-sekat-kantor-toko-resto-bank-kaca-temper-.md": {
+	id: "partisi/partisi-sekat-kantor-toko-resto-bank-kaca-temper-.md";
+  slug: "partisi/partisi-sekat-kantor-toko-resto-bank-kaca-temper-";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"partisi/partisi-sekat-ruko-kantor-toko-resto-bank-aluminium-dan-kaca.md": {
+	id: "partisi/partisi-sekat-ruko-kantor-toko-resto-bank-aluminium-dan-kaca.md";
+  slug: "partisi/partisi-sekat-ruko-kantor-toko-resto-bank-aluminium-dan-kaca";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
 "properti/rm001.md": {
 	id: "properti/rm001.md";
   slug: "properti/rm001";
