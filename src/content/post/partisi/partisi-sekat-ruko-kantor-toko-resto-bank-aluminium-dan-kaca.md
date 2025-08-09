@@ -1,9 +1,9 @@
 ---
-publishDate: 2023-01-25T00:00:00Z
+publishDate: 2025-01-19T00:00:00Z
 author: Zan
 
 code: pt003
-title: Partisi Sekat Kantor Toko Resto Bank Kaca Temper
+title: Partisi Sekat Aluminium & Kaca
 
 price: 350000
 priceBefore: 400000

@@ -3,7 +3,7 @@ publishDate: 2023-01-26T00:00:00Z
 author: Zan
 
 code: pt001
-title: Partisi Kaca Temper Kamar Mandi Shower
+title: Partisi Kaca Temper Kamar Mandi Shower Box
 
 price: 2125000
 priceBefore: 2500000

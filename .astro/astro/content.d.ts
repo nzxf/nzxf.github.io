@@ -151,13 +151,6 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"post": {
-"astrowind-template-in-depth.mdx": {
-	id: "astrowind-template-in-depth.mdx";
-  slug: "astrowind-template-in-depth";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".mdx"] };
 "blog/2024/bangun rumah jogja.md": {
 	id: "blog/2024/bangun rumah jogja.md";
   slug: "blog/2024/bangun-rumah-jogja";
@@ -182,13 +175,6 @@ declare module 'astro:content' {
 "blog/2024/pagar besi jogja.md": {
 	id: "blog/2024/pagar besi jogja.md";
   slug: "blog/2024/pagar-besi-jogja";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".md"] };
-"get-started-website-with-astro-tailwind-css.md": {
-	id: "get-started-website-with-astro-tailwind-css.md";
-  slug: "get-started-website-with-astro-tailwind-css";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
@@ -249,20 +235,6 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"markdown-elements-demo-post.mdx": {
-	id: "markdown-elements-demo-post.mdx";
-  slug: "markdown-elements-demo-post";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".mdx"] };
-"pagar/GG005.md": {
-	id: "pagar/GG005.md";
-  slug: "pagar/gg005";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".md"] };
 "partisi/partisi-sekat-dinding-gypsum-grc-interior.md": {
 	id: "partisi/partisi-sekat-dinding-gypsum-grc-interior.md";
   slug: "partisi/partisi-sekat-dinding-gypsum-grc-interior";
@@ -315,6 +287,27 @@ declare module 'astro:content' {
 "properti/rm004.md": {
 	id: "properti/rm004.md";
   slug: "properti/rm004";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"tangga/tangga-besi-llipat.md": {
+	id: "tangga/tangga-besi-llipat.md";
+  slug: "tangga/tangga-besi-llipat";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"tangga/tangga-besi-rebah.md": {
+	id: "tangga/tangga-besi-rebah.md";
+  slug: "tangga/tangga-besi-rebah";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"tangga/tangga-besi-spiral.md": {
+	id: "tangga/tangga-besi-spiral.md";
+  slug: "tangga/tangga-besi-spiral";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">

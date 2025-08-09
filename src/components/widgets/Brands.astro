@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon/components';
+// import { Icon } from 'astro-icon/components';
 import type { Brands as Props } from '~/types';
 
 import Image from '~/components/common/Image.astro';
@@ -9,7 +9,7 @@ const {
   title = '',
   subtitle = '',
   tagline = '',
-  icons = [],
+  // icons = [],
   images = [],
   id,
   isDark = false,
@@ -21,24 +21,26 @@ const {
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline} />
 
-  <div class="flex flex-wrap justify-center gap-x-3 sm:gap-x-12 lg:gap-x-5">
-    {icons && icons.map((icon) => <Icon name={icon} class="py-3 lg:py-5 w-12 h-auto mx-auto sm:mx-0 text-gray-500" />)}
+  <div class="flex flex-wrap justify-center gap-y-10 gap-x-3 sm:gap-x-12 lg:gap-x-5">
+    <!-- {icons && icons.map((icon) => <Icon name={icon} class="py-3 lg:py-5 w-12 h-auto mx-auto sm:mx-0 text-gray-500" />)} -->
     {
       images &&
         images.map(
           (image) =>
             image.src && (
+            <div class="px-2 py-0">
               <div 
                 class="flex justify-center my-2 lg:my-1 py-1 px-3 rounded-md">         
                   <Image 
                     src={image.src} 
                     alt={image.alt || ''} 
                     class="rounded-md"
-                    width={150} 
-                    height={150} format='webp'/>
+                    width={250} 
+                    height={250} format='webp'/>
               </div>
- 
-            )
+              <span class="font-light flex justify-center  sm:text-small text-black-400 dark:text-slate-400">{image.alt}</span>
+            </div>
+             )
         )
     }
   </div>
