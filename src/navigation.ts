@@ -164,20 +164,36 @@ export const headerData = {
           href: getPermalink('/kategori/kanopi')
         },
         {
-          text: 'Pagar',
-          href: getPermalink('/kategori/pagar')
-        },
-        {
           text: 'Mezzanine',
           href: getPermalink('/kategori/mezzanine')
         },
         {
-          text: 'Rangka',
-          href: getPermalink('/kategori/rangka')
+          text: 'Pagar',
+          href: getPermalink('/kategori/pagar')
+        },
+        {
+          text: 'Aluminium',
+          href: getPermalink('/kategori/aluminium')
+        },
+        {
+          text: 'Tangga',
+          href: getPermalink('/kategori/tangga')
+        },
+        {
+          text: 'Teralis',
+          href: getPermalink('/kategori/teralis')
+        },
+        {
+          text: 'Railing',
+          href: getPermalink('/kategori/railing')
         },
         {
           text: 'Partisi',
           href: getPermalink('/kategori/partisi')
+        },
+        {
+          text: 'Plafon',
+          href: getPermalink('/kategori/plafon')
         },
         
       ]
@@ -229,11 +245,11 @@ export const footerData = {
     {
       title: 'Konstruksi',
       links: [
-        { text: 'Rumah', href: '#' },
-        { text: 'Kos-kosan', href: '#' },
-        { text: 'Gudang', href: '#' },
-        { text: 'GOR', href: '#' },
-        { text: 'Kantor', href: '#' },
+        { text: 'Rumah', href: '/kategori/konstruksi' },
+        { text: 'Kos-kosan', href: '/kategori/konstruksi' },
+        { text: 'Gudang', href: '/kategori/konstruksi' },
+        { text: 'GOR', href: '/kategori/konstruksi' },
+        { text: 'Kantor', href: '/kategori/konstruksi' },
       ],
     },
     {

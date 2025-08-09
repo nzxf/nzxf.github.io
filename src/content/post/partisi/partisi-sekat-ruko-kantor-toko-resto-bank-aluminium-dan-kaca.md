@@ -5,8 +5,8 @@ author: Zan
 code: pt003
 title: Partisi Sekat Aluminium & Kaca
 
-price: 350000
-priceBefore: 400000
+price: 105000
+priceBefore: 120000
 priceTail: /m²
 
 image: ~/assets/images/produk/partisi/partisiAlumKaca.png
@@ -27,9 +27,9 @@ metadata:
 
 ## Deskripsi
 
-- Kaca Temper 10mm
-- Aksesoris Stainless Steel / Atau Aluminium
-- Sealant Anti Bocor
+- Aluminium: 105.000/m
+- Kaca 5mm: 225.000/m²
+- Sealant
 
 ## Tambahan
 - Jika mempunyai desain atau preferensi model sendiri, silahkan dikonsultasikan ke kami.

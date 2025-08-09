@@ -40,7 +40,7 @@ const {
                   )}
                   <div>
                     {title && (
-                      <h3 class="text-center text-2xl lg:text-4xl font-extrabold uppercase leading-9 mb-2">{title}</h3>
+                      <h3 class="text-center text-lg lg:text-2xl font-extrabold uppercase leading-9 mb-2">{title}</h3>
                     )}
                       <div class="flex justify-center my-4 rounded-md">
                     {image && (
@@ -50,7 +50,7 @@ const {
                           class=" max-w-full mx-auto rounded-md lg:rounded-lg bg-gray-400 dark:bg-slate-700"
                           widths={[400, 700]}
                           sizes="(max-width: 700px) 400px, 700px"
-                          width={400}
+                          width={300}
                           height={700}
                           loading="eager"
                           decoding="async"
@@ -62,7 +62,7 @@ const {
                     <div>
                       <div class="flex items-center justify-center text-center mb-1">
                         <span class="text 4xl font-bold text-muted">Rp</span>
-                        <span class="text-2xl font-bold lg:text-5xl">{price}</span>
+                        <span class="text-2xl font-bold lg:text-3xl">{price}</span>
                         <span class="text 4xl font-bold text-muted">{period}</span>
                       </div>
                     </div>

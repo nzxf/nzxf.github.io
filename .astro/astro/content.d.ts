@@ -235,9 +235,37 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"partisi/partisi-sekat-dinding-gypsum-grc-interior.md": {
-	id: "partisi/partisi-sekat-dinding-gypsum-grc-interior.md";
-  slug: "partisi/partisi-sekat-dinding-gypsum-grc-interior";
+"mezzanine/loft bed.md": {
+	id: "mezzanine/loft bed.md";
+  slug: "mezzanine/loft-bed";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"mezzanine/mezzanine dak balkon.md": {
+	id: "mezzanine/mezzanine dak balkon.md";
+  slug: "mezzanine/mezzanine-dak-balkon";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"mezzanine/mezzanine plafon.md": {
+	id: "mezzanine/mezzanine plafon.md";
+  slug: "mezzanine/mezzanine-plafon";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"partisi/partisi-sekat-dinding-gypsum-grc-1-sisi.md": {
+	id: "partisi/partisi-sekat-dinding-gypsum-grc-1-sisi.md";
+  slug: "partisi/partisi-sekat-dinding-gypsum-grc-1-sisi";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"partisi/partisi-sekat-dinding-gypsum-grc-2-sisi.md": {
+	id: "partisi/partisi-sekat-dinding-gypsum-grc-2-sisi.md";
+  slug: "partisi/partisi-sekat-dinding-gypsum-grc-2-sisi";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
@@ -259,6 +287,27 @@ declare module 'astro:content' {
 "partisi/partisi-sekat-ruko-kantor-toko-resto-bank-aluminium-dan-kaca.md": {
 	id: "partisi/partisi-sekat-ruko-kantor-toko-resto-bank-aluminium-dan-kaca.md";
   slug: "partisi/partisi-sekat-ruko-kantor-toko-resto-bank-aluminium-dan-kaca";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"plafon/plafon-grc.md": {
+	id: "plafon/plafon-grc.md";
+  slug: "plafon/plafon-grc";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"plafon/plafon-gypsum.md": {
+	id: "plafon/plafon-gypsum.md";
+  slug: "plafon/plafon-gypsum";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"plafon/plafon-pvc.md": {
+	id: "plafon/plafon-pvc.md";
+  slug: "plafon/plafon-pvc";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">

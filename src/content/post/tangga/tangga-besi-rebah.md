@@ -5,7 +5,7 @@ author: Zan
 code: tg001
 title: Tangga Besi Rebah
 
-price: 150000
+price: 1500000
 priceBefore: 1599500
 priceTail: /m
 

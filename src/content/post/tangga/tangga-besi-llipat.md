@@ -5,8 +5,8 @@ author: Zan
 code: tg003
 title: Tangga Besi Lipat
 
-price: 1500000
-priceBefore: 1750000
+price: 1050000
+priceBefore: 1500000
 priceTail: /m
 
 image: ~/assets/images/produk/tangga/tanggaLipat.png

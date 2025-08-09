@@ -11,7 +11,7 @@ metadata:
   title:
     default: Mitra Bangun Kreasi
     template: '%s — Mitra Bangun Kreasi'
-  description: "Kualitas adalah Prioritas"
+  description: "Solusi Satu Pintu Untuk Kebutuhan Konstruksi Anda"
   robots:
     index: true
     follow: true
@@ -19,7 +19,7 @@ metadata:
     site_name: Mitra Bangun Kreasi
     images:
       - url: '~/assets/images/default.png'
-        width: 1200
+        width: 628
         height: 628
     type: website
   twitter:
@@ -70,4 +70,4 @@ analytics:
       id: null # or "G-XXXXXXXXXX"
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'dark' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
