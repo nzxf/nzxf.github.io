@@ -119,24 +119,65 @@ const { post, url } = Astro.props;
 
     <div class="flex flex-col">
       {post.price && 
-        <h2>HARGA</h2>
+        <h2>Price</h2>
+        <div class="flex">
+          <CallToAction
+            classes={{
+              container: 'm-0 p-0 border-none',
+          }}
+          actions={[
+            {
+              variant: 'primary',
+              text: 'Order Sekarang',
+              href: 'https://wa.me/6285176712656?text=MBK,%20saya%20mau%20pesan%20' + post.title,
+              target: '_blank',
+              icon: 'tabler:shopping-cart'
+            },
+          ]}
+          >
+            <Fragment slot="subtitle">
+              <div class="flex flex-col ">
+                {post.priceBefore && 
+                  <div class="pl-3 flex items-center justify-center">
+                    <span class="text-gray-500 font-bold text-lg line-through">Rp</span>
+                    <span class="text-gray-500 font-bold text-lg line-through">{dotByThousand(post.priceBefore)}</span>
+                    {post.price && 
+                      <span class="text-center font-bold text-lg text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">-{countDiscount(post.price, post.priceBefore)}%</span>
+                    }
+                  </div>
+                }
+                {post.price &&   
+                  <div class="pl-3 flex">
+                    <span class="font-bold text-2xl">Rp</span>
+                    <span class="pl-1 font-bold text-2xl">{dotByThousand(post.price)}</span>
+                    <span class="font-bold text-2xl">{post.priceTail}</span>
+                  </div>
+                }
+              </div>
+            </Fragment>
+          </CallToAction>
+        </div>
       }
-      {post.priceBefore && 
-        <div class="pl-3 flex">
-          <span class="text-gray-500 font-bold text-lg line-through">Rp</span>
-          <span class="text-gray-500 font-bold text-lg line-through">{dotByThousand(post.priceBefore)}</span>
-          {post.price && 
-            <span class="text-center font-bold text-lg text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">-{countDiscount(post.price, post.priceBefore)}%</span>
+      <!-- <div class="flex">
+        <div class="flex flex-col ">
+          {post.priceBefore && 
+            <div class="pl-3 flex">
+              <span class="text-gray-500 font-bold text-lg line-through">Rp</span>
+              <span class="text-gray-500 font-bold text-lg line-through">{dotByThousand(post.priceBefore)}</span>
+              {post.price && 
+                <span class="text-center font-bold text-lg text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">-{countDiscount(post.price, post.priceBefore)}%</span>
+              }
+            </div>
+          }
+          {post.price &&   
+            <div class="pl-3 flex">
+              <span class="font-bold text-2xl">Rp</span>
+              <span class="pl-1 font-bold text-2xl">{dotByThousand(post.price)}</span>
+              <span class="font-bold text-2xl">{post.priceTail}</span>
+            </div>
           }
         </div>
-      }
-      {post.price &&   
-        <div class="pl-3 flex">
-          <span class="font-bold text-2xl">Rp</span>
-          <span class="pl-1 font-bold text-2xl">{dotByThousand(post.price)}</span>
-          <span class="font-bold text-2xl">{post.priceTail}</span>
-        </div>
-      }
+      </div> -->
     </div>
 
     {
@@ -206,7 +247,7 @@ const { post, url } = Astro.props;
               },
               {
                 variant: 'primary',
-                text: 'Tanyakan ini',
+                text: 'Pesan Sekarang',
                 href: 'https://wa.me/6285176712656?text=MBK,%20saya%20mau%20tanya%20tentang%20' + post.code.toUpperCase() + ": " + post.title,
                 target: '_blank',
                 icon: 'tabler:message'
@@ -214,10 +255,10 @@ const { post, url } = Astro.props;
             ]}
             >
               <Fragment slot="title">
-                Tertarik dengan {post.category?.title.toLowerCase()} ini?<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
+                Tertarik dengan {post.category?.title.toLowerCase()} tipe ini?<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
               </Fragment>
               <Fragment slot="subtitle">
-                Tunggu apa lagi, langsung klik tombol di bawah.
+                Tunggu apa lagi, langsung order sekarang juga.
               </Fragment>
             </CallToAction>
           )

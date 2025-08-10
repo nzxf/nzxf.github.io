@@ -2,7 +2,7 @@
 import type { ImageMetadata } from 'astro';
 import { Icon } from 'astro-icon/components';
 import Image from '~/components/common/Image.astro';
-// import Button from '../ui/Button.astro';
+import Button from '../ui/Button.astro';
 // import PostTags from '~/components/blog/Tags.astro';
 
 import { APP_BLOG } from 'astrowind:config';
@@ -195,26 +195,26 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
     </div>
 
     <footer class="my-2">
-      <!-- {
+      {
         post.code && (
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
               class="text-sm m-0 p-2 rounded-xl"
-              text="Lihat Detail"
+              text="Lihat"
               href={link}
               variant="primary">
             </Button>
             <Button
               class="text-sm p-0 rounded-xl"
-              text="Tanyakan Ini" 
-              href={`https://wa.me/6285176712656?text=MBK,%20mau%20tanya%20tentang%20` + `${post.code.toUpperCase()}: ` + post.title}>
+              text="Pesan" 
+              href={`https://wa.me/6285176712656?text=MBK,%20mau%20pesan%20` + `${post.code.toUpperCase()}: ` + post.title}>
             </Button>
           </div>
         )
-      } -->
+      }
     </footer>
 
     
-    <a href={link ?? 'javascript:void(0)'} class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a>
+    <!-- <a href={link ?? 'javascript:void(0)'} class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> -->
   </div>
 </article>

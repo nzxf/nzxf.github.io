@@ -273,11 +273,11 @@ export const footerData = {
     {
       title: 'Properti',
       links: [
-        { text: 'Rumah', href: '#' },
-        { text: 'Toko', href: '#' },
-        { text: 'Ruko', href: '#' },
-        { text: 'Gazebo', href: '#' },
-        { text: 'Gudang', href: '#' },
+        { text: 'Rumah', href: '/kategori/properti' },
+        { text: 'Toko', href: '/kategori/properti' },
+        { text: 'Ruko', href: '/kategori/properti' },
+        { text: 'Gazebo', href: '/kategori/properti' },
+        { text: 'Gudang', href: '/kategori/properti' },
       ],
     },
   ],
