@@ -153,7 +153,7 @@ export const headerData = {
     //   href: getPermalink('/kategori/jasa')
     // },
     {
-      text: 'Katalog Produk',
+      text: 'Katalog',
       links: [
         {
           text: 'Konstruksi',

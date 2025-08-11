@@ -19,7 +19,7 @@ const {
 } = Astro.props;
 ---
 
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl ${classes?.container ?? ''}`} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline}/>
   <!-- <div class="flex items-stretch justify-center"> -->
   <div class="flex items-stretch justify-center">
@@ -28,7 +28,8 @@ const {
         prices &&
           prices.map(({ title, image, subtitle, price, period, items, callToAction, hasRibbon = false, ribbonTitle }) => (
           // prices.map(({ title, subtitle, price, period, items, callToAction, hasRibbon = false, ribbonTitle }) => (
-            <div class="justify-center col-span-3 mx-auto flex sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-quarter">
+            // <div class="justify-center col-span-3 mx-auto flex sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 intersect-once intersect-quarter">
+            <div class="justify-center mx-auto flex intersect-once intersect-quarter">
               {price && period && (
                 <div class="rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow px-6 py-8 flex w-full max-w-sm flex-col justify-between text-center">
                   {hasRibbon && ribbonTitle && (
@@ -48,8 +49,9 @@ const {
                           src={image.src}
                           alt={image.alt || ''}
                           class=" rounded-md lg:rounded-lg bg-gray-400 dark:bg-slate-700"
-                          widths={[100, 300, 600]}
-                          sizes="(max-width: 500px) 200px"
+                          widths={[250, 500]}
+                          sizes="(max-width: 500px) 250px"
+
                           loading="eager"
                           decoding="async"
                           format='webp'
