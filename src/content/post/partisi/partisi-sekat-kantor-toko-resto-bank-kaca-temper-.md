@@ -3,9 +3,9 @@ publishDate: 2023-01-26T00:00:00Z
 author: Zan
 
 code: pt002
-title: Partisi Sekat Kantor Toko Resto Bank Kaca Temper
+title: Partisi Sekat Utama Kaca Tempered
 
-price: 2590000
+price: 2750000
 priceBefore: 2850000
 priceTail: /m²
 
@@ -24,7 +24,7 @@ metadata:
 
 ## Deskripsi
 
-- Kaca Temper 10mm
+- Kaca Temper 12mm
 - Aksesoris Stainless Steel / Atau Aluminium
 - Sealant Anti Bocor
 

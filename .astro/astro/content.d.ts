@@ -256,16 +256,16 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"partisi/partisi-sekat-dinding-gypsum-grc-1-sisi.md": {
-	id: "partisi/partisi-sekat-dinding-gypsum-grc-1-sisi.md";
-  slug: "partisi/partisi-sekat-dinding-gypsum-grc-1-sisi";
+"partisi/partisi-sekat-dinding-gypsum-1-sisi.md": {
+	id: "partisi/partisi-sekat-dinding-gypsum-1-sisi.md";
+  slug: "partisi/partisi-sekat-dinding-gypsum-1-sisi";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"partisi/partisi-sekat-dinding-gypsum-grc-2-sisi.md": {
-	id: "partisi/partisi-sekat-dinding-gypsum-grc-2-sisi.md";
-  slug: "partisi/partisi-sekat-dinding-gypsum-grc-2-sisi";
+"partisi/partisi-sekat-dinding-gypsum-2-sisi.md": {
+	id: "partisi/partisi-sekat-dinding-gypsum-2-sisi.md";
+  slug: "partisi/partisi-sekat-dinding-gypsum-2-sisi";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">

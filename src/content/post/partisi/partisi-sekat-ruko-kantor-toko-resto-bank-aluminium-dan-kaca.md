@@ -27,8 +27,8 @@ metadata:
 
 ## Deskripsi
 
-- Aluminium: 105.000/m
-- Kaca 5mm: 225.000/m²
+- Kusen Aluminium: 105.000/m
+- Kaca 5mm: 235.000/m²
 - Sealant
 
 ## Tambahan

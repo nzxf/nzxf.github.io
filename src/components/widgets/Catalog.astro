@@ -28,7 +28,7 @@ const {
         prices &&
           prices.map(({ title, image, subtitle, price, period, items, callToAction, hasRibbon = false, ribbonTitle }) => (
           // prices.map(({ title, subtitle, price, period, items, callToAction, hasRibbon = false, ribbonTitle }) => (
-            <div class="justify-center col-span-3 mx-auto flex w-full sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-quarter">
+            <div class="justify-center col-span-3 mx-auto flex sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1 intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-quarter">
               {price && period && (
                 <div class="rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow px-6 py-8 flex w-full max-w-sm flex-col justify-between text-center">
                   {hasRibbon && ribbonTitle && (
@@ -40,22 +40,23 @@ const {
                   )}
                   <div>
                     {title && (
-                      <h3 class="text-center text-lg lg:text-2xl font-extrabold uppercase leading-9 mb-2">{title}</h3>
+                      <h3 class="text-center text-2xl font-extrabold uppercase leading-9 mb-2">{title}</h3>
                     )}
-                      <div class="flex justify-center my-4 rounded-md">
+                      <div class="flex justify-center my-4 md:my-1 rounded-md">
                     {image && (
                         <Image
                           src={image.src}
                           alt={image.alt || ''}
-                          class=" max-w-full mx-auto rounded-md lg:rounded-lg bg-gray-400 dark:bg-slate-700"
-                          widths={[400, 700]}
-                          sizes="(max-width: 700px) 400px, 700px"
-                          width={300}
-                          height={700}
+                          class=" rounded-md lg:rounded-lg bg-gray-400 dark:bg-slate-700"
+                          widths={[100, 300, 600]}
+                          sizes="(max-width: 500px) 200px"
                           loading="eager"
                           decoding="async"
                           format='webp'
-                        />
+                          />
+                          // class=" max-w-full mx-auto rounded-md lg:rounded-lg bg-gray-400 dark:bg-slate-700"
+                          // width={600}
+                          // height={700}
                       )}               
                       </div>
                     {subtitle && <span class="mt-2 font-bold text-muted sm:text-small text-black-400 dark:text-slate-400">{subtitle}</span>}

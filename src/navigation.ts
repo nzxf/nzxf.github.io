@@ -195,6 +195,10 @@ export const headerData = {
           text: 'Plafon',
           href: getPermalink('/kategori/plafon')
         },
+        {
+          text: 'Semua',
+          href: getPermalink('/katalog')
+        },
         
       ]
     },
