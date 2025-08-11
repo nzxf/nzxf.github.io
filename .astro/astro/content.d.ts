@@ -340,6 +340,55 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
+"railing/railing besi bulat.md": {
+	id: "railing/railing besi bulat.md";
+  slug: "railing/railing-besi-bulat";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"railing/railing besi ekspanda.md": {
+	id: "railing/railing besi ekspanda.md";
+  slug: "railing/railing-besi-ekspanda";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"railing/railing besi hollow.md": {
+	id: "railing/railing besi hollow.md";
+  slug: "railing/railing-besi-hollow";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"railing/railing besi laser cutting.md": {
+	id: "railing/railing besi laser cutting.md";
+  slug: "railing/railing-besi-laser-cutting";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"railing/railing besi plat perforated.md": {
+	id: "railing/railing besi plat perforated.md";
+  slug: "railing/railing-besi-plat-perforated";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"railing/railing kaca temper.md": {
+	id: "railing/railing kaca temper.md";
+  slug: "railing/railing-kaca-temper";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"railing/railing stainless steel.md": {
+	id: "railing/railing stainless steel.md";
+  slug: "railing/railing-stainless-steel";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
 "tangga/tangga-besi-llipat.md": {
 	id: "tangga/tangga-besi-llipat.md";
   slug: "tangga/tangga-besi-llipat";
