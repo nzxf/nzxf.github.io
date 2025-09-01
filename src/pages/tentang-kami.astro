@@ -5,6 +5,19 @@ import Hero from '~/components/widgets/Hero.astro';
 import Stats from '~/components/widgets/Stats.astro';
 // import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+// Import images for Client Logo
+import logoBi from "~/assets/images/klien/logoBi.png"
+import logoBni from "~/assets/images/klien/logoBni.png"
+import logoBri from "~/assets/images/klien/logoBri.png"
+import logoAngkasaPura from "~/assets/images/klien/logoAngkasaPura.png"
+import logoUmy from "~/assets/images/klien/logoUmy.png"
+import logoPaBantul from "~/assets/images/klien/logoPaBantul.png"
+import logoRskbSinduadi from "~/assets/images/klien/logoRskbSinduadi.png"
+import logoTarakanita from "~/assets/images/klien/logoTarakanita.png"
+import logoSangTimur from "~/assets/images/klien/logoSangTimur.png"
+import logoBaleTimoho from "~/assets/images/klien/logoBaleTimoho.png"
 
 const metadata = {
   title: 'Tentang MBK',
@@ -40,6 +53,55 @@ const metadata = {
   </Hero>
 
   <!-- Stats Widget ****************** -->
+
+  <Brands
+  title="Our Valued Clients"
+  subtitle="Kami Bangga Menjadi Bagian dari Perjalanan Mereka"
+  icons={[]}
+  images={[
+    {
+      src: logoBi,
+      alt: 'Bank Indonesia',
+    },
+    {
+      src: logoBni,
+      alt: 'Bank Negara Indonesia',
+    },
+    {
+      src: logoBri,
+      alt: 'Bank Rakyat Indonesia',
+    },
+    {
+      src: logoAngkasaPura,
+      alt: 'Angkasa Pura I Group',
+    },
+    {
+      src: logoUmy,
+      alt: 'Universitas Muhammadiyah Yogyakarta',
+    },
+    {
+      src: logoPaBantul,
+      alt: 'Pengadilan Agama Bantul',
+    },
+    {
+      src: logoRskbSinduadi,
+      alt: 'Rumah Sakit Khusus Bedah Sinduadi',
+    },
+    {
+      src: logoTarakanita,
+      alt: 'Yayasan Tarakanita Yogyakarta',
+    },
+    {
+      src: logoSangTimur,
+      alt: 'Yayasan Sang Timur',
+    },
+    {
+      src: logoBaleTimoho,
+      alt: 'Bale Timoho Resto',
+    },
+  ]}
+  />
+
 
   <Stats
     title="Statistik Kami"

@@ -179,16 +179,44 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"kanopi/KN003.md": {
-	id: "kanopi/KN003.md";
-  slug: "kanopi/kn003";
+"kanopi/Kanopi Baja Ringan Atap Galvalum.md": {
+	id: "kanopi/Kanopi Baja Ringan Atap Galvalum.md";
+  slug: "kanopi/kanopi-baja-ringan-atap-galvalum";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"kanopi/KN004.md": {
-	id: "kanopi/KN004.md";
-  slug: "kanopi/kn004";
+"kanopi/Kanopi Baja Ringan Atap Polycarbonate Gelombang.md": {
+	id: "kanopi/Kanopi Baja Ringan Atap Polycarbonate Gelombang.md";
+  slug: "kanopi/kanopi-baja-ringan-atap-polycarbonate-gelombang";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"kanopi/Kanopi Besi Hollow Atap Kaca Tempered.md": {
+	id: "kanopi/Kanopi Besi Hollow Atap Kaca Tempered.md";
+  slug: "kanopi/kanopi-besi-hollow-atap-kaca-tempered";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"kanopi/Kanopi Besi Hollow Atap Polycarbonate Solid.md": {
+	id: "kanopi/Kanopi Besi Hollow Atap Polycarbonate Solid.md";
+  slug: "kanopi/kanopi-besi-hollow-atap-polycarbonate-solid";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"kanopi/Kanopi Besi Hollow Atap uPVC Double.md": {
+	id: "kanopi/Kanopi Besi Hollow Atap uPVC Double.md";
+  slug: "kanopi/kanopi-besi-hollow-atap-upvc-double";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"kanopi/Kanopi Besi Hollow Atap uPVC Single.md": {
+	id: "kanopi/Kanopi Besi Hollow Atap uPVC Single.md";
+  slug: "kanopi/kanopi-besi-hollow-atap-upvc-single";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">

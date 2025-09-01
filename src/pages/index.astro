@@ -27,6 +27,8 @@ import railing from "~/assets/images/katalog/railing.png"
 import teralis from "~/assets/images/katalog/teralis.png"
 import partisi from "~/assets/images/katalog/partisi.png"
 import plafon from "~/assets/images/katalog/plafon.png"
+import interior from "~/assets/images/katalog/interior.png"
+import fasad from "~/assets/images/katalog/fasad.png"
 
 // Import images for Client Logo
 import logoBi from "~/assets/images/klien/logoBi.png"
@@ -104,8 +106,8 @@ const metadata = {
           alt: 'Image of Konstruksi Bangunan',
         },
         subtitle: 'mulai dari',
-        price: '3.500.000',
-        period: '/m²',
+        price: '35.000',
+        period: '/kg',
         callToAction: {
           target: '_blank',
           text: 'Lihat Katalog Konstruksi',
@@ -145,7 +147,7 @@ const metadata = {
         ribbonTitle: 'Terlaris',
       },
       {
-        title: 'Pagar Besi',
+        title: 'Pagar',
         image: {
           src: pagar,
           alt: 'Image of Pagar Besi',
@@ -175,7 +177,7 @@ const metadata = {
         },
       },
       {
-        title: 'Tangga Besi',
+        title: 'Tangga',
         image: {
           src: tangga,
           alt: 'Image of Tangga Besi',
@@ -255,11 +257,44 @@ const metadata = {
         hasRibbon: true,
         // ribbonTitle: 'Termurah',
       },
+      {
+        title: 'Fasad',
+        image: {
+          src: fasad,
+          alt: 'Image of Fasad',
+        },
+        subtitle: 'mulai dari',
+        price: '124.500',
+        period: '/m²',
+        callToAction: {
+          target: '_blank',
+          text: 'Lihat Katalog fasad',
+          href: '/kategori/Fasad',
+        },
+        hasRibbon: true,
+        // ribbonTitle: 'Termurah',
+      },
+      {
+        title: 'Interior',
+        image: {
+          src: interior,
+          alt: 'Image of Interior',
+        },
+        subtitle: 'mulai dari',
+        price: '124.500',
+        period: '/m²',
+        callToAction: {
+          target: '_blank',
+          text: 'Lihat Katalog Interior',
+          href: '/kategori/interior',
+        },
+        hasRibbon: true,
+        // ribbonTitle: 'Termurah',
+      },
       
     ]}
     >
   </Catalog>
-
 
   <Brands
   title="Our Valued Clients"

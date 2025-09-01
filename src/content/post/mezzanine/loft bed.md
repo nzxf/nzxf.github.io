@@ -3,7 +3,7 @@ publishDate: 2024-01-25T00:00:00Z
 author: Zan
 
 code: mz003
-title: Loft Bed
+title: Loft Bed HPL
 
 price: 2700000
 priceBefore: 2850000
@@ -15,6 +15,7 @@ tags:
   - Mezzanine
   - Loft Bed
   - Besi
+  - Besi Hollow
   - Kalsifloor
   - Railing
   - Tangga

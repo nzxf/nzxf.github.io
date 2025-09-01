@@ -196,6 +196,14 @@ export const headerData = {
           href: getPermalink('/kategori/plafon')
         },
         {
+          text: 'Fasad',
+          href: getPermalink('/kategori/fasad')
+        },
+        {
+          text: 'Interior',
+          href: getPermalink('/kategori/interior')
+        },
+        {
           text: 'Semua',
           href: getPermalink('/katalog')
         },
