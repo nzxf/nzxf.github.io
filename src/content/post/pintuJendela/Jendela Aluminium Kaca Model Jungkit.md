@@ -1,0 +1,34 @@
+---
+publishDate: 2024-01-25T00:00:00Z
+author: Zan
+
+code: PJ001
+title: Jendela Aluminium Kaca Model Jungkit
+
+price: 550000
+priceBefore: 650000
+priceTail: /m²
+
+image: ~/assets/images/produk/pintuJendela/jendelaAlumJungkit.png
+category: Pintu & Jendela
+tags:
+  - Jendela
+  - Aluminium
+  - Kaca
+
+
+metadata:
+  canonical: https://mitrabangunkreasi.com/p/jj003
+---
+
+## Deskripsi
+
+Spesifikasi Produk:
+- Kusen Aluminium 3 inch
+- Kaca 5mm
+- Aksesoris Standar
+- Sealant (Pelapis Anti Bocor)
+
+Aksesoris Tambahan/Custom (Opsional):
+- Kaca Tempered
+- List

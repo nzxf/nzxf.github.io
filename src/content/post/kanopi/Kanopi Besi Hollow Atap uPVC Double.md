@@ -3,7 +3,7 @@ publishDate: 2024-01-25T00:00:00Z
 author: Zan
 
 code: KH002
-title: Kanopi Besi Hollow Atap uPVC (double).md
+title: Kanopi Besi Hollow Atap uPVC (double)
 
 price: 675000
 priceBefore: 720000
@@ -32,8 +32,5 @@ Spesifikasi Produk:
 - Atap uPVC Double Layer/Twin Wall (Alderon/Dr Shield/Setara)
 - Sealant (Pelapis Anti Bocor)
 
-Belum Termasuk Aksesoris Tambahan:
+Aksesoris Tambahan (Opsional):
 - Talang Air
-
-## Tambahan
-- Silakan hubungi kami untuk mendapatkan informasi lebih lengkap tentang spesifikasi produk ini.

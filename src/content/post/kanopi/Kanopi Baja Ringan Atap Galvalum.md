@@ -30,9 +30,6 @@ Spesifikasi Produk:
 - Atap Spandek Galvalum Polos
 - Sealant (Pelapis Anti Bocor)
 
-Belum Termasuk Aksesoris Tambahan:
+Aksesoris Tambahan (Opsional):
 - Cat Rangka
 - Talang Air
-
-## Tambahan
-- Silakan hubungi kami untuk mendapatkan informasi lebih lengkap tentang spesifikasi produk ini.

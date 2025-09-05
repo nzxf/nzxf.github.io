@@ -172,8 +172,8 @@ export const headerData = {
           href: getPermalink('/kategori/pagar')
         },
         {
-          text: 'Aluminium',
-          href: getPermalink('/kategori/aluminium')
+          text: 'Pintu & Jendela',
+          href: getPermalink('/kategori/pintu-and-jendela')
         },
         {
           text: 'Tangga',
@@ -204,7 +204,7 @@ export const headerData = {
           href: getPermalink('/kategori/interior')
         },
         {
-          text: 'Semua',
+          text: 'Semua Katalog',
           href: getPermalink('/katalog')
         },
         

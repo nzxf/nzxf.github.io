@@ -3,7 +3,7 @@ publishDate: 2024-01-25T00:00:00Z
 author: Zan
 
 code: KH003
-title: Kanopi Besi Hollow Atap Polycarbonate Solid.md
+title: Kanopi Besi Hollow Atap Polycarbonate Solid
 
 price: 650000
 priceBefore: 725000
@@ -33,8 +33,5 @@ Spesifikasi Produk:
 -  Atap Polycarbonate Gelombang (Solartuff/Carbolux/Solarlite/Setara)
 - Sealant (Pelapis Anti Bocor)
 
-Belum Termasuk Aksesoris Tambahan:
+Aksesoris Tambahan (Opsional):
 - Talang Air
-
-## Tambahan
-- Silakan hubungi kami untuk mendapatkan informasi lebih lengkap tentang spesifikasi produk ini.

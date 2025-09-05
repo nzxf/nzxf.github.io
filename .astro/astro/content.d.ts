@@ -319,6 +319,62 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
+"pintuJendela/Jendela Aluminium Kaca Model Jungkit.md": {
+	id: "pintuJendela/Jendela Aluminium Kaca Model Jungkit.md";
+  slug: "pintujendela/jendela-aluminium-kaca-model-jungkit";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pintuJendela/Jendela Aluminium Kaca Model Swing.md": {
+	id: "pintuJendela/Jendela Aluminium Kaca Model Swing.md";
+  slug: "pintujendela/jendela-aluminium-kaca-model-swing";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pintuJendela/Jendela Aluminium dan Kaca Geser Sliding.md": {
+	id: "pintuJendela/Jendela Aluminium dan Kaca Geser Sliding.md";
+  slug: "pintujendela/jendela-aluminium-dan-kaca-geser-sliding";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pintuJendela/Jendela Aluminium dan Kaca Model Sudut.md": {
+	id: "pintuJendela/Jendela Aluminium dan Kaca Model Sudut.md";
+  slug: "pintujendela/jendela-aluminium-dan-kaca-model-sudut";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pintuJendela/Jendela Aluminium dan Kaca Ventilasi.md": {
+	id: "pintuJendela/Jendela Aluminium dan Kaca Ventilasi.md";
+  slug: "pintujendela/jendela-aluminium-dan-kaca-ventilasi";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pintuJendela/Pintu Aluminium Isi Aluminium Spandrel.md": {
+	id: "pintuJendela/Pintu Aluminium Isi Aluminium Spandrel.md";
+  slug: "pintujendela/pintu-aluminium-isi-aluminium-spandrel";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pintuJendela/Pintu Aluminium Kaca Es Frozen Buram.md": {
+	id: "pintuJendela/Pintu Aluminium Kaca Es Frozen Buram.md";
+  slug: "pintujendela/pintu-aluminium-kaca-es-frozen-buram";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pintuJendela/Pintu Aluminium Panel ACP.md": {
+	id: "pintuJendela/Pintu Aluminium Panel ACP.md";
+  slug: "pintujendela/pintu-aluminium-panel-acp";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
 "plafon/plafon-grc.md": {
 	id: "plafon/plafon-grc.md";
   slug: "plafon/plafon-grc";

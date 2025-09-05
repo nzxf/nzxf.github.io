@@ -11,7 +11,7 @@ import type { Post } from '~/types';
 import { getPermalink } from '~/utils/permalinks';
 import { findImage } from '~/utils/images';
 // import { getFormattedDate } from '~/utils/utils';
-import { dotByThousand, countDiscount } from '~/utils/utils';
+// import { dotByThousand, countDiscount } from '~/utils/utils';
 
 
 export interface Props {
@@ -174,7 +174,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
         </body>
    
 
-    <div class="flex-grow flex flex-col justify-end">
+    <!-- <div class="flex-grow flex flex-col justify-end">
       {post.priceBefore && 
           <div class="mt-2 flex justify-center items-center">
             <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
@@ -192,7 +192,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
             <span class="font-bold text-muted text-xl">{post.priceTail}</span>
           </div>
         }  
-    </div>
+    </div> -->
 
     <footer class="my-2">
       {
@@ -200,13 +200,15 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
               class="text-sm m-0 p-2 rounded-xl"
-              text="Lihat"
+              icon='tabler:id'
+              text="Detail"
               href={link}
               variant="primary">
             </Button>
             <Button
               class="text-sm p-0 rounded-xl"
-              text="Pesan" 
+              icon='tabler:shopping-cart'
+              text="Order" 
               href={`https://wa.me/6285176712656?text=MBK,%20mau%20pesan%20` + `${post.code.toUpperCase()}: ` + post.title}>
             </Button>
           </div>

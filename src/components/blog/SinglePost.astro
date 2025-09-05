@@ -8,7 +8,8 @@ import SocialShare from '~/components/common/SocialShare.astro';
 import CallToAction from '../widgets/CallToAction.astro';
 
 import { getPermalink } from '~/utils/permalinks';
-import { getFormattedDate, dotByThousand, countDiscount } from '~/utils/utils';
+import { getFormattedDate } from '~/utils/utils';
+// import { getFormattedDate, dotByThousand, countDiscount } from '~/utils/utils';
 
 import type { Post } from '~/types';
 
@@ -116,9 +117,9 @@ const { post, url } = Astro.props;
     <div
       class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-2 prose-headings:scroll-mt-[80px] prose-li:my-0"
     >
-
+<!-- PRICE -->
     <div class="flex flex-col">
-      {post.price && 
+      <!-- {post.price && 
         <h2>Price</h2>
         <div class="flex">
           <CallToAction
@@ -138,7 +139,7 @@ const { post, url } = Astro.props;
             <Fragment slot="subtitle">
               <div class="flex flex-col ">
                 {post.priceBefore && 
-                  <div class="pl-3 flex items-center justify-center">
+                  <div class="flex items-center justify-center">
                     <span class="text-gray-500 font-bold text-lg line-through">Rp</span>
                     <span class="text-gray-500 font-bold text-lg line-through">{dotByThousand(post.priceBefore)}</span>
                     {post.price && 
@@ -158,7 +159,7 @@ const { post, url } = Astro.props;
           </CallToAction>
         </div>
       }
-      <!-- <div class="flex">
+      <div class="flex">
         <div class="flex flex-col ">
           {post.priceBefore && 
             <div class="pl-3 flex">

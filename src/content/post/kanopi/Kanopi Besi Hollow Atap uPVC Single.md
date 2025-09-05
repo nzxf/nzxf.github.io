@@ -3,7 +3,7 @@ publishDate: 2024-01-25T00:00:00Z
 author: Zan
 
 code: KH001
-title: Kanopi Besi Hollow Atap uPVC (single).md
+title: Kanopi Besi Hollow Atap uPVC (single)
 
 price: 525000
 priceBefore: 580000
@@ -15,7 +15,7 @@ tags:
   - Kanopi
   - Carport
   - Besi
-  - Besi HOllow
+  - Besi Hollow
   - uPVC
   - Alderon
   - Dr Shield
@@ -32,8 +32,5 @@ Spesifikasi Produk:
 - Atap uPVC Single Layer (Alderon/Dr Shield/Setara)
 - Sealant (Pelapis Anti Bocor)
 
-Belum Termasuk Aksesoris Tambahan:
+Aksesoris Tambahan (Opsional):
 - Talang Air
-
-## Tambahan
-- Silakan hubungi kami untuk mendapatkan informasi lebih lengkap tentang spesifikasi produk ini.
