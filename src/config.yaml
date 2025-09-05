@@ -34,7 +34,7 @@ i18n:
 apps:
   blog:
     isEnabled: true
-    postsPerPage: 12
+    postsPerPage: 14
 
     post:
       isEnabled: true
