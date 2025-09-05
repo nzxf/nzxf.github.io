@@ -296,7 +296,7 @@ Mohon maaf properti sudah terjual</p></div>  </div>  </div> </section> </div> <d
       }  
   </div>
 </article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/rm003.DMPsUnxs.jpg" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="933" srcset="/_astro/rm003.DMPsUnxs_Z1L1LDp.webp 400w, /_astro/rm003.DMPsUnxs_1ngjLB.webp 700w, /_astro/rm003.DMPsUnxs_ZVtfOA.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 933px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Toko Abu 3 Akses" loading="lazy" decoding="async"> <div class="absolute inset-0 bg-gray-900 opacity-60 rounded-t-lg"></div>
-              <div class="absolute inset-0 flex flex-col items-center justify-center"> <h2 class="text-gray-100 text-2xl font-extrabold">PROPERTI</h2> <h2 class="text-gray-100 text-2xl font-extrabold">TERJUAL</h2> </div> </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/properti/rm003"> Toko Abu 3 Akses </a> </h2> <p class="mb-2 text-muted dark:text-slate-400 text-base">Banguntapan, Bantul</p> </div> <div class="flex-grow flex flex-col justify-end">  <div class="flex justify-center items-center"> <span class="font-bold text-muted text-xl">Rp</span> <span class="font-bold text-2xl">350.000.000</span> <span class="font-bold text-muted text-xl"></span> </div> </div> <footer class="my-2"> <!-- {
+              <div class="absolute inset-0 flex flex-col items-center justify-center"> <h2 class="text-gray-100 text-2xl font-extrabold">PROPERTI</h2> <h2 class="text-gray-100 text-2xl font-extrabold">TERJUAL</h2> </div> </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/properti/rm003"> Toko Abu 3 Akses </a> </h2> <p class="mb-2 text-muted dark:text-slate-400 text-base">Banguntapan, Bantul</p> </div> <footer class="my-2"> <!-- {
         post.code && (
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
@@ -312,7 +312,25 @@ Mohon maaf properti sudah terjual</p></div>  </div>  </div> </section> </div> <d
             </Button>
           </div>
         )
-      } --> </footer> <a href="/properti/rm003" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <article
+      } --> </footer> <a href="/properti/rm003" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <div class="flex-grow flex flex-col justify-end">
+      {post.priceBefore && 
+          <div class="mt-2 flex justify-center items-center">
+            <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{post.priceTail}</span>
+            {post.price && 
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
+            }
+          </div>
+        }
+        {post.price && 
+          <div class="flex justify-center items-center">
+            <span class="font-bold text-muted text-xl">Rp</span>
+            <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
+            <span class="font-bold text-muted text-xl">{post.priceTail}</span>
+          </div>
+        }  
+    </div> --><!-- <article
   class="mb-6 transition intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
 >
   <div class="relative h-100 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
@@ -383,7 +401,7 @@ Mohon maaf properti sudah terjual</p></div>  </div>  </div> </section> </div> <d
       }  
   </div>
 </article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/rm004.C_CIfN4Y.jpg" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="525" srcset="/_astro/rm004.C_CIfN4Y_1JhHKq.webp 400w, /_astro/rm004.C_CIfN4Y_ZbBjCu.webp 700w, /_astro/rm004.C_CIfN4Y_1bf9AH.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 525px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Gazebo Resto Parkiran Luas" loading="lazy" decoding="async"> <div class="absolute inset-0 bg-gray-900 opacity-60 rounded-t-lg"></div>
-              <div class="absolute inset-0 flex flex-col items-center justify-center"> <h2 class="text-gray-100 text-2xl font-extrabold">PROPERTI</h2> <h2 class="text-gray-100 text-2xl font-extrabold">TERJUAL</h2> </div> </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/properti/rm004"> Gazebo Resto Parkiran Luas </a> </h2> <p class="mb-2 text-muted dark:text-slate-400 text-base">Palagan, Sleman</p> </div> <div class="flex-grow flex flex-col justify-end"> <div class="mt-2 flex justify-center items-center"> <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span> <span class="text-gray-500 text-center font-bold text-sm line-through">625.000.000</span> <span class="text-gray-500 text-center font-bold text-sm line-through"></span> <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">5%</span> </div> <div class="flex justify-center items-center"> <span class="font-bold text-muted text-xl">Rp</span> <span class="font-bold text-2xl">595.000.000</span> <span class="font-bold text-muted text-xl"></span> </div> </div> <footer class="my-2"> <!-- {
+              <div class="absolute inset-0 flex flex-col items-center justify-center"> <h2 class="text-gray-100 text-2xl font-extrabold">PROPERTI</h2> <h2 class="text-gray-100 text-2xl font-extrabold">TERJUAL</h2> </div> </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/properti/rm004"> Gazebo Resto Parkiran Luas </a> </h2> <p class="mb-2 text-muted dark:text-slate-400 text-base">Palagan, Sleman</p> </div> <footer class="my-2"> <!-- {
         post.code && (
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
@@ -399,7 +417,25 @@ Mohon maaf properti sudah terjual</p></div>  </div>  </div> </section> </div> <d
             </Button>
           </div>
         )
-      } --> </footer> <a href="/properti/rm004" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <article
+      } --> </footer> <a href="/properti/rm004" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <div class="flex-grow flex flex-col justify-end">
+      {post.priceBefore && 
+          <div class="mt-2 flex justify-center items-center">
+            <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{post.priceTail}</span>
+            {post.price && 
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
+            }
+          </div>
+        }
+        {post.price && 
+          <div class="flex justify-center items-center">
+            <span class="font-bold text-muted text-xl">Rp</span>
+            <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
+            <span class="font-bold text-muted text-xl">{post.priceTail}</span>
+          </div>
+        }  
+    </div> --><!-- <article
   class="mb-6 transition intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
 >
   <div class="relative h-100 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
@@ -470,7 +506,7 @@ Mohon maaf properti sudah terjual</p></div>  </div>  </div> </section> </div> <d
       }  
   </div>
 </article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/rm001.dlozBaL9.jpeg" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="582" srcset="/_astro/rm001.dlozBaL9_Tn9Vg.webp 400w, /_astro/rm001.dlozBaL9_Z11vRrE.webp 700w, /_astro/rm001.dlozBaL9_J0Gci.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 582px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Rumah 2 Lantai Modern" loading="lazy" decoding="async"> <div class="absolute inset-0 bg-gray-900 opacity-60 rounded-t-lg"></div>
-              <div class="absolute inset-0 flex flex-col items-center justify-center"> <h2 class="text-gray-100 text-2xl font-extrabold">PROPERTI</h2> <h2 class="text-gray-100 text-2xl font-extrabold">TERJUAL</h2> </div> </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/properti/rm001"> Rumah 2 Lantai Modern </a> </h2> <p class="mb-2 text-muted dark:text-slate-400 text-base">Gedongkuning, Yogyakarta</p> </div> <div class="flex-grow flex flex-col justify-end"> <div class="mt-2 flex justify-center items-center"> <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span> <span class="text-gray-500 text-center font-bold text-sm line-through">800.000.000</span> <span class="text-gray-500 text-center font-bold text-sm line-through"></span> <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">6%</span> </div> <div class="flex justify-center items-center"> <span class="font-bold text-muted text-xl">Rp</span> <span class="font-bold text-2xl">750.000.000</span> <span class="font-bold text-muted text-xl"></span> </div> </div> <footer class="my-2"> <!-- {
+              <div class="absolute inset-0 flex flex-col items-center justify-center"> <h2 class="text-gray-100 text-2xl font-extrabold">PROPERTI</h2> <h2 class="text-gray-100 text-2xl font-extrabold">TERJUAL</h2> </div> </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/properti/rm001"> Rumah 2 Lantai Modern </a> </h2> <p class="mb-2 text-muted dark:text-slate-400 text-base">Gedongkuning, Yogyakarta</p> </div> <footer class="my-2"> <!-- {
         post.code && (
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
@@ -486,7 +522,25 @@ Mohon maaf properti sudah terjual</p></div>  </div>  </div> </section> </div> <d
             </Button>
           </div>
         )
-      } --> </footer> <a href="/properti/rm001" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <article
+      } --> </footer> <a href="/properti/rm001" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <div class="flex-grow flex flex-col justify-end">
+      {post.priceBefore && 
+          <div class="mt-2 flex justify-center items-center">
+            <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{post.priceTail}</span>
+            {post.price && 
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
+            }
+          </div>
+        }
+        {post.price && 
+          <div class="flex justify-center items-center">
+            <span class="font-bold text-muted text-xl">Rp</span>
+            <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
+            <span class="font-bold text-muted text-xl">{post.priceTail}</span>
+          </div>
+        }  
+    </div> --><!-- <article
   class="mb-6 transition intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
 >
   <div class="relative h-100 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
@@ -556,7 +610,7 @@ Mohon maaf properti sudah terjual</p></div>  </div>  </div> </section> </div> <d
         </div>
       }  
   </div>
-</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/bangun-rumah-jogja.YdFVd52i.jpg" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="466" srcset="/_astro/bangun-rumah-jogja.YdFVd52i_Z1mNAUY.webp 400w, /_astro/bangun-rumah-jogja.YdFVd52i_1Ltuu2.webp 700w, /_astro/bangun-rumah-jogja.YdFVd52i_1bNSAK.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 466px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Bangun Rumah di Jogja" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/blog/2024/bangun-rumah-jogja"> Bangun Rumah di Jogja </a> </h2> <p class="mb-2 text-muted dark:text-slate-400 text-base">Wujudkan Hunian Impian di kota budaya</p> </div> <div class="flex-grow flex flex-col justify-end">   </div> <footer class="my-2"> <!-- {
+</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/bangun-rumah-jogja.YdFVd52i.jpg" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="466" srcset="/_astro/bangun-rumah-jogja.YdFVd52i_Z1mNAUY.webp 400w, /_astro/bangun-rumah-jogja.YdFVd52i_1Ltuu2.webp 700w, /_astro/bangun-rumah-jogja.YdFVd52i_1bNSAK.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 466px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Bangun Rumah di Jogja" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/blog/2024/bangun-rumah-jogja"> Bangun Rumah di Jogja </a> </h2> <p class="mb-2 text-muted dark:text-slate-400 text-base">Wujudkan Hunian Impian di kota budaya</p> </div> <footer class="my-2"> <!-- {
         post.code && (
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
@@ -572,7 +626,25 @@ Mohon maaf properti sudah terjual</p></div>  </div>  </div> </section> </div> <d
             </Button>
           </div>
         )
-      } --> </footer> <a href="/blog/2024/bangun-rumah-jogja" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <article
+      } --> </footer> <a href="/blog/2024/bangun-rumah-jogja" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <div class="flex-grow flex flex-col justify-end">
+      {post.priceBefore && 
+          <div class="mt-2 flex justify-center items-center">
+            <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{post.priceTail}</span>
+            {post.price && 
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
+            }
+          </div>
+        }
+        {post.price && 
+          <div class="flex justify-center items-center">
+            <span class="font-bold text-muted text-xl">Rp</span>
+            <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
+            <span class="font-bold text-muted text-xl">{post.priceTail}</span>
+          </div>
+        }  
+    </div> --><!-- <article
   class="mb-6 transition intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
 >
   <div class="relative h-100 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
@@ -642,7 +714,7 @@ Mohon maaf properti sudah terjual</p></div>  </div>  </div> </section> </div> <d
         </div>
       }  
   </div>
-</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/kanopi-jogja.DmDb7VXP.jpg" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/kanopi-jogja.DmDb7VXP_1YXhDS.webp 400w, /_astro/kanopi-jogja.DmDb7VXP_44ffX.webp 700w, /_astro/kanopi-jogja.DmDb7VXP_Z111olV.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Kanopi Murah Jogja" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/blog/2024/kanopi-murah-jogja"> Kanopi Murah Jogja </a> </h2> <p class="mb-2 text-muted dark:text-slate-400 text-base">Solusi Praktis untuk Hunian dan Kendaraan Anda</p> </div> <div class="flex-grow flex flex-col justify-end">   </div> <footer class="my-2"> <!-- {
+</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/kanopi-jogja.DmDb7VXP.jpg" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/kanopi-jogja.DmDb7VXP_1YXhDS.webp 400w, /_astro/kanopi-jogja.DmDb7VXP_44ffX.webp 700w, /_astro/kanopi-jogja.DmDb7VXP_Z111olV.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Kanopi Murah Jogja" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/blog/2024/kanopi-murah-jogja"> Kanopi Murah Jogja </a> </h2> <p class="mb-2 text-muted dark:text-slate-400 text-base">Solusi Praktis untuk Hunian dan Kendaraan Anda</p> </div> <footer class="my-2"> <!-- {
         post.code && (
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
@@ -658,7 +730,25 @@ Mohon maaf properti sudah terjual</p></div>  </div>  </div> </section> </div> <d
             </Button>
           </div>
         )
-      } --> </footer> <a href="/blog/2024/kanopi-murah-jogja" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <article
+      } --> </footer> <a href="/blog/2024/kanopi-murah-jogja" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <div class="flex-grow flex flex-col justify-end">
+      {post.priceBefore && 
+          <div class="mt-2 flex justify-center items-center">
+            <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{post.priceTail}</span>
+            {post.price && 
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
+            }
+          </div>
+        }
+        {post.price && 
+          <div class="flex justify-center items-center">
+            <span class="font-bold text-muted text-xl">Rp</span>
+            <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
+            <span class="font-bold text-muted text-xl">{post.priceTail}</span>
+          </div>
+        }  
+    </div> --><!-- <article
   class="mb-6 transition intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
 >
   <div class="relative h-100 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
@@ -728,7 +818,7 @@ Mohon maaf properti sudah terjual</p></div>  </div>  </div> </section> </div> <d
         </div>
       }  
   </div>
-</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/mezanin-jogja.Jj7nvUu3.jpg" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="466" srcset="/_astro/mezanin-jogja.Jj7nvUu3_Vms3V.webp 400w, /_astro/mezanin-jogja.Jj7nvUu3_ZYwzjY.webp 700w, /_astro/mezanin-jogja.Jj7nvUu3_1JDT68.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 466px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Mezzanine di Jogja" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/blog/2024/mezzanine-jogja"> Mezzanine di Jogja </a> </h2> <p class="mb-2 text-muted dark:text-slate-400 text-base">Efisien untuk Memaksimalkan Ruang</p> </div> <div class="flex-grow flex flex-col justify-end">   </div> <footer class="my-2"> <!-- {
+</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/mezanin-jogja.Jj7nvUu3.jpg" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="466" srcset="/_astro/mezanin-jogja.Jj7nvUu3_Vms3V.webp 400w, /_astro/mezanin-jogja.Jj7nvUu3_ZYwzjY.webp 700w, /_astro/mezanin-jogja.Jj7nvUu3_1JDT68.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 466px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Mezzanine di Jogja" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/blog/2024/mezzanine-jogja"> Mezzanine di Jogja </a> </h2> <p class="mb-2 text-muted dark:text-slate-400 text-base">Efisien untuk Memaksimalkan Ruang</p> </div> <footer class="my-2"> <!-- {
         post.code && (
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
@@ -744,7 +834,25 @@ Mohon maaf properti sudah terjual</p></div>  </div>  </div> </section> </div> <d
             </Button>
           </div>
         )
-      } --> </footer> <a href="/blog/2024/mezzanine-jogja" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <article
+      } --> </footer> <a href="/blog/2024/mezzanine-jogja" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <div class="flex-grow flex flex-col justify-end">
+      {post.priceBefore && 
+          <div class="mt-2 flex justify-center items-center">
+            <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{post.priceTail}</span>
+            {post.price && 
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
+            }
+          </div>
+        }
+        {post.price && 
+          <div class="flex justify-center items-center">
+            <span class="font-bold text-muted text-xl">Rp</span>
+            <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
+            <span class="font-bold text-muted text-xl">{post.priceTail}</span>
+          </div>
+        }  
+    </div> --><!-- <article
   class="mb-6 transition intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
 >
   <div class="relative h-100 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
@@ -814,7 +922,7 @@ Mohon maaf properti sudah terjual</p></div>  </div>  </div> </section> </div> <d
         </div>
       }  
   </div>
-</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/pagar-jogja.Dc_GLLOb.jpg" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="708" srcset="/_astro/pagar-jogja.Dc_GLLOb_fXRqM.webp 400w, /_astro/pagar-jogja.Dc_GLLOb_Z1EU9W8.webp 700w, /_astro/pagar-jogja.Dc_GLLOb_13smYi.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 708px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Pagar Besi di Jogja" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/blog/2024/pagar-besi-jogja"> Pagar Besi di Jogja </a> </h2> <p class="mb-2 text-muted dark:text-slate-400 text-base">Solusi Aman dan Estetis untuk Hunian Anda</p> </div> <div class="flex-grow flex flex-col justify-end">   </div> <footer class="my-2"> <!-- {
+</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/pagar-jogja.Dc_GLLOb.jpg" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="708" srcset="/_astro/pagar-jogja.Dc_GLLOb_fXRqM.webp 400w, /_astro/pagar-jogja.Dc_GLLOb_Z1EU9W8.webp 700w, /_astro/pagar-jogja.Dc_GLLOb_13smYi.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 708px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Pagar Besi di Jogja" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/blog/2024/pagar-besi-jogja"> Pagar Besi di Jogja </a> </h2> <p class="mb-2 text-muted dark:text-slate-400 text-base">Solusi Aman dan Estetis untuk Hunian Anda</p> </div> <footer class="my-2"> <!-- {
         post.code && (
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
@@ -830,7 +938,25 @@ Mohon maaf properti sudah terjual</p></div>  </div>  </div> </section> </div> <d
             </Button>
           </div>
         )
-      } --> </footer> <a href="/blog/2024/pagar-besi-jogja" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <article
+      } --> </footer> <a href="/blog/2024/pagar-besi-jogja" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <div class="flex-grow flex flex-col justify-end">
+      {post.priceBefore && 
+          <div class="mt-2 flex justify-center items-center">
+            <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{post.priceTail}</span>
+            {post.price && 
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
+            }
+          </div>
+        }
+        {post.price && 
+          <div class="flex justify-center items-center">
+            <span class="font-bold text-muted text-xl">Rp</span>
+            <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
+            <span class="font-bold text-muted text-xl">{post.priceTail}</span>
+          </div>
+        }  
+    </div> --><!-- <article
   class="mb-6 transition intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
 >
   <div class="relative h-100 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
@@ -900,7 +1026,7 @@ Mohon maaf properti sudah terjual</p></div>  </div>  </div> </section> </div> <d
         </div>
       }  
   </div>
-</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/partisiAlumKaca.CvGSgpI1.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/partisiAlumKaca.CvGSgpI1_ZkbF5g.webp 400w, /_astro/partisiAlumKaca.CvGSgpI1_Z2g5Htb.webp 700w, /_astro/partisiAlumKaca.CvGSgpI1_Z24idPq.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Partisi Sekat Aluminium &#38; Kaca" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/partisi/partisi-sekat-ruko-kantor-toko-resto-bank-aluminium-dan-kaca"> Partisi Sekat Aluminium &amp; Kaca </a> </h2>  </div> <div class="flex-grow flex flex-col justify-end"> <div class="mt-2 flex justify-center items-center"> <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span> <span class="text-gray-500 text-center font-bold text-sm line-through">120.000</span> <span class="text-gray-500 text-center font-bold text-sm line-through">/m²</span> <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">13%</span> </div> <div class="flex justify-center items-center"> <span class="font-bold text-muted text-xl">Rp</span> <span class="font-bold text-2xl">105.000</span> <span class="font-bold text-muted text-xl">/m²</span> </div> </div> <footer class="my-2"> <!-- {
+</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/partisiAlumKaca.CvGSgpI1.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/partisiAlumKaca.CvGSgpI1_ZkbF5g.webp 400w, /_astro/partisiAlumKaca.CvGSgpI1_Z2g5Htb.webp 700w, /_astro/partisiAlumKaca.CvGSgpI1_Z24idPq.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Partisi Sekat Aluminium &#38; Kaca" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/partisi/partisi-sekat-ruko-kantor-toko-resto-bank-aluminium-dan-kaca"> Partisi Sekat Aluminium &amp; Kaca </a> </h2>  </div> <footer class="my-2"> <!-- {
         post.code && (
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
@@ -916,7 +1042,25 @@ Mohon maaf properti sudah terjual</p></div>  </div>  </div> </section> </div> <d
             </Button>
           </div>
         )
-      } --> </footer> <a href="/partisi/partisi-sekat-ruko-kantor-toko-resto-bank-aluminium-dan-kaca" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article> </div> </div> </section>  </main>  <footer class="relative border-t border-gray-200 dark:border-slate-800 not-prose"> <div class="dark:bg-dark absolute inset-0 pointer-events-none" aria-hidden="true"></div> <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300 intersect-once intersect-quarter intercept-no-queue motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12"> <div class="col-span-12 lg:col-span-4"> <div class="mb-2"> <a class="inline-block font-bold text-xl" href="/">Mitra Bangun Kreasi</a> </div> <div class="text-sm text-muted flex gap-1"> <a class="text-muted hover:text-gray-700 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="/terms">Terms</a>  · <a class="text-muted hover:text-gray-700 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="/privacy">Privacy Policy</a>  </div> </div> <div class="col-span-6 md:col-span-3 lg:col-span-2"> <div class="dark:text-gray-300 font-medium mb-2">Konstruksi</div> <ul class="text-sm"> <li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> Rumah </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> Kos-kosan </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> Gudang </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> GOR </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> Kantor </a> </li> </ul> </div><div class="col-span-6 md:col-span-3 lg:col-span-2"> <div class="dark:text-gray-300 font-medium mb-2">Produk</div> <ul class="text-sm"> <li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/kanopi"> Kanopi/carport </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/pagar"> Pagar Besi </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/mezzanine"> Mezzanine </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/rangka"> Rangka Atap </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/partisi"> Sekat/Partisi </a> </li> </ul> </div><div class="col-span-6 md:col-span-3 lg:col-span-2"> <div class="dark:text-gray-300 font-medium mb-2">Properti</div> <ul class="text-sm"> <li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Rumah </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Toko </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Ruko </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Gazebo </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Gudang </a> </li> </ul> </div> </div> <div class="md:flex md:items-center md:justify-between py-6 md:py-8"> <ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0 rtl:ml-0 rtl:-mr-2 rtl:md:ml-0 rtl:md:mr-4"> <li> <a class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" aria-label="X" href="https://x.com/mbangunkreasi"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5" data-icon="tabler:brand-x">  <symbol id="ai:tabler:brand-x"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 4l11.733 16H20L8.267 4zm0 16l6.768-6.768m2.46-2.46L20 4"/></symbol><use xlink:href="#ai:tabler:brand-x"></use>  </svg>  </a> </li><li> <a class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" aria-label="Instagram" href="https://www.instagram.com/mitrabangunkreasi/"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5" data-icon="tabler:brand-instagram">  <symbol id="ai:tabler:brand-instagram"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M9 12a3 3 0 1 0 6 0a3 3 0 1 0-6 0m7.5-4.5v.01"/></g></symbol><use xlink:href="#ai:tabler:brand-instagram"></use>  </svg>  </a> </li><li> <a class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" aria-label="Tiktok" href="https://www.tiktok.com/@mitrabangunkreasi"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5" data-icon="tabler:brand-tiktok">  <symbol id="ai:tabler:brand-tiktok"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7.917v4.034A9.95 9.95 0 0 1 16 10v4.5a6.5 6.5 0 1 1-8-6.326V12.5a2.5 2.5 0 1 0 4 2V3h4.083A6.005 6.005 0 0 0 21 7.917"/></symbol><use xlink:href="#ai:tabler:brand-tiktok"></use>  </svg>  </a> </li><li> <a class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" aria-label="Youtube" href="http://www.youtube.com/@mitrabangunkreasi"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5" data-icon="tabler:brand-youtube">  <symbol id="ai:tabler:brand-youtube"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 8a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="m10 9l5 3l-5 3z"/></g></symbol><use xlink:href="#ai:tabler:brand-youtube"></use>  </svg>  </a> </li> </ul> <div class="text-sm mr-4 dark:text-muted"> 
+      } --> </footer> <a href="/partisi/partisi-sekat-ruko-kantor-toko-resto-bank-aluminium-dan-kaca" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <div class="flex-grow flex flex-col justify-end">
+      {post.priceBefore && 
+          <div class="mt-2 flex justify-center items-center">
+            <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{post.priceTail}</span>
+            {post.price && 
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
+            }
+          </div>
+        }
+        {post.price && 
+          <div class="flex justify-center items-center">
+            <span class="font-bold text-muted text-xl">Rp</span>
+            <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
+            <span class="font-bold text-muted text-xl">{post.priceTail}</span>
+          </div>
+        }  
+    </div> --> </div> </div> </section>  </main>  <footer class="relative border-t border-gray-200 dark:border-slate-800 not-prose"> <div class="dark:bg-dark absolute inset-0 pointer-events-none" aria-hidden="true"></div> <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300 intersect-once intersect-quarter intercept-no-queue motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12"> <div class="col-span-12 lg:col-span-4"> <div class="mb-2"> <a class="inline-block font-bold text-xl" href="/">Mitra Bangun Kreasi</a> </div> <div class="text-sm text-muted flex gap-1"> <a class="text-muted hover:text-gray-700 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="/terms">Terms</a>  · <a class="text-muted hover:text-gray-700 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="/privacy">Privacy Policy</a>  </div> </div> <div class="col-span-6 md:col-span-3 lg:col-span-2"> <div class="dark:text-gray-300 font-medium mb-2">Konstruksi</div> <ul class="text-sm"> <li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> Rumah </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> Kos-kosan </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> Gudang </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> GOR </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> Kantor </a> </li> </ul> </div><div class="col-span-6 md:col-span-3 lg:col-span-2"> <div class="dark:text-gray-300 font-medium mb-2">Produk</div> <ul class="text-sm"> <li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/kanopi"> Kanopi/carport </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/pagar"> Pagar Besi </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/mezzanine"> Mezzanine </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/rangka"> Rangka Atap </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/partisi"> Sekat/Partisi </a> </li> </ul> </div><div class="col-span-6 md:col-span-3 lg:col-span-2"> <div class="dark:text-gray-300 font-medium mb-2">Properti</div> <ul class="text-sm"> <li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Rumah </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Toko </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Ruko </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Gazebo </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Gudang </a> </li> </ul> </div> </div> <div class="md:flex md:items-center md:justify-between py-6 md:py-8"> <ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0 rtl:ml-0 rtl:-mr-2 rtl:md:ml-0 rtl:md:mr-4"> <li> <a class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" aria-label="X" href="https://x.com/mbangunkreasi"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5" data-icon="tabler:brand-x">  <symbol id="ai:tabler:brand-x"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 4l11.733 16H20L8.267 4zm0 16l6.768-6.768m2.46-2.46L20 4"/></symbol><use xlink:href="#ai:tabler:brand-x"></use>  </svg>  </a> </li><li> <a class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" aria-label="Instagram" href="https://www.instagram.com/mitrabangunkreasi/"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5" data-icon="tabler:brand-instagram">  <symbol id="ai:tabler:brand-instagram"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M9 12a3 3 0 1 0 6 0a3 3 0 1 0-6 0m7.5-4.5v.01"/></g></symbol><use xlink:href="#ai:tabler:brand-instagram"></use>  </svg>  </a> </li><li> <a class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" aria-label="Tiktok" href="https://www.tiktok.com/@mitrabangunkreasi"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5" data-icon="tabler:brand-tiktok">  <symbol id="ai:tabler:brand-tiktok"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7.917v4.034A9.95 9.95 0 0 1 16 10v4.5a6.5 6.5 0 1 1-8-6.326V12.5a2.5 2.5 0 1 0 4 2V3h4.083A6.005 6.005 0 0 0 21 7.917"/></symbol><use xlink:href="#ai:tabler:brand-tiktok"></use>  </svg>  </a> </li><li> <a class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" aria-label="Youtube" href="http://www.youtube.com/@mitrabangunkreasi"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5" data-icon="tabler:brand-youtube">  <symbol id="ai:tabler:brand-youtube"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 8a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="m10 9l5 3l-5 3z"/></g></symbol><use xlink:href="#ai:tabler:brand-youtube"></use>  </svg>  </a> </li> </ul> <div class="text-sm mr-4 dark:text-muted"> 
   Made by <a class="text-blue-600 underline dark:text-muted" href="https://nzxf.my.id/"> nzxf </a> · All rights reserved.
    </div> </div> </div> </footer>   <script>(function(){const defaultTheme = "dark";
 

@@ -4,7 +4,7 @@ import type { Post } from '~/types';
 
 import Image from '~/components/common/Image.astro';
 
-import { dotByThousand, countDiscount } from '~/utils/utils';
+// import { dotByThousand, countDiscount } from '~/utils/utils';
 
 import { findImage } from '~/utils/images';
 import { getPermalink } from '~/utils/permalinks';
@@ -148,7 +148,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
         </body>
    
 
-    <div class="flex-grow flex flex-col justify-end">
+    <!-- <div class="flex-grow flex flex-col justify-end">
       {post.priceBefore && 
           <div class="mt-2 flex justify-center items-center">
             <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
@@ -166,7 +166,7 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
             <span class="font-bold text-muted text-xl">{post.priceTail}</span>
           </div>
         }  
-    </div>
+    </div> -->
 
     <footer class="my-2">
       <!-- {

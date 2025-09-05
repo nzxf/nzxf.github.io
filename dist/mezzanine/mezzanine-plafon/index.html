@@ -292,7 +292,7 @@ Tunggu apa lagi, langsung order sekarang juga.
         </div>
       }  
   </div>
-</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/loftBed.l29a3Q5P.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/loftBed.l29a3Q5P_Z2i1FSR.webp 400w, /_astro/loftBed.l29a3Q5P_Qgpw9.webp 700w, /_astro/loftBed.l29a3Q5P_Z1VOTe1.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Loft Bed HPL" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/mezzanine/loft-bed"> Loft Bed HPL </a> </h2>  </div> <div class="flex-grow flex flex-col justify-end"> <div class="mt-2 flex justify-center items-center"> <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span> <span class="text-gray-500 text-center font-bold text-sm line-through">2.850.000</span> <span class="text-gray-500 text-center font-bold text-sm line-through">/m²</span> <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">5%</span> </div> <div class="flex justify-center items-center"> <span class="font-bold text-muted text-xl">Rp</span> <span class="font-bold text-2xl">2.700.000</span> <span class="font-bold text-muted text-xl">/m²</span> </div> </div> <footer class="my-2"> <!-- {
+</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/loftBed.l29a3Q5P.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/loftBed.l29a3Q5P_Z2i1FSR.webp 400w, /_astro/loftBed.l29a3Q5P_Qgpw9.webp 700w, /_astro/loftBed.l29a3Q5P_Z1VOTe1.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Loft Bed HPL" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/mezzanine/loft-bed"> Loft Bed HPL </a> </h2>  </div> <footer class="my-2"> <!-- {
         post.code && (
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
@@ -308,7 +308,25 @@ Tunggu apa lagi, langsung order sekarang juga.
             </Button>
           </div>
         )
-      } --> </footer> <a href="/mezzanine/loft-bed" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <article
+      } --> </footer> <a href="/mezzanine/loft-bed" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <div class="flex-grow flex flex-col justify-end">
+      {post.priceBefore && 
+          <div class="mt-2 flex justify-center items-center">
+            <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{post.priceTail}</span>
+            {post.price && 
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
+            }
+          </div>
+        }
+        {post.price && 
+          <div class="flex justify-center items-center">
+            <span class="font-bold text-muted text-xl">Rp</span>
+            <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
+            <span class="font-bold text-muted text-xl">{post.priceTail}</span>
+          </div>
+        }  
+    </div> --><!-- <article
   class="mb-6 transition intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
 >
   <div class="relative h-100 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
@@ -378,7 +396,7 @@ Tunggu apa lagi, langsung order sekarang juga.
         </div>
       }  
   </div>
-</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/mez.CTqzm0MW.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/mez.CTqzm0MW_2re0J5.webp 400w, /_astro/mez.CTqzm0MW_vjXla.webp 700w, /_astro/mez.CTqzm0MW_Z2pCqaD.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Mezzanine" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/mezzanine/mezzanine-dak-balkon"> Mezzanine </a> </h2>  </div> <div class="flex-grow flex flex-col justify-end"> <div class="mt-2 flex justify-center items-center"> <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span> <span class="text-gray-500 text-center font-bold text-sm line-through">1.200.000</span> <span class="text-gray-500 text-center font-bold text-sm line-through">/m²</span> <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">21%</span> </div> <div class="flex justify-center items-center"> <span class="font-bold text-muted text-xl">Rp</span> <span class="font-bold text-2xl">950.000</span> <span class="font-bold text-muted text-xl">/m²</span> </div> </div> <footer class="my-2"> <!-- {
+</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/mez.CTqzm0MW.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/mez.CTqzm0MW_2re0J5.webp 400w, /_astro/mez.CTqzm0MW_vjXla.webp 700w, /_astro/mez.CTqzm0MW_Z2pCqaD.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Mezzanine" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/mezzanine/mezzanine-dak-balkon"> Mezzanine </a> </h2>  </div> <footer class="my-2"> <!-- {
         post.code && (
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
@@ -394,7 +412,25 @@ Tunggu apa lagi, langsung order sekarang juga.
             </Button>
           </div>
         )
-      } --> </footer> <a href="/mezzanine/mezzanine-dak-balkon" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <article
+      } --> </footer> <a href="/mezzanine/mezzanine-dak-balkon" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <div class="flex-grow flex flex-col justify-end">
+      {post.priceBefore && 
+          <div class="mt-2 flex justify-center items-center">
+            <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{post.priceTail}</span>
+            {post.price && 
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
+            }
+          </div>
+        }
+        {post.price && 
+          <div class="flex justify-center items-center">
+            <span class="font-bold text-muted text-xl">Rp</span>
+            <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
+            <span class="font-bold text-muted text-xl">{post.priceTail}</span>
+          </div>
+        }  
+    </div> --><!-- <article
   class="mb-6 transition intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
 >
   <div class="relative h-100 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
@@ -464,7 +500,7 @@ Tunggu apa lagi, langsung order sekarang juga.
         </div>
       }  
   </div>
-</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/tanggaLipat.BVvXk457.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/tanggaLipat.BVvXk457_xvqRa.webp 400w, /_astro/tanggaLipat.BVvXk457_Z1nnAvK.webp 700w, /_astro/tanggaLipat.BVvXk457_ZcnpeS.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Tangga Besi Lipat" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/tangga/tangga-besi-llipat"> Tangga Besi Lipat </a> </h2>  </div> <div class="flex-grow flex flex-col justify-end"> <div class="mt-2 flex justify-center items-center"> <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span> <span class="text-gray-500 text-center font-bold text-sm line-through">1.500.000</span> <span class="text-gray-500 text-center font-bold text-sm line-through">/m</span> <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">30%</span> </div> <div class="flex justify-center items-center"> <span class="font-bold text-muted text-xl">Rp</span> <span class="font-bold text-2xl">1.050.000</span> <span class="font-bold text-muted text-xl">/m</span> </div> </div> <footer class="my-2"> <!-- {
+</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/tanggaLipat.BVvXk457.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/tanggaLipat.BVvXk457_xvqRa.webp 400w, /_astro/tanggaLipat.BVvXk457_Z1nnAvK.webp 700w, /_astro/tanggaLipat.BVvXk457_ZcnpeS.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Tangga Besi Lipat" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/tangga/tangga-besi-llipat"> Tangga Besi Lipat </a> </h2>  </div> <footer class="my-2"> <!-- {
         post.code && (
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
@@ -480,7 +516,25 @@ Tunggu apa lagi, langsung order sekarang juga.
             </Button>
           </div>
         )
-      } --> </footer> <a href="/tangga/tangga-besi-llipat" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <article
+      } --> </footer> <a href="/tangga/tangga-besi-llipat" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <div class="flex-grow flex flex-col justify-end">
+      {post.priceBefore && 
+          <div class="mt-2 flex justify-center items-center">
+            <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{post.priceTail}</span>
+            {post.price && 
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
+            }
+          </div>
+        }
+        {post.price && 
+          <div class="flex justify-center items-center">
+            <span class="font-bold text-muted text-xl">Rp</span>
+            <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
+            <span class="font-bold text-muted text-xl">{post.priceTail}</span>
+          </div>
+        }  
+    </div> --><!-- <article
   class="mb-6 transition intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
 >
   <div class="relative h-100 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
@@ -550,7 +604,7 @@ Tunggu apa lagi, langsung order sekarang juga.
         </div>
       }  
   </div>
-</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/plafon.CuyfhUBR.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/plafon.CuyfhUBR_Z2eaib1.webp 400w, /_astro/plafon.CuyfhUBR_U7Nf0.webp 700w, /_astro/plafon.CuyfhUBR_M93p.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Plafon PVC" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/plafon/plafon-pvc"> Plafon PVC </a> </h2>  </div> <div class="flex-grow flex flex-col justify-end"> <div class="mt-2 flex justify-center items-center"> <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span> <span class="text-gray-500 text-center font-bold text-sm line-through">265.000</span> <span class="text-gray-500 text-center font-bold text-sm line-through">/m²</span> <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">15%</span> </div> <div class="flex justify-center items-center"> <span class="font-bold text-muted text-xl">Rp</span> <span class="font-bold text-2xl">225.000</span> <span class="font-bold text-muted text-xl">/m²</span> </div> </div> <footer class="my-2"> <!-- {
+</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/plafon.CuyfhUBR.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/plafon.CuyfhUBR_Z2eaib1.webp 400w, /_astro/plafon.CuyfhUBR_U7Nf0.webp 700w, /_astro/plafon.CuyfhUBR_M93p.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Plafon PVC" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/plafon/plafon-pvc"> Plafon PVC </a> </h2>  </div> <footer class="my-2"> <!-- {
         post.code && (
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
@@ -566,7 +620,25 @@ Tunggu apa lagi, langsung order sekarang juga.
             </Button>
           </div>
         )
-      } --> </footer> <a href="/plafon/plafon-pvc" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <article
+      } --> </footer> <a href="/plafon/plafon-pvc" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <div class="flex-grow flex flex-col justify-end">
+      {post.priceBefore && 
+          <div class="mt-2 flex justify-center items-center">
+            <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{post.priceTail}</span>
+            {post.price && 
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
+            }
+          </div>
+        }
+        {post.price && 
+          <div class="flex justify-center items-center">
+            <span class="font-bold text-muted text-xl">Rp</span>
+            <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
+            <span class="font-bold text-muted text-xl">{post.priceTail}</span>
+          </div>
+        }  
+    </div> --><!-- <article
   class="mb-6 transition intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
 >
   <div class="relative h-100 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
@@ -636,7 +708,7 @@ Tunggu apa lagi, langsung order sekarang juga.
         </div>
       }  
   </div>
-</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/railingBesiBulat.CXW64VWn.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/railingBesiBulat.CXW64VWn_1kPMAK.webp 400w, /_astro/railingBesiBulat.CXW64VWn_ZA3eMa.webp 700w, /_astro/railingBesiBulat.CXW64VWn_Z1425Fg.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Railing Besi Bulat" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/railing/railing-besi-bulat"> Railing Besi Bulat </a> </h2>  </div> <div class="flex-grow flex flex-col justify-end"> <div class="mt-2 flex justify-center items-center"> <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span> <span class="text-gray-500 text-center font-bold text-sm line-through">650.000</span> <span class="text-gray-500 text-center font-bold text-sm line-through">/m²</span> <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">8%</span> </div> <div class="flex justify-center items-center"> <span class="font-bold text-muted text-xl">Rp</span> <span class="font-bold text-2xl">600.000</span> <span class="font-bold text-muted text-xl">/m²</span> </div> </div> <footer class="my-2"> <!-- {
+</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/railingBesiBulat.CXW64VWn.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/railingBesiBulat.CXW64VWn_1kPMAK.webp 400w, /_astro/railingBesiBulat.CXW64VWn_ZA3eMa.webp 700w, /_astro/railingBesiBulat.CXW64VWn_Z1425Fg.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Railing Besi Bulat" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/railing/railing-besi-bulat"> Railing Besi Bulat </a> </h2>  </div> <footer class="my-2"> <!-- {
         post.code && (
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
@@ -652,7 +724,25 @@ Tunggu apa lagi, langsung order sekarang juga.
             </Button>
           </div>
         )
-      } --> </footer> <a href="/railing/railing-besi-bulat" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <article
+      } --> </footer> <a href="/railing/railing-besi-bulat" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <div class="flex-grow flex flex-col justify-end">
+      {post.priceBefore && 
+          <div class="mt-2 flex justify-center items-center">
+            <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{post.priceTail}</span>
+            {post.price && 
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
+            }
+          </div>
+        }
+        {post.price && 
+          <div class="flex justify-center items-center">
+            <span class="font-bold text-muted text-xl">Rp</span>
+            <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
+            <span class="font-bold text-muted text-xl">{post.priceTail}</span>
+          </div>
+        }  
+    </div> --><!-- <article
   class="mb-6 transition intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
 >
   <div class="relative h-100 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
@@ -722,7 +812,7 @@ Tunggu apa lagi, langsung order sekarang juga.
         </div>
       }  
   </div>
-</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/railingBesiEkspanda.B1sPC1al.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/railingBesiEkspanda.B1sPC1al_21EOvp.webp 400w, /_astro/railingBesiEkspanda.B1sPC1al_5KM7u.webp 700w, /_astro/railingBesiEkspanda.B1sPC1al_Z9oGEF.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Railing Besi Ekspanda" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/railing/railing-besi-ekspanda"> Railing Besi Ekspanda </a> </h2>  </div> <div class="flex-grow flex flex-col justify-end"> <div class="mt-2 flex justify-center items-center"> <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span> <span class="text-gray-500 text-center font-bold text-sm line-through">600.000</span> <span class="text-gray-500 text-center font-bold text-sm line-through">/m²</span> <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">8%</span> </div> <div class="flex justify-center items-center"> <span class="font-bold text-muted text-xl">Rp</span> <span class="font-bold text-2xl">550.000</span> <span class="font-bold text-muted text-xl">/m²</span> </div> </div> <footer class="my-2"> <!-- {
+</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/railingBesiEkspanda.B1sPC1al.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/railingBesiEkspanda.B1sPC1al_21EOvp.webp 400w, /_astro/railingBesiEkspanda.B1sPC1al_5KM7u.webp 700w, /_astro/railingBesiEkspanda.B1sPC1al_Z9oGEF.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Railing Besi Ekspanda" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/railing/railing-besi-ekspanda"> Railing Besi Ekspanda </a> </h2>  </div> <footer class="my-2"> <!-- {
         post.code && (
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
@@ -738,7 +828,25 @@ Tunggu apa lagi, langsung order sekarang juga.
             </Button>
           </div>
         )
-      } --> </footer> <a href="/railing/railing-besi-ekspanda" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <article
+      } --> </footer> <a href="/railing/railing-besi-ekspanda" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <div class="flex-grow flex flex-col justify-end">
+      {post.priceBefore && 
+          <div class="mt-2 flex justify-center items-center">
+            <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{post.priceTail}</span>
+            {post.price && 
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
+            }
+          </div>
+        }
+        {post.price && 
+          <div class="flex justify-center items-center">
+            <span class="font-bold text-muted text-xl">Rp</span>
+            <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
+            <span class="font-bold text-muted text-xl">{post.priceTail}</span>
+          </div>
+        }  
+    </div> --><!-- <article
   class="mb-6 transition intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
 >
   <div class="relative h-100 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
@@ -808,7 +916,7 @@ Tunggu apa lagi, langsung order sekarang juga.
         </div>
       }  
   </div>
-</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/railingBesiHollow.CzK1NsKt.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/railingBesiHollow.CzK1NsKt_Z2byNgr.webp 400w, /_astro/railingBesiHollow.CzK1NsKt_WIi9z.webp 700w, /_astro/railingBesiHollow.CzK1NsKt_1kklic.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Railing Besi Hollow" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/railing/railing-besi-hollow"> Railing Besi Hollow </a> </h2>  </div> <div class="flex-grow flex flex-col justify-end"> <div class="mt-2 flex justify-center items-center"> <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span> <span class="text-gray-500 text-center font-bold text-sm line-through">625.000</span> <span class="text-gray-500 text-center font-bold text-sm line-through">/m²</span> <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">12%</span> </div> <div class="flex justify-center items-center"> <span class="font-bold text-muted text-xl">Rp</span> <span class="font-bold text-2xl">550.000</span> <span class="font-bold text-muted text-xl">/m²</span> </div> </div> <footer class="my-2"> <!-- {
+</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/railingBesiHollow.CzK1NsKt.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/railingBesiHollow.CzK1NsKt_Z2byNgr.webp 400w, /_astro/railingBesiHollow.CzK1NsKt_WIi9z.webp 700w, /_astro/railingBesiHollow.CzK1NsKt_1kklic.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Railing Besi Hollow" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/railing/railing-besi-hollow"> Railing Besi Hollow </a> </h2>  </div> <footer class="my-2"> <!-- {
         post.code && (
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
@@ -824,7 +932,25 @@ Tunggu apa lagi, langsung order sekarang juga.
             </Button>
           </div>
         )
-      } --> </footer> <a href="/railing/railing-besi-hollow" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <article
+      } --> </footer> <a href="/railing/railing-besi-hollow" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <div class="flex-grow flex flex-col justify-end">
+      {post.priceBefore && 
+          <div class="mt-2 flex justify-center items-center">
+            <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{post.priceTail}</span>
+            {post.price && 
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
+            }
+          </div>
+        }
+        {post.price && 
+          <div class="flex justify-center items-center">
+            <span class="font-bold text-muted text-xl">Rp</span>
+            <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
+            <span class="font-bold text-muted text-xl">{post.priceTail}</span>
+          </div>
+        }  
+    </div> --><!-- <article
   class="mb-6 transition intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
 >
   <div class="relative h-100 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
@@ -894,7 +1020,7 @@ Tunggu apa lagi, langsung order sekarang juga.
         </div>
       }  
   </div>
-</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/railingBesiLaserCutting.fCRO4b1b.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/railingBesiLaserCutting.fCRO4b1b_1HLkVP.webp 400w, /_astro/railingBesiLaserCutting.fCRO4b1b_Zd7Gr5.webp 700w, /_astro/railingBesiLaserCutting.fCRO4b1b_piyop.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Railing Besi Laser Cutting" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/railing/railing-besi-laser-cutting"> Railing Besi Laser Cutting </a> </h2>  </div> <div class="flex-grow flex flex-col justify-end"> <div class="mt-2 flex justify-center items-center"> <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span> <span class="text-gray-500 text-center font-bold text-sm line-through">1.625.000</span> <span class="text-gray-500 text-center font-bold text-sm line-through">/m²</span> <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">8%</span> </div> <div class="flex justify-center items-center"> <span class="font-bold text-muted text-xl">Rp</span> <span class="font-bold text-2xl">1.500.000</span> <span class="font-bold text-muted text-xl">/m²</span> </div> </div> <footer class="my-2"> <!-- {
+</article> --><article class="h-full gap-2 md:gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="h-full flex flex-col text-center mt-1 rounded-lg backdrop-blur border border-gray-100 dark:border-gray-900 bg-white dark:bg-slate-900 shadow flex w-full max-w-sm"> <header> <div class="relative h-0 pb-[100%] md:pb-[100%] md:h-72 lg:pb-[100%] overflow-hidden"> <img src="/_astro/railingBesiLaserCutting.fCRO4b1b.png" crossorigin="anonymous" referrerpolicy="no-referrer" width="700" height="700" srcset="/_astro/railingBesiLaserCutting.fCRO4b1b_1HLkVP.webp 400w, /_astro/railingBesiLaserCutting.fCRO4b1b_Zd7Gr5.webp 700w, /_astro/railingBesiLaserCutting.fCRO4b1b_piyop.webp 1400w" sizes="(max-width: 700px) 400px, 700px" style="object-fit: cover; object-position: center; max-width: 700px; max-height: 700px; aspect-ratio: 1; width: 100%;" class="absolute inset-0 object-contain w-full h-full mb-6 rounded-t-lg" alt="Railing Besi Laser Cutting" loading="lazy" decoding="async">  </div> </header> <div class="grid grid-col px-2"> <h2 class="text-lg sm:text-2xl font-bold leading-tight font-heading dark:text-slate-300"> <a class="mt-3 inline-block hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="/railing/railing-besi-laser-cutting"> Railing Besi Laser Cutting </a> </h2>  </div> <footer class="my-2"> <!-- {
         post.code && (
           <div class="mt-4 mb-3 mx-2 grid grid-cols-2 gap-1">
             <Button
@@ -910,7 +1036,25 @@ Tunggu apa lagi, langsung order sekarang juga.
             </Button>
           </div>
         )
-      } --> </footer> <a href="/railing/railing-besi-laser-cutting" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article> </div> </div> </section>  </main>  <footer class="relative border-t border-gray-200 dark:border-slate-800 not-prose"> <div class="dark:bg-dark absolute inset-0 pointer-events-none" aria-hidden="true"></div> <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300 intersect-once intersect-quarter intercept-no-queue motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12"> <div class="col-span-12 lg:col-span-4"> <div class="mb-2"> <a class="inline-block font-bold text-xl" href="/">Mitra Bangun Kreasi</a> </div> <div class="text-sm text-muted flex gap-1"> <a class="text-muted hover:text-gray-700 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="/terms">Terms</a>  · <a class="text-muted hover:text-gray-700 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="/privacy">Privacy Policy</a>  </div> </div> <div class="col-span-6 md:col-span-3 lg:col-span-2"> <div class="dark:text-gray-300 font-medium mb-2">Konstruksi</div> <ul class="text-sm"> <li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> Rumah </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> Kos-kosan </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> Gudang </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> GOR </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> Kantor </a> </li> </ul> </div><div class="col-span-6 md:col-span-3 lg:col-span-2"> <div class="dark:text-gray-300 font-medium mb-2">Produk</div> <ul class="text-sm"> <li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/kanopi"> Kanopi/carport </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/pagar"> Pagar Besi </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/mezzanine"> Mezzanine </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/rangka"> Rangka Atap </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/partisi"> Sekat/Partisi </a> </li> </ul> </div><div class="col-span-6 md:col-span-3 lg:col-span-2"> <div class="dark:text-gray-300 font-medium mb-2">Properti</div> <ul class="text-sm"> <li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Rumah </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Toko </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Ruko </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Gazebo </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Gudang </a> </li> </ul> </div> </div> <div class="md:flex md:items-center md:justify-between py-6 md:py-8"> <ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0 rtl:ml-0 rtl:-mr-2 rtl:md:ml-0 rtl:md:mr-4"> <li> <a class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" aria-label="X" href="https://x.com/mbangunkreasi"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5" data-icon="tabler:brand-x">  <symbol id="ai:tabler:brand-x"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 4l11.733 16H20L8.267 4zm0 16l6.768-6.768m2.46-2.46L20 4"/></symbol><use xlink:href="#ai:tabler:brand-x"></use>  </svg>  </a> </li><li> <a class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" aria-label="Instagram" href="https://www.instagram.com/mitrabangunkreasi/"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5" data-icon="tabler:brand-instagram">  <symbol id="ai:tabler:brand-instagram"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M9 12a3 3 0 1 0 6 0a3 3 0 1 0-6 0m7.5-4.5v.01"/></g></symbol><use xlink:href="#ai:tabler:brand-instagram"></use>  </svg>  </a> </li><li> <a class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" aria-label="Tiktok" href="https://www.tiktok.com/@mitrabangunkreasi"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5" data-icon="tabler:brand-tiktok">  <symbol id="ai:tabler:brand-tiktok"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7.917v4.034A9.95 9.95 0 0 1 16 10v4.5a6.5 6.5 0 1 1-8-6.326V12.5a2.5 2.5 0 1 0 4 2V3h4.083A6.005 6.005 0 0 0 21 7.917"/></symbol><use xlink:href="#ai:tabler:brand-tiktok"></use>  </svg>  </a> </li><li> <a class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" aria-label="Youtube" href="http://www.youtube.com/@mitrabangunkreasi"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5" data-icon="tabler:brand-youtube">  <symbol id="ai:tabler:brand-youtube"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 8a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="m10 9l5 3l-5 3z"/></g></symbol><use xlink:href="#ai:tabler:brand-youtube"></use>  </svg>  </a> </li> </ul> <div class="text-sm mr-4 dark:text-muted"> 
+      } --> </footer> <a href="/railing/railing-besi-laser-cutting" class="bg-sky-500 hover:bg-sky-700 before:absolute before:inset-0"></a> </div> </article><!-- <div class="flex-grow flex flex-col justify-end">
+      {post.priceBefore && 
+          <div class="mt-2 flex justify-center items-center">
+            <span class="text-gray-500 text-center font-bold text-sm line-through">Rp</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{dotByThousand(post.priceBefore)}</span>
+            <span class="text-gray-500 text-center font-bold text-sm line-through">{post.priceTail}</span>
+            {post.price && 
+              <span class="text-center font-bold text-sm text-green-500 bg-gray-200 dark:bg-gray-800 ml-1 rounded px-1">{countDiscount(post.price, post.priceBefore)}%</span>
+            }
+          </div>
+        }
+        {post.price && 
+          <div class="flex justify-center items-center">
+            <span class="font-bold text-muted text-xl">Rp</span>
+            <span class="font-bold text-2xl">{dotByThousand(post.price)}</span>
+            <span class="font-bold text-muted text-xl">{post.priceTail}</span>
+          </div>
+        }  
+    </div> --> </div> </div> </section>  </main>  <footer class="relative border-t border-gray-200 dark:border-slate-800 not-prose"> <div class="dark:bg-dark absolute inset-0 pointer-events-none" aria-hidden="true"></div> <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300 intersect-once intersect-quarter intercept-no-queue motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"> <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12"> <div class="col-span-12 lg:col-span-4"> <div class="mb-2"> <a class="inline-block font-bold text-xl" href="/">Mitra Bangun Kreasi</a> </div> <div class="text-sm text-muted flex gap-1"> <a class="text-muted hover:text-gray-700 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="/terms">Terms</a>  · <a class="text-muted hover:text-gray-700 dark:text-gray-400 hover:underline transition duration-150 ease-in-out" href="/privacy">Privacy Policy</a>  </div> </div> <div class="col-span-6 md:col-span-3 lg:col-span-2"> <div class="dark:text-gray-300 font-medium mb-2">Konstruksi</div> <ul class="text-sm"> <li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> Rumah </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> Kos-kosan </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> Gudang </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> GOR </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/konstruksi"> Kantor </a> </li> </ul> </div><div class="col-span-6 md:col-span-3 lg:col-span-2"> <div class="dark:text-gray-300 font-medium mb-2">Produk</div> <ul class="text-sm"> <li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/kanopi"> Kanopi/carport </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/pagar"> Pagar Besi </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/mezzanine"> Mezzanine </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/rangka"> Rangka Atap </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/partisi"> Sekat/Partisi </a> </li> </ul> </div><div class="col-span-6 md:col-span-3 lg:col-span-2"> <div class="dark:text-gray-300 font-medium mb-2">Properti</div> <ul class="text-sm"> <li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Rumah </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Toko </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Ruko </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Gazebo </a> </li><li class="mb-2"> <a class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out" href="/kategori/properti"> Gudang </a> </li> </ul> </div> </div> <div class="md:flex md:items-center md:justify-between py-6 md:py-8"> <ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0 rtl:ml-0 rtl:-mr-2 rtl:md:ml-0 rtl:md:mr-4"> <li> <a class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" aria-label="X" href="https://x.com/mbangunkreasi"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5" data-icon="tabler:brand-x">  <symbol id="ai:tabler:brand-x"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 4l11.733 16H20L8.267 4zm0 16l6.768-6.768m2.46-2.46L20 4"/></symbol><use xlink:href="#ai:tabler:brand-x"></use>  </svg>  </a> </li><li> <a class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" aria-label="Instagram" href="https://www.instagram.com/mitrabangunkreasi/"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5" data-icon="tabler:brand-instagram">  <symbol id="ai:tabler:brand-instagram"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M9 12a3 3 0 1 0 6 0a3 3 0 1 0-6 0m7.5-4.5v.01"/></g></symbol><use xlink:href="#ai:tabler:brand-instagram"></use>  </svg>  </a> </li><li> <a class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" aria-label="Tiktok" href="https://www.tiktok.com/@mitrabangunkreasi"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5" data-icon="tabler:brand-tiktok">  <symbol id="ai:tabler:brand-tiktok"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7.917v4.034A9.95 9.95 0 0 1 16 10v4.5a6.5 6.5 0 1 1-8-6.326V12.5a2.5 2.5 0 1 0 4 2V3h4.083A6.005 6.005 0 0 0 21 7.917"/></symbol><use xlink:href="#ai:tabler:brand-tiktok"></use>  </svg>  </a> </li><li> <a class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" aria-label="Youtube" href="http://www.youtube.com/@mitrabangunkreasi"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5" data-icon="tabler:brand-youtube">  <symbol id="ai:tabler:brand-youtube"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 8a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="m10 9l5 3l-5 3z"/></g></symbol><use xlink:href="#ai:tabler:brand-youtube"></use>  </svg>  </a> </li> </ul> <div class="text-sm mr-4 dark:text-muted"> 
   Made by <a class="text-blue-600 underline dark:text-muted" href="https://nzxf.my.id/"> nzxf </a> · All rights reserved.
    </div> </div> </div> </footer>   <script>(function(){const defaultTheme = "dark";
 

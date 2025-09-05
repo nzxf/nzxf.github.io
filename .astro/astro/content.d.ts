@@ -221,44 +221,44 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"konstruksi/bg001-bangun-gudang-industrial.md": {
-	id: "konstruksi/bg001-bangun-gudang-industrial.md";
-  slug: "konstruksi/bg001-bangun-gudang-industrial";
+"konstruksi/Bangun Gudang Industrial Serba Guna.md": {
+	id: "konstruksi/Bangun Gudang Industrial Serba Guna.md";
+  slug: "konstruksi/bangun-gudang-industrial-serba-guna";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"konstruksi/bg001-bangun-lapangan-olahraga-futsal-basket-volley.md": {
-	id: "konstruksi/bg001-bangun-lapangan-olahraga-futsal-basket-volley.md";
-  slug: "konstruksi/bg001-bangun-lapangan-olahraga-futsal-basket-volley";
+"konstruksi/Bangun Hunian Kos Kosan.md": {
+	id: "konstruksi/Bangun Hunian Kos Kosan.md";
+  slug: "konstruksi/bangun-hunian-kos-kosan";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"konstruksi/bg001-bangun-tempat-parkirl.md": {
-	id: "konstruksi/bg001-bangun-tempat-parkirl.md";
-  slug: "konstruksi/bg001-bangun-tempat-parkirl";
+"konstruksi/Bangun Hunian Rumah 1 Lantai.md": {
+	id: "konstruksi/Bangun Hunian Rumah 1 Lantai.md";
+  slug: "konstruksi/bangun-hunian-rumah-1-lantai";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"konstruksi/kn001-bangun-rumah-minimalis copy.md": {
-	id: "konstruksi/kn001-bangun-rumah-minimalis copy.md";
-  slug: "konstruksi/kn001-bangun-rumah-minimalis-copy";
+"konstruksi/Bangun Hunian Rumah 2 Lantai.md": {
+	id: "konstruksi/Bangun Hunian Rumah 2 Lantai.md";
+  slug: "konstruksi/bangun-hunian-rumah-2-lantai";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"konstruksi/kn001-bangun-rumah-minimalis.md": {
-	id: "konstruksi/kn001-bangun-rumah-minimalis.md";
-  slug: "konstruksi/kn001-bangun-rumah-minimalis";
+"konstruksi/Bangun Lapangan Olahraga Indoor atau Semi Outdoor.md": {
+	id: "konstruksi/Bangun Lapangan Olahraga Indoor atau Semi Outdoor.md";
+  slug: "konstruksi/bangun-lapangan-olahraga-indoor-atau-semi-outdoor";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"konstruksi/kn002-bangun-kos-kosan.md": {
-	id: "konstruksi/kn002-bangun-kos-kosan.md";
-  slug: "konstruksi/kn002-bangun-kos-kosan";
+"konstruksi/Bangun Tempat Parkir Semi Indoor.md": {
+	id: "konstruksi/Bangun Tempat Parkir Semi Indoor.md";
+  slug: "konstruksi/bangun-tempat-parkir-semi-indoor";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
@@ -280,6 +280,20 @@ declare module 'astro:content' {
 "mezzanine/mezzanine plafon.md": {
 	id: "mezzanine/mezzanine plafon.md";
   slug: "mezzanine/mezzanine-plafon";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pagar/Pagar Besi Hollow Minimalis.md": {
+	id: "pagar/Pagar Besi Hollow Minimalis.md";
+  slug: "pagar/pagar-besi-hollow-minimalis";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pagar/Pagar Besi Hollow dan Plat.md": {
+	id: "pagar/Pagar Besi Hollow dan Plat.md";
+  slug: "pagar/pagar-besi-hollow-dan-plat";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
