@@ -37,6 +37,7 @@ Pilihan Jenis:
 
 Belum Termasuk Aksesori Tambahan:
 - Tempat Nomor Rumah
+- Tempat Paket
 
 ## Tambahan
 - Jika mempunyai desain atau preferensi model sendiri, silahkan dikonsultasikan ke kami.

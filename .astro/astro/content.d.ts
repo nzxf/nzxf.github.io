@@ -284,6 +284,20 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
+"pagar/Pagar Besi Ekspanda Metal.md": {
+	id: "pagar/Pagar Besi Ekspanda Metal.md";
+  slug: "pagar/pagar-besi-ekspanda-metal";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pagar/Pagar Besi Ekspanda.md": {
+	id: "pagar/Pagar Besi Ekspanda.md";
+  slug: "pagar/pagar-besi-ekspanda";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
 "pagar/Pagar Besi Hollow Minimalis.md": {
 	id: "pagar/Pagar Besi Hollow Minimalis.md";
   slug: "pagar/pagar-besi-hollow-minimalis";
@@ -294,6 +308,69 @@ declare module 'astro:content' {
 "pagar/Pagar Besi Hollow dan Plat.md": {
 	id: "pagar/Pagar Besi Hollow dan Plat.md";
   slug: "pagar/pagar-besi-hollow-dan-plat";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pagar/Pagar Besi Laser Cutting Kombinasi.md": {
+	id: "pagar/Pagar Besi Laser Cutting Kombinasi.md";
+  slug: "pagar/pagar-besi-laser-cutting-kombinasi";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pagar/Pagar Besi Laser Cutting.md": {
+	id: "pagar/Pagar Besi Laser Cutting.md";
+  slug: "pagar/pagar-besi-laser-cutting";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pagar/Pagar Besi Lisplank Motif.md": {
+	id: "pagar/Pagar Besi Lisplank Motif.md";
+  slug: "pagar/pagar-besi-lisplank-motif";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pagar/Pagar Besi Lisplank Rongga.md": {
+	id: "pagar/Pagar Besi Lisplank Rongga.md";
+  slug: "pagar/pagar-besi-lisplank-rongga";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pagar/Pagar Besi Lisplank.md": {
+	id: "pagar/Pagar Besi Lisplank.md";
+  slug: "pagar/pagar-besi-lisplank";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pagar/Pagar Besi Perforated Kombinasi.md": {
+	id: "pagar/Pagar Besi Perforated Kombinasi.md";
+  slug: "pagar/pagar-besi-perforated-kombinasi";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pagar/Pagar Besi Perforated.md": {
+	id: "pagar/Pagar Besi Perforated.md";
+  slug: "pagar/pagar-besi-perforated";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pagar/Pagar Stainless Steel Kombinasi.md": {
+	id: "pagar/Pagar Stainless Steel Kombinasi.md";
+  slug: "pagar/pagar-stainless-steel-kombinasi";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"pagar/Pagar Stainless Steel.md": {
+	id: "pagar/Pagar Stainless Steel.md";
+  slug: "pagar/pagar-stainless-steel";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
