@@ -6,7 +6,7 @@ code: GD002
 
 title: Bangun Lapangan Olahraga Indoor atau Semi Outdoor
 excerpt: Cocok untuk usaha rental lapangan olahraga
-image: ~/assets/images/produk/konstruksi/konstruksiGudangLapangan.png
+image: ~/assets/images/produk/konstruksi/lapangan.png
 category: Konstruksi
 price: 35000
 priceBefore: 37500

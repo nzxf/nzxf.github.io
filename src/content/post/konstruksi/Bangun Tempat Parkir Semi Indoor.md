@@ -4,9 +4,9 @@ publishDate: 2023-07-22T00:00:00Z
 author: Zan
 code: GD003
 
-title: Bangun Tempat Parkir Semi Indoor
-excerpt: Usaha anda butuh ruang parkir yang luas?
-image: ~/assets/images/produk/konstruksi/konstruksiGudangParkiran.png
+title: Bangun Pabrik Semi Indoor
+excerpt: Usaha anda butuh ruang usaha yang luas?
+image: ~/assets/images/produk/konstruksi/pabrik.png
 category: Konstruksi
 price: 30000
 priceBefore: 35000

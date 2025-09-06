@@ -11,7 +11,7 @@ metadata:
   title:
     default: Mitra Bangun Kreasi
     template: '%s — Mitra Bangun Kreasi'
-  description: "Solusi Satu Pintu Untuk Kebutuhan Konstruksi Anda"
+  description: "Solusi Satu Pintu Untuk Kebutuhan Konstruksi dan Interior Anda"
   robots:
     index: true
     follow: true

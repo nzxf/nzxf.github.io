@@ -179,6 +179,62 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
+"fasad/Fasad Aluminium ACP.md": {
+	id: "fasad/Fasad Aluminium ACP.md";
+  slug: "fasad/fasad-aluminium-acp";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"fasad/Fasad Besi Laser Cutting.md": {
+	id: "fasad/Fasad Besi Laser Cutting.md";
+  slug: "fasad/fasad-besi-laser-cutting";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"fasad/Fasad GRC.md": {
+	id: "fasad/Fasad GRC.md";
+  slug: "fasad/fasad-grc";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"interior/Kitchen Set Multiplek HPL.md": {
+	id: "interior/Kitchen Set Multiplek HPL.md";
+  slug: "interior/kitchen-set-multiplek-hpl";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"interior/Kitechen Set Aluminium ACP Grey.md": {
+	id: "interior/Kitechen Set Aluminium ACP Grey.md";
+  slug: "interior/kitechen-set-aluminium-acp-grey";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"interior/Kitechen Set Aluminium ACP White.md": {
+	id: "interior/Kitechen Set Aluminium ACP White.md";
+  slug: "interior/kitechen-set-aluminium-acp-white";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"interior/Lemari Display Multiplek HPL Stainless Steel.md": {
+	id: "interior/Lemari Display Multiplek HPL Stainless Steel.md";
+  slug: "interior/lemari-display-multiplek-hpl-stainless-steel";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"interior/Lemari Display Multiplek HPL.md": {
+	id: "interior/Lemari Display Multiplek HPL.md";
+  slug: "interior/lemari-display-multiplek-hpl";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
 "kanopi/Kanopi Baja Ringan Atap Galvalum.md": {
 	id: "kanopi/Kanopi Baja Ringan Atap Galvalum.md";
   slug: "kanopi/kanopi-baja-ringan-atap-galvalum";
@@ -207,16 +263,16 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"kanopi/Kanopi Besi Hollow Atap uPVC Double.md": {
-	id: "kanopi/Kanopi Besi Hollow Atap uPVC Double.md";
-  slug: "kanopi/kanopi-besi-hollow-atap-upvc-double";
+"kanopi/Kanopi Besi Hollow Atap uPVC Bending.md": {
+	id: "kanopi/Kanopi Besi Hollow Atap uPVC Bending.md";
+  slug: "kanopi/kanopi-besi-hollow-atap-upvc-bending";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"kanopi/Kanopi Besi Hollow Atap uPVC Single.md": {
-	id: "kanopi/Kanopi Besi Hollow Atap uPVC Single.md";
-  slug: "kanopi/kanopi-besi-hollow-atap-upvc-single";
+"kanopi/Kanopi Besi Hollow Atap uPVC.md": {
+	id: "kanopi/Kanopi Besi Hollow Atap uPVC.md";
+  slug: "kanopi/kanopi-besi-hollow-atap-upvc";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">

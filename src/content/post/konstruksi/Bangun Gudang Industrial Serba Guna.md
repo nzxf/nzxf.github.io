@@ -6,7 +6,7 @@ code: GD001
 
 title: Bangun Gudang Industrial Serba Guna
 excerpt: Untuk bisnis yang butuh ruang tertutup dan bangunan yang kokoh
-image: ~/assets/images/produk/konstruksi/konstruksiGudangIndustri.png
+image: ~/assets/images/produk/konstruksi/industrial.png
 category: Konstruksi
 price: 35000
 priceBefore: 40000

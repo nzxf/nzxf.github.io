@@ -27,9 +27,13 @@ metadata:
 ## Deskripsi
 
 Spesifikasi Produk:
-- Rangka Baja Ringan
+- Rangka Besi Hollow Galvanis Anti Karat
 - Atap Kaca Tempered
-- Sealant (Pelapis Anti Bocor)
+- Finishing Sealant (Pelapis Anti Bocor)
+- Cat Zinc Chromate Pelindung Khusus Anti Karat
+- 3 lapis pengecatan rangka menggunakan kompresor (Lebih rata dan tahan lama)
 
 Aksesoris Tambahan (Opsional):
 - Talang Air
+- Ketebalan Kaca Tempered
+- Model Tiang

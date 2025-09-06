@@ -6,12 +6,13 @@ code: kn002
 
 title: Bangun Hunian Kos-kosan
 excerpt: Paket lengkap desain dan bangun kos-kosan
-image: ~/assets/images/produk/konstruksi/konstruksiBeton.webp
+image: ~/assets/images/produk/konstruksi/kosan.png
 category: Konstruksi
 price: 3499000
 priceBefore: 4249000
 priceTail: /m²
 tags:
+  - konstruksi
   - bangun
   - kos-kosan
 

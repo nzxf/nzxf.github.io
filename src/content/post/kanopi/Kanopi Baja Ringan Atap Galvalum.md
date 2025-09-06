@@ -27,9 +27,11 @@ metadata:
 
 Spesifikasi Produk:
 - Rangka Baja Ringan
-- Atap Spandek Galvalum Polos
+- Atap Spandek Galvalum
 - Sealant (Pelapis Anti Bocor)
 
 Aksesoris Tambahan (Opsional):
-- Cat Rangka
 - Talang Air
+- Model Tiang
+- Jenis Atap Galvalum (Biasa/Pasir/Lainnya)
+- Rangka Besi Hollow Galvanis

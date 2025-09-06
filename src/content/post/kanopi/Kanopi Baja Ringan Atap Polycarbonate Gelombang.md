@@ -33,5 +33,7 @@ Spesifikasi Produk:
 - Sealant (Pelapis Anti Bocor)
 
 Aksesoris Tambahan (Opsional):
-- Cat Rangka
 - Talang Air
+- Model Tiang
+- Ketebalan Atap Polycarbonate
+- Rangka Besi Hollow Galvanis

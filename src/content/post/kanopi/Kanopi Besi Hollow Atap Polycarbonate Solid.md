@@ -29,9 +29,13 @@ metadata:
 ## Deskripsi
 
 Spesifikasi Produk:
-- Rangka Baja Ringan
--  Atap Polycarbonate Gelombang (Solartuff/Carbolux/Solarlite/Setara)
-- Sealant (Pelapis Anti Bocor)
+- Rangka Besi Hollow
+- Atap Polycarbonate Gelombang (Solartuff/Carbolux/Solarlite/Setara)
+- Finishing Sealant (Pelapis Anti Bocor)
+- Cat Zinc Chromate Pelindung Khusus Anti Karat
+- 3 lapis pengecatan rangka menggunakan kompresor (Lebih rata dan tahan lama)
 
 Aksesoris Tambahan (Opsional):
 - Talang Air
+- Ketebalan Atap Polycarbonate (1.2mm/3mm/lainnya)
+- Model Tiang
