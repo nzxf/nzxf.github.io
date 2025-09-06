@@ -34,5 +34,5 @@ Spesifikasi Produk:
 Belum Termasuk Aksesori Tambahan:
 - Handrailing Kayu
 
-## Tambahan
+## Note
 - Jika mempunyai desain atau preferensi model sendiri, silahkan dikonsultasikan ke kami.

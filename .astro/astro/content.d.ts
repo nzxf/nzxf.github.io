@@ -641,6 +641,48 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
+"teralis/Teralis Jendela Besi Beton.md": {
+	id: "teralis/Teralis Jendela Besi Beton.md";
+  slug: "teralis/teralis-jendela-besi-beton";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"teralis/Teralis Jendela Besi Hollow.md": {
+	id: "teralis/Teralis Jendela Besi Hollow.md";
+  slug: "teralis/teralis-jendela-besi-hollow";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"teralis/Teralis Jendela Stainless Steel.md": {
+	id: "teralis/Teralis Jendela Stainless Steel.md";
+  slug: "teralis/teralis-jendela-stainless-steel";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"teralis/Teralis Pintu Besi Motif Angles.md": {
+	id: "teralis/Teralis Pintu Besi Motif Angles.md";
+  slug: "teralis/teralis-pintu-besi-motif-angles";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"teralis/Teralis Pintu Besi Motif Arch.md": {
+	id: "teralis/Teralis Pintu Besi Motif Arch.md";
+  slug: "teralis/teralis-pintu-besi-motif-arch";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"teralis/Teralis Pintu Besi Motif Herringbone.md": {
+	id: "teralis/Teralis Pintu Besi Motif Herringbone.md";
+  slug: "teralis/teralis-pintu-besi-motif-herringbone";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
 };
 
 	};
