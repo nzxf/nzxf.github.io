@@ -5,7 +5,7 @@ author: Zan
 code: GD001
 
 title: Bangun Gudang Industrial Serba Guna
-excerpt: Untuk bisnis yang butuh ruang tertutup dan bangunan yang kokoh
+excerpt: Untuk bisnis yang butuh ruang ekstra
 image: ~/assets/images/produk/konstruksi/industrial.png
 category: Konstruksi
 price: 35000

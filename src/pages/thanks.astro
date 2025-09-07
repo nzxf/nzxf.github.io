@@ -1,0 +1,24 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { getPermalink } from '~/utils/permalinks';
+
+const title = `Terima Kasih Sudah Menghubungi Kami`;
+---
+
+<Layout metadata={{ title }}>
+  <section class="flex items-center h-full p-16">
+    <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
+      <div class="max-w-md text-center">
+        <h2 class="mb-8 font-bold text-9xl flex justify-center">
+          <!-- <span class="sr-only">Success</span> -->
+          <span class="text-primary">TERIMA KASIH</span>
+        </h2>
+        <p class="text-3xl font-semibold md:text-3xl">Telah Menghubungi</p>
+        <p class="text-3xl font-bold md:text-3xl my-2">MITRA BANGUN KREASI</p>
+        <p class="text-xl text-muted font-semibold md:text-xl">Kami Akan Membalas Chat Anda</p>
+        <br/>
+        <a rel="noopener noreferrer" href={getPermalink('/katalog')} class="btn ml-2">Lihat Produk Kami yang Lain</a>
+      </div>
+    </div>
+  </section>
+</Layout>
