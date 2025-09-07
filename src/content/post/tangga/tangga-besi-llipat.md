@@ -2,19 +2,21 @@
 publishDate: 2024-11-12T00:00:00Z
 author: Zan
 
-code: tg003
+code: TG004
 title: Tangga Besi Lipat
 
-price: 1050000
+price: 1250000
 priceBefore: 1500000
 priceTail: /m
 
 image: ~/assets/images/produk/tangga/tanggaLipat.png
 category: Tangga
 tags:
-  - tangga
-  - besi
-  - lipat
+  - Tangga
+  - Besi
+  - Besi Hollow
+  - Besi Bordess
+  - Lipat
  
 metadata:
   canonical: https://mitrabangunkreasi.com/p/jj003
@@ -34,16 +36,5 @@ Bisa Request:
 - Bahan dan ketebalan pijakan/step tangga
 - Material dan ornamen handrailing
 
-Apa saja yang ditawarkan dalam produk ini:
-- Gratis Biaya Survei dan Konsultasi
-- Gratis Desain
-- Gratis Pengiriman
-- Bergaransi
-- Model by request
-- After Sales Service
-- Harga di atas sudah termasuk bahan dan jasa pemasangan
-- Semakin besar luasannya, kami berikan harga penawaran terbaik.
-
-
-## Tambahan
+## Note
 - Jika mempunyai desain atau preferensi model sendiri, silahkan dikonsultasikan ke kami.

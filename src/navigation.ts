@@ -1,5 +1,5 @@
-// import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
-import { getPermalink } from './utils/permalinks';
+// import { getBlogPermalink } from './utils/permalinks';
+import { getPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -160,20 +160,16 @@ export const headerData = {
           href: getPermalink('/kategori/konstruksi')
         },
         {
-          text: 'Kanopi',
-          href: getPermalink('/kategori/kanopi')
-        },
-        {
           text: 'Mezzanine',
           href: getPermalink('/kategori/mezzanine')
         },
         {
-          text: 'Pagar',
-          href: getPermalink('/kategori/pagar')
+          text: 'Kanopi',
+          href: getPermalink('/kategori/kanopi')
         },
         {
-          text: 'Pintu & Jendela',
-          href: getPermalink('/kategori/pintu-and-jendela')
+          text: 'Pagar',
+          href: getPermalink('/kategori/pagar')
         },
         {
           text: 'Tangga',
@@ -202,6 +198,10 @@ export const headerData = {
         {
           text: 'Interior',
           href: getPermalink('/kategori/interior')
+        },
+        {
+          text: 'Pintu & Jendela',
+          href: getPermalink('/kategori/pintu-and-jendela')
         },
         {
           text: 'Semua Katalog',
@@ -260,18 +260,18 @@ export const footerData = {
         { text: 'Rumah', href: '/kategori/konstruksi' },
         { text: 'Kos-kosan', href: '/kategori/konstruksi' },
         { text: 'Gudang', href: '/kategori/konstruksi' },
-        { text: 'GOR', href: '/kategori/konstruksi' },
-        { text: 'Kantor', href: '/kategori/konstruksi' },
+        { text: 'Pabrik', href: '/kategori/konstruksi' },
+        { text: 'Lapangan', href: '/kategori/konstruksi' },
       ],
     },
     {
-      title: 'Produk',
+      title: 'Besi',
       links: [
         { text: 'Kanopi/carport', href: '/kategori/kanopi' },
         { text: 'Pagar Besi', href: '/kategori/pagar' },
         { text: 'Mezzanine', href: '/kategori/mezzanine' },
-        { text: 'Rangka Atap', href: '/kategori/rangka' },
-        { text: 'Sekat/Partisi', href: '/kategori/partisi' },
+        { text: 'Tangga', href: '/kategori/tangga' },
+        { text: 'Teralis', href: '/kategori/teralis' },
       ],
     },
     // {
@@ -283,13 +283,23 @@ export const footerData = {
     //   ],
     // },
     {
-      title: 'Properti',
+      title: 'Aluminium',
       links: [
-        { text: 'Rumah', href: '/kategori/properti' },
-        { text: 'Toko', href: '/kategori/properti' },
-        { text: 'Ruko', href: '/kategori/properti' },
-        { text: 'Gazebo', href: '/kategori/properti' },
-        { text: 'Gudang', href: '/kategori/properti' },
+        { text: 'Pintu', href: '/kategori/pintu-and-jendela' },
+        { text: 'Jendela', href: '/kategori/pintu-and-jendela' },
+        { text: 'Kaca Mati', href: '/kategori/pintu-and-jendela' },
+        { text: 'Partisi', href: '/kategori/pintu-and-jendela' },
+        { text: 'Ventilasi', href: '/kategori/pintu-and-jendela' },
+      ],
+    },
+    {
+      title: 'Stainless',
+      links: [
+        { text: 'Pagar', href: '/tag/stainless-steel' },
+        { text: 'Teralis', href: '/kategori/stainless-steel' },
+        { text: 'Partisi', href: '/kategori/stainless-steel' },
+        { text: 'Kanopi', href: '/kategori/stainless-steel' },
+        { text: 'Pintu', href: '/kategori/stainless-steel' },
       ],
     },
   ],
@@ -302,8 +312,8 @@ export const footerData = {
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/mitrabangunkreasi/' },
     { ariaLabel: 'Tiktok', icon: 'tabler:brand-tiktok', href: 'https://www.tiktok.com/@mitrabangunkreasi' },
     { ariaLabel: 'Youtube', icon: 'tabler:brand-youtube', href: 'http://www.youtube.com/@mitrabangunkreasi' },
-    // { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://m.facebook.com/people/Mitra-Bangun-Kreasi/61564505944795/' },
-    // { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://m.facebook.com/people/Mitra-Bangun-Kreasi/61564505944795/' },
+    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
   ],
   footNote: `
   Made by <a class="text-blue-600 underline dark:text-muted" href="https://nzxf.my.id/"> nzxf </a> · All rights reserved.

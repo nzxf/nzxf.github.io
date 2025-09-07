@@ -1,5 +1,5 @@
 ---
-import Image from '~/components/common/Image.astro';
+// import Image from '~/components/common/Image.astro';
 import Button from '~/components/ui/Button.astro';
 
 import type { Hero as Props } from '~/types';
@@ -11,7 +11,7 @@ const {
 
   content = await Astro.slots.render('content'),
   actions = await Astro.slots.render('actions'),
-  image = await Astro.slots.render('image'),
+  // image = await Astro.slots.render('image'),
 
   id,
   bg = await Astro.slots.render('bg'),
@@ -26,8 +26,8 @@ const {
   </div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
     <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
-    <div class="py-12 md:py-20">
-      <div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
+    <div class="pt-8 md:pt-10">
+      <div class="text-center pb-5 md:pb-8 max-w-5xl mx-auto">
         {
           tagline && (
             <p
@@ -71,7 +71,7 @@ const {
         </div>
         {content && <Fragment set:html={content} />}
       </div>
-      <div
+      <!-- <div
         class="intersect-once intercept-no-queue intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
       >
         {
@@ -94,6 +94,6 @@ const {
           )
         }
       </div>
-    </div>
+    </div> -->
   </div>
 </section>

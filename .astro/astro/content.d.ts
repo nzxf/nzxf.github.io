@@ -620,16 +620,30 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"tangga/tangga-besi-llipat.md": {
-	id: "tangga/tangga-besi-llipat.md";
-  slug: "tangga/tangga-besi-llipat";
+"tangga/Tangga Besi Rebah Rangka Samping.md": {
+	id: "tangga/Tangga Besi Rebah Rangka Samping.md";
+  slug: "tangga/tangga-besi-rebah-rangka-samping";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"tangga/tangga-besi-rebah.md": {
-	id: "tangga/tangga-besi-rebah.md";
-  slug: "tangga/tangga-besi-rebah";
+"tangga/Tangga Besi Rebah Rangka Tengah Double.md": {
+	id: "tangga/Tangga Besi Rebah Rangka Tengah Double.md";
+  slug: "tangga/tangga-besi-rebah-rangka-tengah-double";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"tangga/Tangga Besi Rebah Rangka Tengah Single.md": {
+	id: "tangga/Tangga Besi Rebah Rangka Tengah Single.md";
+  slug: "tangga/tangga-besi-rebah-rangka-tengah-single";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"tangga/tangga-besi-llipat.md": {
+	id: "tangga/tangga-besi-llipat.md";
+  slug: "tangga/tangga-besi-llipat";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">

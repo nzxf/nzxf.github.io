@@ -2,7 +2,7 @@
 publishDate: 2024-01-24T00:00:00Z
 author: Zan
 
-code: tg002
+code: TG005
 title: Tangga Besi Spiral/Putar
 
 price: 1600000
@@ -12,10 +12,12 @@ priceTail: /m
 image: ~/assets/images/produk/tangga/tanggaPutar.png
 category: Tangga
 tags:
-  - tangga
-  - besi
-  - spiral
-  - putar
+  - Tangga
+  - Besi
+  - Besi Hollow
+  - Besi Bordess
+  - Spiral
+  - Bending
  
 metadata:
   canonical: https://mitrabangunkreasi.com/p/jj003
@@ -35,16 +37,5 @@ Bisa Request:
 - Bahan dan ketebalan pijakan/step tangga
 - Material dan ornamen handrailing
 
-Apa saja yang ditawarkan dalam produk ini:
-- Gratis Biaya Survei dan Konsultasi
-- Gratis Desain
-- Gratis Pengiriman
-- Bergaransi
-- Model by request
-- After Sales Service
-- Harga di atas sudah termasuk bahan dan jasa pemasangan
-- Semakin besar luasannya, kami berikan harga penawaran terbaik.
-
-
-## Tambahan
+## Note
 - Jika mempunyai desain atau preferensi model sendiri, silahkan dikonsultasikan ke kami.
