@@ -312,9 +312,9 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"konstruksi/Bangun Tempat Parkir Semi Indoor.md": {
-	id: "konstruksi/Bangun Tempat Parkir Semi Indoor.md";
-  slug: "konstruksi/bangun-tempat-parkir-semi-indoor";
+"konstruksi/Bangun Pabrik Untuk Bisnis.md": {
+	id: "konstruksi/Bangun Pabrik Untuk Bisnis.md";
+  slug: "konstruksi/bangun-pabrik-untuk-bisnis";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">

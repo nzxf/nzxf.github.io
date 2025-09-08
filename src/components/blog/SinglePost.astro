@@ -242,14 +242,14 @@ const { post, url } = Astro.props;
               {
                 variant: 'primary',
                 text: 'Jadwalkan Survey',
-                href: 'https://wa.me/6285176712656?text=MBK,%20saya%20mau%20jadwalkan%20survey%20untuk%20' + post.code.toUpperCase() + ": " + post.title,
+                href: 'https://wa.me/6285176712656?text=MBK,%20saya%20mau%20dijadwalkan%20survey%20untuk%20' + " " + post.title + " - " + url,
                 target: '_blank',
                 icon: 'tabler:calendar-plus'
               },
               {
                 variant: 'primary',
-                text: 'Pesan Sekarang',
-                href: 'https://wa.me/6285176712656?text=MBK,%20saya%20mau%20tanya%20tentang%20' + post.code.toUpperCase() + ": " + post.title,
+                text: 'Order Sekarang',
+                href: 'https://wa.me/6285176712656?text=MBK,%20saya%20mau%20order%20tentang%20' + " " + post.title  + " - " + url,
                 target: '_blank',
                 icon: 'tabler:message'
               },

@@ -5,7 +5,7 @@ author: Zan
 code: GD003
 
 title: Bangun Pabrik Semi Indoor
-excerpt: Usaha anda butuh ruang usaha yang luas?
+excerpt: Bagi anda yang butuh ruangan pabrik yang luas
 image: ~/assets/images/produk/konstruksi/pabrik.png
 category: Konstruksi
 price: 30000
