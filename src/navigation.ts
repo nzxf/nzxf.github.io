@@ -172,6 +172,10 @@ export const headerData = {
           href: getPermalink('/kategori/pagar')
         },
         {
+          text: 'Pintu & Jendela',
+          href: getPermalink('/kategori/pintu-and-jendela')
+        },
+        {
           text: 'Tangga',
           href: getPermalink('/kategori/tangga')
         },
@@ -198,10 +202,6 @@ export const headerData = {
         {
           text: 'Interior',
           href: getPermalink('/kategori/interior')
-        },
-        {
-          text: 'Pintu & Jendela',
-          href: getPermalink('/kategori/pintu-and-jendela')
         },
         {
           text: 'Semua Katalog',
@@ -308,15 +308,16 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://x.com/mbangunkreasi' },
+    { ariaLabel: 'Whatsapp', icon: 'tabler:brand-whatsapp', href: 'https://wa.me/6285176712656' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/mitrabangunkreasi/' },
     { ariaLabel: 'Tiktok', icon: 'tabler:brand-tiktok', href: 'https://www.tiktok.com/@mitrabangunkreasi' },
     { ariaLabel: 'Youtube', icon: 'tabler:brand-youtube', href: 'http://www.youtube.com/@mitrabangunkreasi' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://m.facebook.com/people/Mitra-Bangun-Kreasi/61564505944795/' },
+    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://x.com/mbangunkreasi' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
   ],
   footNote: `
-  Made by <a class="text-blue-600 underline dark:text-muted" href="https://nzxf.my.id/"> nzxf </a> · All rights reserved.
+  Made by <a class="text-blue-600 underline dark:text-muted"> Zan </a> · All rights reserved.
   `,
 };
 

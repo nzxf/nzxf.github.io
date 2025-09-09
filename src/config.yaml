@@ -1,6 +1,6 @@
 site:
   name: Mitra Bangun Kreasi
-  site: 'https://nzxf.my.id'
+  site: 'https://mitrabangunkreasi.com'
   base: '/'
   trailingSlash: false
 
@@ -11,7 +11,7 @@ metadata:
   title:
     default: Mitra Bangun Kreasi
     template: '%s — Mitra Bangun Kreasi'
-  description: "Solusi Satu Pintu Untuk Kebutuhan Konstruksi dan Interior Anda"
+  description: "Solusi Satu Pintu Untuk Kebutuhan Konstruksi, Eksterior dan Interior di Yogyakarta dan Jawa Tengah"
   robots:
     index: true
     follow: true
