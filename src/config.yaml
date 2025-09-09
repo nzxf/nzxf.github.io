@@ -11,7 +11,7 @@ metadata:
   title:
     default: Mitra Bangun Kreasi
     template: '%s — Mitra Bangun Kreasi'
-  description: "Solusi Satu Pintu Untuk Kebutuhan Konstruksi, Eksterior dan Interior di Yogyakarta dan Jawa Tengah"
+  description: "Jasa konstruksi & interior Jogja & Jateng: kanopi, pintu, jendela, tangga, railing, pagar, mezzanine, plafon, partisi, fasad. Cepat & terpercaya."
   robots:
     index: true
     follow: true
@@ -25,6 +25,10 @@ metadata:
   twitter:
     handle: '@mbangunkreasi'
     site: '@mbangunkreasi'
+    cardType: summary_large_image
+  istagram:
+    handle: '@mitrabangunkreasi'
+    site: '@mitrabangunkreasi'
     cardType: summary_large_image
 
 i18n:
