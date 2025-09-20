@@ -18,8 +18,6 @@ tags:
   - toko
   - stainless steel
 
-metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
 ---
 
 ## Deskripsi
@@ -28,5 +26,5 @@ metadata:
 - Aksesoris Stainless Steel / Atau Aluminium
 - Sealant Anti Bocor
 
-## Tambahan
+## Note
 - Jika mempunyai desain atau preferensi model sendiri, silahkan dikonsultasikan ke kami.

@@ -34,5 +34,5 @@ BISA REQUEST
 BELUM TERMASUK
 - pekerjaan bongkaran (jika ada)
 
-## Tambahan
+## Note
 - Jika mempunyai desain atau preferensi model sendiri, silahkan dikonsultasikan ke kami.

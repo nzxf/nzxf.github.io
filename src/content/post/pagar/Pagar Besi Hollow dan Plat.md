@@ -18,8 +18,6 @@ tags:
   - Besi Hollow
   - Besi Plat
 
-metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
 ---
 
 ## Deskripsi
@@ -41,5 +39,5 @@ Belum Termasuk Aksesori Tambahan:
 - Tempat Nomor Rumah
 - Tempat Paket
 
-## Tambahan
+## Note
 - Jika mempunyai desain atau preferensi model sendiri, silahkan dikonsultasikan ke kami.

@@ -19,8 +19,6 @@ tags:
   - Spiral
   - Bending
  
-metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
 ---
 
 ## Deskripsi

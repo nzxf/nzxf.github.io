@@ -17,8 +17,6 @@ tags:
   - Besi Hollow
   - Besi Bordess
  
-metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
 ---
 
 ## Deskripsi

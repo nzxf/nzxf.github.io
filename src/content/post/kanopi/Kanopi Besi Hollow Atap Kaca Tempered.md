@@ -20,8 +20,6 @@ tags:
   - Kaca Tempered
 
 
-metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
 ---
 
 ## Deskripsi

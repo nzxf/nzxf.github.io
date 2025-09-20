@@ -16,9 +16,6 @@ tags:
   - Aluminium
   - Kaca
 
-
-metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
 ---
 
 ## Deskripsi
@@ -33,3 +30,6 @@ Aksesoris Tambahan (Opsional):
 - Handle Bar Stainless Steel
 - Door Closer
 - List
+
+## Note
+- Jika mempunyai desain atau preferensi model sendiri, silahkan dikonsultasikan ke kami.

@@ -20,8 +20,6 @@ tags:
   - Railing
   - Tangga
 
-metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
 ---
 
 ## Deskripsi
@@ -38,7 +36,7 @@ Belum Termasuk Aksesori Tambahan:
 - Railing
 - Plafon
 
-## Tambahan
+## Note
 - Jika mempunyai desain atau preferensi model sendiri, silahkan dikonsultasikan ke kami.
 
 ---

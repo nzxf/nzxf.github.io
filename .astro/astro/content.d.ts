@@ -179,23 +179,23 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"fasad/Fasad Aluminium ACP.md": {
-	id: "fasad/Fasad Aluminium ACP.md";
-  slug: "fasad/fasad-aluminium-acp";
+"fasad/Pasang Fasad Aluminium ACP - Jogja Jateng.md": {
+	id: "fasad/Pasang Fasad Aluminium ACP - Jogja Jateng.md";
+  slug: "fasad/pasang-fasad-aluminium-acp---jogja-jateng";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"fasad/Fasad Besi Laser Cutting.md": {
-	id: "fasad/Fasad Besi Laser Cutting.md";
-  slug: "fasad/fasad-besi-laser-cutting";
+"fasad/Pasang Fasad Besi Laser Cutting - Jogja Jateng.md": {
+	id: "fasad/Pasang Fasad Besi Laser Cutting - Jogja Jateng.md";
+  slug: "fasad/pasang-fasad-besi-laser-cutting---jogja-jateng";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"fasad/Fasad GRC.md": {
-	id: "fasad/Fasad GRC.md";
-  slug: "fasad/fasad-grc";
+"fasad/Pasang Fasad GRC Fibre Cement - Jogja Jateng.md": {
+	id: "fasad/Pasang Fasad GRC Fibre Cement - Jogja Jateng.md";
+  slug: "fasad/pasang-fasad-grc-fibre-cement---jogja-jateng";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
@@ -263,16 +263,16 @@ declare module 'astro:content' {
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"kanopi/Kanopi Besi Hollow Atap uPVC Bending.md": {
-	id: "kanopi/Kanopi Besi Hollow Atap uPVC Bending.md";
-  slug: "kanopi/kanopi-besi-hollow-atap-upvc-bending";
+"kanopi/Kanopi Besi Hollow Atap uPVC Alderon Dr Shield  murah berkualitas di jogja.md": {
+	id: "kanopi/Kanopi Besi Hollow Atap uPVC Alderon Dr Shield  murah berkualitas di jogja.md";
+  slug: "kanopi/kanopi-besi-hollow-atap-upvc-alderon-dr-shield--murah-berkualitas-di-jogja";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"kanopi/Kanopi Besi Hollow Atap uPVC.md": {
-	id: "kanopi/Kanopi Besi Hollow Atap uPVC.md";
-  slug: "kanopi/kanopi-besi-hollow-atap-upvc";
+"kanopi/Kanopi Besi Hollow Atap uPVC Bending.md": {
+	id: "kanopi/Kanopi Besi Hollow Atap uPVC Bending.md";
+  slug: "kanopi/kanopi-besi-hollow-atap-upvc-bending";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">

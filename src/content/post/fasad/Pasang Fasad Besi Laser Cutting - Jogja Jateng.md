@@ -2,8 +2,8 @@
 publishDate: 2024-01-25T00:00:00Z
 author: Zan
 
-code: FS003
-title: Fasad Besi Plat Laser Cutting
+code: FS002
+title: Pasang Fasad Besi Plat Laser Cutting
 
 price: 1500000
 priceBefore: 1850000
@@ -16,8 +16,6 @@ tags:
   - Besi Plat
   - Laser Cutting
 
-metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
 ---
 
 ## Deskripsi

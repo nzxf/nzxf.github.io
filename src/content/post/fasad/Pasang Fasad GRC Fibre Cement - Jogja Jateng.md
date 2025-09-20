@@ -2,8 +2,8 @@
 publishDate: 2024-01-25T00:00:00Z
 author: Zan
 
-code: FS002
-title: Fasad GRC
+code: FS003
+title: Pasang Fasad GRC Fibre Cement
 
 price: 550000
 priceBefore: 850000
@@ -15,8 +15,6 @@ tags:
   - Fasad
   - GRC
 
-metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
 ---
 
 ## Deskripsi

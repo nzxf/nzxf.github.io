@@ -43,5 +43,5 @@ BISA REQUEST
 - led drop ceilling
 - plafon silika board
 
-## Tambahan
+## Note
 - Jika mempunyai desain atau preferensi model sendiri, silahkan dikonsultasikan ke kami.

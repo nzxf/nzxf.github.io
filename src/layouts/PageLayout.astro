@@ -7,6 +7,7 @@ import Footer from '~/components/widgets/Footer.astro';
 import { headerData, footerData } from '~/navigation';
 
 import type { MetaData } from '~/types';
+import CallToActionWa from '~/components/widgets/CallToActionWa.astro';
 
 export interface Props {
   metadata?: MetaData;
@@ -28,80 +29,8 @@ const { metadata } = Astro.props;
   </main>
   <slot name="footer">
     <Footer {...footerData} />
+    <CallToActionWa></CallToActionWa>
   </slot>
-
-
-  <style>
-
-    body{
-      font-family: 'Inter', sans-serif;
-      background-color: #18212D;;
-    }
-
-    .whats-float {
-        position: fixed;
-        transform:translate(114px,0px);
-        bottom:10%;
-        right:0;
-        width:160px;
-        overflow: hidden;
-        background-color: #25d366;
-        color: #FFF;
-        border-radius: 2px 0 0 2px;
-        z-index: 10;
-        transition: all 0.3s ease-in-out;
-        vertical-align: middle
-
-        
-    }
-    .whats-float a span {
-        color: white;
-        font-size: 15px;
-        padding-top: 8px;
-        padding-bottom: 10px;
-        position: absolute;
-        line-height: 16px;
-        font-weight: bolder;
-    }
-
-    .whats-float i {
-        font-size: 30px;
-        color: white;
-        line-height: 30px;
-        padding: 10px;
-        transform:rotate(0deg);
-        transition: all 0.5s ease-in-out;
-        text-align:center;
-
-    }
-
-    .whats-float:hover {
-        color: #FFFFFF;
-        transform:translate(0px,0px);
-    }
-
-    .whats-float:hover i  {
-        transform:rotate(360deg);
-
-      }
-      .contact_icon {
-        animation: pulse 1.5s infinite;
-        box-shadow: 0 0 0 0 #42db87;
-        -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-        -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-        -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-        animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-        text-decoration: none !important;
-        transition: all 300ms ease-in-out;
-      }
-      
-          @keyframes pulsing {
-        to {
-          box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);
-        }
-    }
-
-  </style>
 
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <div class="floating_btn">
@@ -112,29 +41,6 @@ const { metadata } = Astro.props;
     </a>
     <p class="text_icon">Tanya MBK?</p>
   </div> -->
-
-
-  <head>
-    <meta charset="UTF-8">
-    <title>Floating WhatsApp Button</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><link rel="stylesheet" href="./style.css">
-  
-  </head>
-  <body>
-  <!-- partial:index.partial.html -->
-
-  <div class="whats-float contact_icon">
-      <a href="https://api.whatsapp.com/send/?phone=6285176712656&text=Halo+Mitra+Bangun+Kreasi"
-         target="_blank">
-          <i class="fa fa-whatsapp"></i><span>Tanya MBK<br><small>+62 851 7671 2656</small></span>
-      </a>
-  </div>
-  <!-- partial -->
-    
-  </body>
  
-  
 
 </Layout>

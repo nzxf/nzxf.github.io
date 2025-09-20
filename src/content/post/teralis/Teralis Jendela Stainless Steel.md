@@ -16,8 +16,6 @@ tags:
   - Stainless Steel
   - Jendela
 
-metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
 ---
 
 ## Deskripsi

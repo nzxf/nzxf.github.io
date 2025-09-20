@@ -18,9 +18,6 @@ tags:
   - Galvalum
   - Spandex
 
-
-metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
 ---
 
 ## Deskripsi

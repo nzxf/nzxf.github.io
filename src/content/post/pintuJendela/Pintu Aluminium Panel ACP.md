@@ -16,9 +16,6 @@ tags:
   - Aluminium
   - ACP
 
-
-metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
 ---
 
 ## Deskripsi
@@ -32,3 +29,6 @@ Spesifikasi Produk:
 Aksesoris Tambahan (Opsional):
 - Handle Bar Stainless Steel
 - Door Closer
+
+## Note
+- Jika mempunyai desain atau preferensi model sendiri, silahkan dikonsultasikan ke kami.

@@ -1,0 +1,102 @@
+---
+
+---
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Floating WhatsApp Button</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+  
+  </head>
+  <body>
+  <!-- partial:index.partial.html -->
+
+  <div class="whats-float contact_icon">
+      <a href="https://api.whatsapp.com/send/?phone=6285176712656&text=Halo+Mitra+Bangun+Kreasi"
+         target="_blank">
+          <i class="fa fa-whatsapp"></i><span>Tanya MBK<br><small>+62 851 7671 2656</small></span>
+      </a>
+  </div>
+
+  <style>
+
+    body{
+      font-family: 'Inter', sans-serif;
+      background-color: #18212D;;
+    }
+
+/* CONTAINER */
+    .whats-float {
+        position: fixed;
+        transform:translate(145px,0px);
+        bottom:7%;
+        right:0;
+        width: 215px;
+        height: 65px;
+        overflow: hidden;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 5px 0 0 5px;
+        z-index: 10;
+        transition: all 0.3s ease-in-out;
+        vertical-align: middle
+
+        
+    }
+
+/* TEXT */
+    .whats-float a span {
+        color: white;
+        font-size: 19px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: absolute;
+        line-height: 21px;
+        font-weight: bolder;
+    }
+
+/* LOGO WHATSAPP */
+    .whats-float i {
+        font-size: 45px;
+        color: white;
+        line-height: 30px;
+        padding: 17px;
+        transform:rotate(0deg);
+        transition: all 0.5s ease-in-out;
+        text-align:center;
+
+    }
+
+    .whats-float:hover {
+        color: #FFFFFF;
+        transform:translate(0px,0px);
+    }
+
+    .whats-float:hover i  {
+        transform:rotate(360deg);
+
+      }
+      .contact_icon {
+        animation: pulse 1.5s infinite;
+        box-shadow: 0 0 0 0 #42db87;
+        -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+        -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+        -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+        animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+        text-decoration: none !important;
+        transition: all 300ms ease-in-out;
+      }
+      
+          @keyframes pulsing {
+        to {
+          box-shadow: 0 0 0 25px rgba(232, 76, 61, 0);
+        }
+    }
+
+  </style>
+
+  <!-- partial -->
+    
+  </body>

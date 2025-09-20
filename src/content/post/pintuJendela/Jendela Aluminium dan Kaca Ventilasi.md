@@ -17,8 +17,6 @@ tags:
   - Kaca
 
 
-metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
 ---
 
 ## Deskripsi
@@ -31,3 +29,6 @@ Spesifikasi Produk:
 
 Aksesoris Tambahan/Custom (Opsional):
 - Kaca Tempered
+
+## Note
+- Jika mempunyai desain atau preferensi model sendiri, silahkan dikonsultasikan ke kami.

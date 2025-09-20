@@ -3,7 +3,7 @@ publishDate: 2024-01-25T00:00:00Z
 author: Zan
 
 code: FS001
-title: Fasad Aluminium ACP
+title: Pasang Fasad Aluminium ACP
 
 price: 650000
 priceBefore: 1050000
@@ -16,8 +16,6 @@ tags:
   - ACP
   - Aluminium
 
-metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
 ---
 
 ## Deskripsi

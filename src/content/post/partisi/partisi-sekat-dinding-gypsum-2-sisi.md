@@ -20,8 +20,6 @@ tags:
   - resto
   - bank
 
-metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
 ---
 
 ## Deskripsi
@@ -46,5 +44,5 @@ BISA REQUEST
 - peredam suara
 - partisi silika board
 
-## Tambahan
+## Note
 - Jika mempunyai desain atau preferensi model sendiri, silahkan dikonsultasikan ke kami.

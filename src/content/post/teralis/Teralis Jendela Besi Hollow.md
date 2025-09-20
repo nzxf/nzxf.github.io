@@ -17,8 +17,6 @@ tags:
   - Besi Hollow
   - Jendela
 
-metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
 ---
 
 ## Deskripsi

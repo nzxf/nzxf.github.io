@@ -26,7 +26,11 @@ metadata:
     handle: '@mbangunkreasi'
     site: '@mbangunkreasi'
     cardType: summary_large_image
-  istagram:
+  instagram:
+    handle: '@mitrabangunkreasi'
+    site: '@mitrabangunkreasi'
+    cardType: summary_large_image
+  tiktok:
     handle: '@mitrabangunkreasi'
     site: '@mitrabangunkreasi'
     cardType: summary_large_image
@@ -50,7 +54,7 @@ apps:
       isEnabled: false
       pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
       robots:
-        index: false
+        index: true
 
     category:
       isEnabled: true
@@ -63,7 +67,7 @@ apps:
       isEnabled: true
       pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
       robots:
-        index: false
+        index: true
 
     isRelatedPostsEnabled: true
     relatedPostsCount: 4

@@ -21,8 +21,6 @@ tags:
   - resto
   - bank
 
-metadata:
-  canonical: https://mitrabangunkreasi.com/p/jj003
 ---
 
 ## Deskripsi
@@ -31,5 +29,5 @@ metadata:
 - Kaca 5mm: 235.000/m²
 - Sealant
 
-## Tambahan
+## Note
 - Jika mempunyai desain atau preferensi model sendiri, silahkan dikonsultasikan ke kami.
